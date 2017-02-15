@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="BonsaiApp">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BonsaiApp is a complete angular baseApp with an Elegant & Modern UI for rapid application development.">
+  <link rel="author" href="/humans.txt" /> 
+</head>
+<body>
+ <!-- Simple Nav for DEMO  -->
+<ul style="position: fixed; margin-top: 45px;">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/soon">Soon</a></li>
+</ul>
+<main ng-cloak>
+  <!-- AngularJS Routing -->
+  <div ng-view=""> </div>
+  <!-- End Routing -->
+</main>
+<!-- Jquery Library files   -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- AngularJS Library files --> 
+<script src="bower_components/angular/angular.min.js"></script> 
+<script src="bower_components/angular-route/angular-route.min.js"></script> 
+<!-- Project files --> 
+<script defer src="scripts/templates.js"></script> 
+<script defer src="scripts/main.js"></script> 
+<script defer src="scripts/index/index.js"></script> 
+<script defer src="scripts/index/controllers.js"></script> 
+<script defer src="scripts/index/directives.js"></script> 
+</body>
+</html>

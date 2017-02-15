@@ -1,0 +1,89 @@
+// Variables
+$gutters: 5px;
+$gridPadding: 5px;
+$rowSpacing: 5px;
+$gridsize: 12;
+$breakpoints: ("xs": 420px, "sm": 768px, "md": 992px, "lg": 1200px);
+
+@charset "utf-8";
+
+/* Removes padding behaviour on widths */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Grid Container */
+.grid, .grid-fw {
+  padding: $gridPadding $gridPadding 0 $gridPadding;
+  margin: 0 auto;
+}
+
+/* Row Clearfix */
+.row {
+  margin-bottom: $rowSpacing;
+  &:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+/* Column attribute selector */
+[class*='col-'] {
+  position: relative;
+  float: left;
+  display: block;
+  padding-right: $gutters;
+  min-height: 1px;
+}
+
+/* Floats last ".col-" to the right */
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+@each $size in $breakpoints {
+  @media (min-width: #{$size}) {
+    .grid {
+      width: #{$size} -50px;
+    }
+  }
+}
+
+//Columns, Columns Offsets, and Thier Breakpoints
+@each $mqSlug, $size in $breakpoints {
+  @media (min-width: #{$size}) {
+    @for $colNumb from 1 through $gridsize {
+      .col-#{$colNumb}#{$mqSlug} {
+        width: $colNumb / $gridsize * 100%;
+      }
+
+      .offset-#{$colNumb}#{$mqSlug} {
+        margin-left: $colNumb / $gridsize * 100%;
+      }
+    }
+  }
+}
+
+//Demo styles
+body {
+  background: #c3c3c3;
+  color: #fff;
+  font-family: Helvetica, Arial, "Lucida Grande";
+  font-weight: bold;
+}
+
+[class*='col-'] > p {
+  background-color: #004d81;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+}

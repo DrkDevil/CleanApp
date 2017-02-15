@@ -1,0 +1,23 @@
+{
+  "name": "BaseApp",
+  "description": "Bootstrap AngularJS Base App with Routing.",
+  "main": "",
+  "directory": "app/bower_components",	
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "angular": "~1.4.9",
+    "angular-route": "~1.4.9",
+    "bootstrap-sass": "^3.3.6",
+	"FortAwesome/Font-Awesome": "*"
+  }
+}
