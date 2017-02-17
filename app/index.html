@@ -9,27 +9,27 @@
   <link rel="author" href="/humans.txt" /> 
 </head>
 <body>
- <!-- Simple Nav for DEMO  -->
-<ul style="position: fixed; margin-top: 45px;">
-  <li><a href="/">Home</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a href="/soon">Soon</a></li>
-</ul>
-<main ng-cloak>
-  <!-- AngularJS Routing -->
-  <div ng-view=""> </div>
-  <!-- End Routing -->
-</main>
-<!-- Jquery Library files   -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!-- AngularJS Library files --> 
-<script src="bower_components/angular/angular.min.js"></script> 
-<script src="bower_components/angular-route/angular-route.min.js"></script> 
-<!-- Project files --> 
-<script defer src="scripts/templates.js"></script> 
-<script defer src="scripts/main.js"></script> 
-<script defer src="scripts/index/index.js"></script> 
-<script defer src="scripts/index/controllers.js"></script> 
-<script defer src="scripts/index/directives.js"></script> 
+  <!-- Simple Nav for DEMO (Delete and use your own navigation)  -->
+  <ul style="position: fixed; margin-top: 45px;">
+   <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/soon">Soon</a></li>
+  </ul>
+  <main ng-cloak>
+    <!-- AngularJS Routing -->
+    <div ng-view=""> </div>
+    <!-- End Routing -->
+  </main>
+  <!-- Jquery Library files   -->
+  <script src="components/jquery/dist/jquery.min.js"></script>
+  <!-- AngularJS Library files --> 
+  <script src="components/angular/angular.min.js"></script> 
+  <script src="components/angular-route/angular-route.min.js"></script> 
+  <!-- Project files --> 
+  <script defer src="scripts/templates.js"></script> 
+  <script defer src="scripts/main.js"></script> 
+  <script defer src="scripts/index/index.js"></script> 
+  <script defer src="scripts/index/controllers.js"></script> 
+  <script defer src="scripts/index/directives.js"></script> 
 </body>
 </html>
