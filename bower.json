@@ -2,7 +2,6 @@
   "name": "BaseApp",
   "description": "Bootstrap AngularJS Base App with Routing.",
   "main": "",
-  "directory": "app/bower_components",	
   "moduleType": [],
   "license": "MIT",
   "homepage": "",
