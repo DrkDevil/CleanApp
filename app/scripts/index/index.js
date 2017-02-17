@@ -15,7 +15,7 @@ angular.module('BonsaiApp.index', [
 .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', { 
-      title: 'BonsaiApp - Angular Edition', 
+      title: 'BonsaiApp - BaseApp with Modern UI', 
       templateUrl: 'main.html', 
       controller: 'IndexCtrl' 
     })
