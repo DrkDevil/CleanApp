@@ -32,8 +32,7 @@ gulp.task('connect', [], function () {
     // https: true;
 	// Run as an https by uncommenting 'https: true'
 	// Note: this uses an unsigned certificate which on first access
-    //       will present a certificate warning in the browser.
-   
+    //       will present a certificate warning in the browser.   
   });
   // Watch these files, and folders. 
   // If there are any changes to saved files reload browser. 

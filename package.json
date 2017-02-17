@@ -1,5 +1,5 @@
 {
-  "name": "MinamalNodeWebsite",
+  "name": "BonsaiApp",
   "devDependencies": {
     "browser-sync": "^1.3.0",
     "gulp": "^3.8.5",
