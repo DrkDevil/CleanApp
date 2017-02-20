@@ -1,12 +1,13 @@
 'use strict';
-// ----- BonsaiApp Gulp File --
+// ----- BonsaiApp Gulp File -----
 
+// ----- Required Dependecies -----
 var gulp          = require('gulp');
 var sass          = require('gulp-sass');
 var templateCache = require('gulp-angular-templatecache');
 var browserSync   = require('browser-sync');
 
-// ----- Reload BrowserSync --
+// ----- Reload BrowserSync ------
 var reload = browserSync.reload;
 
 // ---- Sass Compiling ----------------------------------------------------------------------
@@ -24,10 +25,10 @@ gulp.task('templates', function () {
 });
 
 // ---- BrowserSync Config ------------------------------------------------------------------
-gulp.task('connect', [], function () {
+gulp.task('view', [], function () {
   browserSync({
-    notify: false,           // Disables "BrowserSync is running" notification
-    logPrefix: 'BonsaiApp',  // Name you want displayed in your console log's prefix. 
+    notify: false,           // Disables the "BrowserSync is running" notification
+    logPrefix: 'BonsaiApp',  // Name you want displayed in your console log's prefix. (Optional but cool!)
     server: ["./app"]        // The folder the application is running from.
     // https: true;
 	// Run as an https by uncommenting 'https: true'
