@@ -1,22 +1,18 @@
 {
-  "name": "BaseApp",
+  "name": "BonsaiApp",
   "description": "Bootstrap AngularJS Base App with Routing.",
+  "authors": [ { "name": "Brian Orr (drkdevil)" } ], 
   "main": "",
   "moduleType": [],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "http://bonsaiapp.digitalreligion.net",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "app/components"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.7",
     "angular": "~1.4.9",
     "angular-route": "~1.4.9",
-    "bootstrap-sass": "^3.3.6",
-	"FortAwesome/Font-Awesome": "*"
   }
 }

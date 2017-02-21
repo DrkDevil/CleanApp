@@ -8,27 +8,14 @@ angular.module('BonsaiApp.index', [
   $rootScope.$on('$routeChangeSuccess', function(newVal, oldVal) {
     if (oldVal !== newVal) {
       document.title = $route.current.title;
-
     }
   });
 }])
-.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider
-    .when('/', { 
-      title: 'BonsaiApp - BaseApp with Modern UI', 
-      templateUrl: 'main.html', 
-      controller: 'IndexCtrl' 
-    })
-    .when('/about', { 
-      title: 'BonsaiApp - About', 
-      templateUrl: 'about.html', 
-      controller: 'IndexCtrl' 
-    })
-	.when('/soon', { 
-      title: 'Under Construction', 
-      templateUrl: 'soon.html', 
-      controller: 'IndexCtrl' 
-    })
+    .when('/', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'main.html', controller: 'IndexCtrl' })
+    .when('/about', { title: 'BonsaiApp - About', templateUrl: 'about.html', controller: 'IndexCtrl' })
+	.when('/soon', { title: 'Under Construction', templateUrl: 'soon.html', controller: 'IndexCtrl' })
     .otherwise({ redirectTo: '/' });
-    $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(true);
 }]);
