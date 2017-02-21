@@ -8,14 +8,16 @@ var concat            = require('gulp-concat');
 var templateCache     = require('gulp-angular-templatecache');
 var friendlyFormatter = require('eslint-friendly-formatter');
 var browserSync       = require('browser-sync');
+var cleanCSS          = require('gulp-clean-css');
+var sourcemaps        = require('gulp-sourcemaps');
 
 // ----- Reload BrowserSync -----------------------------------------------------------------
 var reload = browserSync.reload;
 
 // ---- Gulp Quick Commands -----------------------------------------------------------------
-//gulp.task('prod', ['lint', 'build', 'view']);      // gulp prod
-gulp.task('dev', ['lint', 'view']);                  // gulp dev
-gulp.task('default', ['dev']);                       // gulp default
+gulp.task('prod', ['lint', 'build', 'view']);      // gulp prod
+gulp.task('dev', ['lint', 'view']);                // gulp dev
+gulp.task('default', ['dev']);                     // gulp default
 
 // ---- Sass Compiling ----------------------------------------------------------------------
 gulp.task('sass', function() {
@@ -44,7 +46,14 @@ gulp.task('package', function() {
 	return.gulp.src('app/')
 	 .pipe()
 });*/
-
+ 
+gulp.task('minify-css', function() {
+    return gulp.src('./src/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(cleanCSS())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('dist'));
+});
 // ---- BrowserSync Config ------------------------------------------------------------------
 gulp.task('view', [], function() {
   browserSync({
