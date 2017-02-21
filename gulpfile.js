@@ -1,16 +1,15 @@
 'use strict';
-// ----- BonsaiApp Gulp File -----
-
-// ----- Required Dependecies -----
+// ----- BonsaiApp - Clean Version - Gulp File ----------------------------------------------                                           
+// ----- Required Dependecies ---------------------------------------------------------------
 var gulp              = require('gulp');
 var sass              = require('gulp-sass');
-var templateCache     = require('gulp-angular-templatecache');
 var eslint            = require('gulp-eslint');
-var browserSync       = require('browser-sync');
+var concat            = require('gulp-concat');
+var templateCache     = require('gulp-angular-templatecache');
 var friendlyFormatter = require('eslint-friendly-formatter');
-var gulpStylelint     = require('gulp-stylelint');
+var browserSync       = require('browser-sync');
 
-// ----- Reload BrowserSync ------
+// ----- Reload BrowserSync -----------------------------------------------------------------
 var reload = browserSync.reload;
 
 // ---- Gulp Quick Commands -----------------------------------------------------------------
@@ -34,17 +33,24 @@ gulp.task('templates', function() {
 
 // ---- JavaScript Linting (ESlint) ---------------------------------------------------------
 gulp.task('lint', function() {
-  return gulp.src(['app/scripts/**/*.js','!app/scripts/templates.js'])   // Location of js files you want to lint. 
-    .pipe(eslint('.eslintrc.json'))                                      // Your eslint pipe (config file) 
-    .pipe(eslint.format(friendlyFormatter));                             // friendlyFormater is a better way to dispay errors. 
+  return gulp.src(['app/scripts/**/*.js',
+				   '!app/scripts/templates.js'])   // Location of js files you want to lint. 
+    .pipe(eslint('.eslintrc.json'))                // Your eslint pipe (config file) 
+    .pipe(eslint.format(friendlyFormatter));       // A better way to dispay errors. 
 });
+
+/*// ---- Build Package -----------------------------------------------------------------------
+gulp.task('package', function() {
+	return.gulp.src('app/')
+	 .pipe()
+});*/
 
 // ---- BrowserSync Config ------------------------------------------------------------------
 gulp.task('view', [], function() {
   browserSync({
-    notify: false,           // Disables the 'BrowserSync is running' notification
-    logPrefix: 'BonsaiApp',  // Name you want displayed in your console log's prefix. (Optional but cool!)
-    server: ['./app']        // The folder the application is running from.
+    notify: false,            // Disables the 'BrowserSync is running' notification
+    logPrefix: 'BonsaiApp',   // Name you want displayed in your console log's prefix. 
+    server: ['./app']         // The folder the application is running from.
     // https: true;
 	// Run as an https by uncommenting 'https: true'
 	// Note: this uses an unsigned certificate which on first access
