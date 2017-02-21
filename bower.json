@@ -1,9 +1,8 @@
 {
   "name": "BonsaiApp",
-  "description": "Bootstrap AngularJS Base App with Routing.",
+  "description": "A Zen-like Angular Modular BaseApp with Modern, &amp; Elegant UI for Rapid Application Development.",
   "authors": [ { "name": "Brian Orr (drkdevil)" } ], 
-  "main": "",
-  "moduleType": [],
+  "main": "index.html",
   "license": "MIT",
   "homepage": "http://bonsaiapp.digitalreligion.net",
   "ignore": [
