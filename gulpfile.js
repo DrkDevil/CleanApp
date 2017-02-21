@@ -8,8 +8,6 @@ var concat            = require('gulp-concat');
 var templateCache     = require('gulp-angular-templatecache');
 var friendlyFormatter = require('eslint-friendly-formatter');
 var browserSync       = require('browser-sync');
-var cleanCSS          = require('gulp-clean-css');
-var sourcemaps        = require('gulp-sourcemaps');
 
 // ----- Reload BrowserSync -----------------------------------------------------------------
 var reload = browserSync.reload;
@@ -40,20 +38,7 @@ gulp.task('lint', function() {
     .pipe(eslint('.eslintrc.json'))                // Your eslint pipe (config file) 
     .pipe(eslint.format(friendlyFormatter));       // A better way to dispay errors. 
 });
-
-/*// ---- Build Package -----------------------------------------------------------------------
-gulp.task('package', function() {
-	return.gulp.src('app/')
-	 .pipe()
-});*/
  
-gulp.task('minify-css', function() {
-    return gulp.src('./src/*.css')
-        .pipe(sourcemaps.init())
-        .pipe(cleanCSS())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist'));
-});
 // ---- BrowserSync Config ------------------------------------------------------------------
 gulp.task('view', [], function() {
   browserSync({
