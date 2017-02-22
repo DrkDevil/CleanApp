@@ -20,8 +20,9 @@
   },
   "private": true,
   "scripts": {
-    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' app/scripts/",
     "dev": "gulp dev",
+    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' app/scripts/",
+    "postinstall": "bower install",
     "prod": "gulp prod"
   },
   "dependencies": {}
