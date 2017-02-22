@@ -4,7 +4,6 @@
 var gulp              = require('gulp');
 var sass              = require('gulp-sass');
 var eslint            = require('gulp-eslint');
-var concat            = require('gulp-concat');
 var templateCache     = require('gulp-angular-templatecache');
 var friendlyFormatter = require('eslint-friendly-formatter');
 var browserSync       = require('browser-sync');
@@ -38,7 +37,7 @@ gulp.task('lint', function() {
     .pipe(eslint('.eslintrc.json'))                // Your eslint pipe (config file) 
     .pipe(eslint.format(friendlyFormatter));       // A better way to dispay errors. 
 });
- 
+
 // ---- BrowserSync Config ------------------------------------------------------------------
 gulp.task('view', [], function() {
   browserSync({
