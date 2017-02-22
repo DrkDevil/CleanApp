@@ -1,5 +1,5 @@
 {
-  "name": "BonsaiApp",
+  "name": "bonsaiapp",
   "description": "A Zen-like Angular Modular BaseApp with Modern, &amp; Elegant UI for Rapid Application Development.",
   "author": "Brian Orr (DrkDevil) <brian.orr@digitalreligion.net>",
   "license": "MIT",
@@ -20,8 +20,9 @@
   },
   "private": true,
   "scripts": {
-    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' app/scripts/",
     "dev": "gulp dev",
+    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' app/scripts/",
+    "postinstall": "bower install",
     "prod": "gulp prod"
   },
   "dependencies": {}
