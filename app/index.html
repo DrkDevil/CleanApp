@@ -9,12 +9,16 @@
   <link rel="author" href="humans.txt" /> 
 </head>
 <body>
-  <!-- Simple Nav for DEMO (Delete and use your own navigation)  -->
-  <ul style="position: fixed; margin-top: 45px;">
-   <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/soon">Soon</a></li>
-  </ul>
+ <!-- Other optional classed for nav are: sidenav-left, and sidenav-right -->
+  <nav class="navbar">
+   <header>BonsaiApp</header>
+   <!-- Other options for types of navigation in the ul are block, pills, tabbed -->
+    <ul class="pills">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/soon">Soon</a></li>
+    </ul>	
+  </nav>
   <main ng-cloak>
     <!-- AngularJS Routing -->
     <div ng-view=""> </div>
