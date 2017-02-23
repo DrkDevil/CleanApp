@@ -1,10 +1,6 @@
-/*!
- * CSS for website
- * @author: [name] [(email/web site)]
- */
+//  ----- Bonsai UI SCSS Build -----
+// Grid System
+@import 'bonsaiui/bonsai-grid';
+// Bonsai Navigation Styles
+@import 'bonsaiui/bonsai-grid';
 
-// Bower imports
-@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
-
-// Project specific imports
-@import 'components/components';
