@@ -1,4 +1,4 @@
-/* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. ---*/ 
+/* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. --- */ 
 
 /*
   * BonsaiApp - Clean: CSS
@@ -11,30 +11,34 @@
 /*  Allow angular.js to be loaded in body, hiding cloaked elements until templates compile. */
 [ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
 
-// App Base Styles ------------ ------------------------------
+@charset "utf-8";
+
+// App Base ------------------- ------------------------------
+@import 'base/variables';        // Application Configuration 
 @import 'base/global';           // Global Reset Styles
 @import 'base/typography';       // Typography Settings. 
-@import 'base/variables';        // Application Configuration
 
-// Helper Classes ------------- ------------------------------
+
+// Helpers -------------------- ------------------------------
 @import 'helpers/functions';     // SCSS Functions
 @import 'helpers/mixins';        // SCSS Mixins
 @import 'helpers/helpers';       // CSS Helpers
 
-// Layout Styles -------------- ------------------------------
+// Layout --------------------- ------------------------------
 @import 'layout/bui-grid';       // CSS Grid System
-@import 'layout/bui-flexGrid';   // Flex Grid System
+@import 'layout/bui-flexGrid';   // Flex Grid System - in Dev
 
 // Components ----------------- ------------------------------
-@import 'components/bui-navs';   // Navigation Types
+@import 'components/bui-navs';   // Navigation Types - in Dev
 
-// Page Styles ---------------- ------------------------------
+// Page ---------------- ------------------------------
 @import 'pages/main';            // Main Page
 @import 'pages/about';           // About Us Page
 @import 'pages/contact';         // COntact Page
 
 // Themes --------------------- ------------------------------
-@import 'themes/bonsaiui';       // Default Theme
+@import 'themes/bonsaiui';       // Default Theme - in Dev
+@import 'themes/bonsaiui-dark';  // Dark Theme - in Dev
 
 // Vendor CSS ----------------- ------------------------------
 @import 'vendor/animate';        // Animate.css

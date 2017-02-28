@@ -1,6 +1,5 @@
-### cleanApp - Base Angular App
-WITH ABSOLUTELYL NOTHING IN IT. 
+### BonsaiApp - Clean Version
+A minimal bonsaiApp with no UI elements, just the base structure and starting placeholders
 
 ## NO UI.
-
-personal use only.
+Bonsai-UI Grid System, and basic navigation for demo purposes. 
