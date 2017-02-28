@@ -20,7 +20,7 @@ gulp.task('default', ['dev']);                     // gulp default
 gulp.task('sass', function() {
  return gulp.src('app/scss/**/*.scss')       // Location of scss files.
    .pipe(sass().on('error', sass.logError))  // Compile Sass, & log errors in terminal.
-   .pipe(gulp.dest('app/css'));              // Put compiled CSS Files in designated folder.
+   .pipe(gulp.dest('app/css/'));              // Put compiled CSS Files in designated folder.
 });
 
 // ---- Template Caching --------------------------------------------------------------------
