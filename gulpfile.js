@@ -1,6 +1,6 @@
 'use strict';
-// ----- BonsaiApp - Clean Version - Gulp File ----------------------------------------------                                           
-// ----- Required Dependecies ---------------------------------------------------------------
+// ----- BonsaiApp - Clean Version - Gulp File ------------------------------------------------                                           
+// ----- Required Dependecies -----------------------------------------------------------------
 var gulp              = require('gulp');
 var sass              = require('gulp-sass');
 var eslint            = require('gulp-eslint');
@@ -8,37 +8,37 @@ var templateCache     = require('gulp-angular-templatecache');
 var friendlyFormatter = require('eslint-friendly-formatter');
 var browserSync       = require('browser-sync');
 
-// ----- Reload BrowserSync -----------------------------------------------------------------
+// ----- Reload BrowserSync -------------------------------------------------------------------
 var reload = browserSync.reload;
 
-// ---- Gulp Quick Commands -----------------------------------------------------------------
+// ---- Gulp Quick Commands -------------------------------------------------------------------
 gulp.task('prod', ['lint', 'build', 'view']);      // gulp prod
 gulp.task('dev', ['lint', 'view']);                // gulp dev
 gulp.task('default', ['dev']);                     // gulp default
 
-// ---- Sass Compiling ----------------------------------------------------------------------
+// ---- Sass Compiling ------------------------------------------------------------------------
 gulp.task('sass', function() {
  return gulp.src('app/scss/**/*.scss')       // Location of scss files.
    .pipe(sass().on('error', sass.logError))  // Compile Sass, & log errors in terminal.
    .pipe(gulp.dest('app/css/'));              // Put compiled CSS Files in designated folder.
 });
 
-// ---- Template Caching --------------------------------------------------------------------
+// ---- Template Caching ----------------------------------------------------------------------
 gulp.task('templates', function() {
  return gulp.src('app/templates/**/*.html')  // Location of your main HTML files.
    .pipe(templateCache({standalone: true}))  // Runs template caching.
    .pipe(gulp.dest('app/scripts'));          // Create template.js in designated folder.
 });
 
-// ---- JavaScript Linting (ESlint) ---------------------------------------------------------
+// ---- JavaScript Linting (ESlint) -----------------------------------------------------------
 gulp.task('lint', function() {
-  return gulp.src(['app/scripts/**/*.js',
-				   '!app/scripts/templates.js'])   // Location of js files you want to lint. 
+  return gulp.src(['app/scripts/**/*.js',          // Location of js files you want to lint. 
+				   '!app/scripts/templates.js'])   // Use !foldername/filename to ignore files. 
     .pipe(eslint('.eslintrc.json'))                // Your eslint pipe (config file) 
     .pipe(eslint.format(friendlyFormatter));       // A better way to dispay errors. 
 });
 
-// ---- BrowserSync Config ------------------------------------------------------------------
+// ---- BrowserSync Config --------------------------------------------------------------------
 gulp.task('view', [], function() {
   browserSync({
     notify: false,            // Disables the 'BrowserSync is running' notification
