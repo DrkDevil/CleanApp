@@ -1,4 +1,4 @@
-/* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. ---*/
+/* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. --- */
 /*
   * BonsaiApp - Clean: CSS
   * Version: 0.0.1
@@ -45,7 +45,6 @@ time, mark, audio, video {
 html {
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  color: #fff;
   overflow-x: hidden; }
 
 /* HTML5 display-role reset for older browsers */
@@ -72,6 +71,22 @@ table {
   border-spacing: 0; }
 
 /* Fonts */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px; }
+
+body {
+  background: #c3c3c3; }
+
+[class*='col-'] > p {
+  background-color: #004d81;
+  padding: 10px;
+  margin-bottom: 0;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff; }
+
 /* ----- Bonsai UI Grid System ----- */
 /* Removes padding behaviour on widths */
 *, *:before, *:after {
@@ -83,24 +98,24 @@ table {
 
 /* Grid Container */
 .grid, .grid-fw {
-  padding: 5px 5px 0 5px;
+  padding: 15px 15px 0 15px;
   margin: 0 auto; }
 
 /* Row Clearfix */
-.row {
-  margin-bottom: 5px; }
-  .row:after {
-    content: " ";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both; }
+.row:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
 
 /* Column attribute selector */
 [class*='col-'] {
   position: relative;
   float: left;
   display: block;
+  margin-bottom: 5px;
+  width: 100%;
   padding-right: 5px;
   min-height: 1px; }
 
@@ -324,16 +339,25 @@ table {
   .offset-12lg {
     margin-left: 100%; } }
 
-body {
-  background: #c3c3c3;
-  color: #fff;
-  font-family: Helvetica, Arial, "Lucida Grande";
-  font-weight: bold; }
+.navbar {
+  background-color: #af9f71;
+  position: relative; }
 
-[class*='col-'] > p {
-  background-color: #004d81;
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  text-align: center;
-  color: #fff; }
+.navbar ul {
+  padding: 20px; }
+
+.navbar li {
+  display: inline-block;
+  margin-right: 12px; }
+
+.navbar header {
+  float: left;
+  padding: 20px; }
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .8rem; }
+
+p {
+  margin-bottom: 15px; }

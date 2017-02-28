@@ -41,7 +41,7 @@ gulp.task('lint', function() {
 // ---- BrowserSync Config --------------------------------------------------------------------
 gulp.task('view', [], function() {
   browserSync({
-    notify: false,            // Disables the 'BrowserSync is running' notification
+    notify: false,            // Enable or Disables the 'BrowserSync is running' notification
     logPrefix: 'BonsaiApp',   // Name you want displayed in your console log's prefix. 
     server: ['./app']         // The folder the application is running from.
     // https: true;

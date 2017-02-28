@@ -1,0 +1,33 @@
+// ----- Base Variables -----------------------------------------------
+
+// Fonts
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+$tertiary-font: 'Open Sans', sans-serif;
+
+// ----- Component Variables ------------------------------------------
+
+// Navbar
+$navbar-height: 20px;
+$navbar-link-spacing: 12px;
+
+// ----- Helper Variables ---------------------------------------------
+
+// ----- Layout Variables ---------------------------------------------
+
+// Grid System  
+$gutters: 5px;
+$gridPadding: 15px;
+$rowSpacing: 5px;
+$gridsize: 12;
+$breakpoints: ("xs": 420px, "sm": 768px, "md": 992px, "lg": 1200px);
+
+
+// The Variable below are used for demo purposes and should be 
+// replaced with your own. They are left in here for you to see
+// the structure of the scss.
+
+// ----- Page Variables -----------------------------------------------
+
+// ----- Theme Variables ----------------------------------------------
+

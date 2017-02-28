@@ -1,0 +1,14 @@
+//These Demo Styles Make the Grid Visible.
+body {
+  background: #c3c3c3; 
+}
+
+[class*='col-'] > p {
+  background-color: #004d81;
+  padding: 10px;
+  margin-bottom: 0;	
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+}

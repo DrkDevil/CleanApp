@@ -11,10 +11,13 @@
 /*  Allow angular.js to be loaded in body, hiding cloaked elements until templates compile. */
 [ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
 
+@charset "utf-8";
+
 // App Base ------------------- ------------------------------
+@import 'base/variables';        // Application Configuration 
 @import 'base/global';           // Global Reset Styles
 @import 'base/typography';       // Typography Settings. 
-@import 'base/variables';        // Application Configuration
+
 
 // Helpers -------------------- ------------------------------
 @import 'helpers/functions';     // SCSS Functions
@@ -28,7 +31,7 @@
 // Components ----------------- ------------------------------
 @import 'components/bui-navs';   // Navigation Types - in Dev
 
-// Page ----------------------- ------------------------------
+// Page ---------------- ------------------------------
 @import 'pages/main';            // Main Page
 @import 'pages/about';           // About Us Page
 @import 'pages/contact';         // COntact Page

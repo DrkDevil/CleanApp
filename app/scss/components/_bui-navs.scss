@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #af9f71;
+  position: relative;
+}
+.navbar ul {
+  padding: $navbar-height;
+}
+.navbar li {
+  display: inline-block;
+  margin-right: $navbar-link-spacing;
+	
+}
+.navbar header {
+  float: left;
+  padding: $navbar-height;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #fff;
+	font-size: .8rem;
+}
