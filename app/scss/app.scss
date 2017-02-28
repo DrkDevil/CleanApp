@@ -1,4 +1,5 @@
 /* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. ---*/ 
+
 /*
   * BonsaiApp - Clean: CSS
   * Version: 0.0.1
@@ -10,18 +11,30 @@
 /*  Allow angular.js to be loaded in body, hiding cloaked elements until templates compile. */
 [ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
 
-// App Base Styles
+// App Base Styles ------------ ------------------------------
 @import 'base/global';           // Global Reset Styles
 @import 'base/typography';       // Typography Settings. 
 @import 'base/variables';        // Application Configuration
 
-// Layout Styles 
-@import 'layout/bui-grid';       // CSS Grid System
-@import 'layout/bui-flexGrid';   // Flex Grid System
-
-// Helper Classes
+// Helper Classes ------------- ------------------------------
 @import 'helpers/functions';     // SCSS Functions
 @import 'helpers/mixins';        // SCSS Mixins
 @import 'helpers/helpers';       // CSS Helpers
 
+// Layout Styles -------------- ------------------------------
+@import 'layout/bui-grid';       // CSS Grid System
+@import 'layout/bui-flexGrid';   // Flex Grid System
 
+// Components ----------------- ------------------------------
+@import 'components/bui-navs';   // Navigation Types
+
+// Page Styles ---------------- ------------------------------
+@import 'pages/main';            // Main Page
+@import 'pages/about';           // About Us Page
+@import 'pages/contact';         // COntact Page
+
+// Themes --------------------- ------------------------------
+@import 'themes/bonsaiui';       // Default Theme
+
+// Vendor CSS ----------------- ------------------------------
+@import 'vendor/animate';        // Animate.css
