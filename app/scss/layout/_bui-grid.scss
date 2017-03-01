@@ -31,7 +31,7 @@
   position: relative;
   float: left;
   display: block;
-  margin-bottom: $rowSpacing;
+  margin-bottom: $colSpacing;
   width: 100%;
   padding-right: $gutters;
   min-height: 1px;
@@ -41,12 +41,20 @@
 [class*='col-']:last-of-type {
   padding-right: 0;
 }
+/* Removes floats on mobile phones */
+@media (max-width: 420px) {
+  [class*='col-'] {
+    padding-right: 0;
+  }	
+}
 
-@each $size in $breakpoints {
+@each $mqSlug, $size in $breakpoints {
   @media (min-width: #{$size}) {
     .grid {
-      width: #{$size} -50px;
-    }
+      width: -webkit-calc( #{$size} - 60px);
+	  width:    -moz-calc( #{$size} - 60px);
+	  width:         calc( #{$size} - 60px);
+    }	  
   }
 }
 
@@ -57,7 +65,6 @@
       .col-#{$colNumb}#{$mqSlug} {
         width: $colNumb / $gridsize * 100%;
       }
-
       .offset-#{$colNumb}#{$mqSlug} {
         margin-left: $colNumb / $gridsize * 100%;
       }

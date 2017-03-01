@@ -75,6 +75,11 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 20px; }
 
+h2 {
+  font-size: 2.0rem;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
 body {
   background: #c3c3c3; }
 
@@ -123,21 +128,34 @@ body {
 [class*='col-']:last-of-type {
   padding-right: 0; }
 
-@media (min-width: xs 420px) {
-  .grid {
-    width: xs 420px -50px; } }
+/* Removes floats on mobile phones */
+@media (max-width: 420px) {
+  [class*='col-'] {
+    padding-right: 0; } }
 
-@media (min-width: sm 768px) {
+@media (min-width: 420px) {
   .grid {
-    width: sm 768px -50px; } }
+    width: -webkit-calc( 420px - 60px);
+    width: -moz-calc( 420px - 60px);
+    width: calc( 420px - 60px); } }
 
-@media (min-width: md 992px) {
+@media (min-width: 768px) {
   .grid {
-    width: md 992px -50px; } }
+    width: -webkit-calc( 768px - 60px);
+    width: -moz-calc( 768px - 60px);
+    width: calc( 768px - 60px); } }
 
-@media (min-width: lg 1200px) {
+@media (min-width: 992px) {
   .grid {
-    width: lg 1200px -50px; } }
+    width: -webkit-calc( 992px - 60px);
+    width: -moz-calc( 992px - 60px);
+    width: calc( 992px - 60px); } }
+
+@media (min-width: 1200px) {
+  .grid {
+    width: -webkit-calc( 1200px - 60px);
+    width: -moz-calc( 1200px - 60px);
+    width: calc( 1200px - 60px); } }
 
 @media (min-width: 420px) {
   .col-1xs {
