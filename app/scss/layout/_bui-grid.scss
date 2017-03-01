@@ -42,7 +42,7 @@
   padding-right: 0;
 }
 /* Removes floats on mobile phones */
-@media (max-width: 420px) {
+@media (max-width: 419px) {
   [class*='col-'] {
     padding-right: 0;
   }	
