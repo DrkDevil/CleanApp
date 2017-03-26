@@ -1,5 +1,5 @@
 'use strict';
-angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directives'])
+angular.module('BonsaiApp.newView', ['ngRoute','index.controllers','index.directives'])
 .run(['$rootScope', '$route', '$location', function($rootScope, $route, $location) {
   $rootScope.$on('$routeChangeSuccess', function(newVal, oldVal) {
     if (oldVal !== newVal) {
@@ -9,9 +9,7 @@ angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directiv
 }])
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider
-    .when('/', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'main.html', controller: 'IndexCtrl' })
-    .when('/about', { title: 'BonsaiApp - About', templateUrl: 'about.html', controller: 'IndexCtrl' })
-	.when('/soon', { title: 'Under Construction', templateUrl: 'soon.html', controller: 'IndexCtrl' })
+    .when('/newView', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'newView.html', controller: 'newViewCtrl' })
     .otherwise({ redirectTo: '/' });
   $locationProvider.html5Mode(true);
 }]);
