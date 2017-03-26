@@ -1,5 +1,5 @@
 angular.module('index.controllers', [])
-.controller('IndexCtrl', ['$scope', '$location', '$http', function($scope, $location, $http) {
+.controller('IndexCtrl', ['$scope', '$location', function($scope, $location) {
   $scope.$on('$locationChangeStart', function(scope) {
     $scope.pathUrl = $location.path();($scope.pathUrl);
   });

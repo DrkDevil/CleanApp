@@ -1,5 +1,6 @@
 // AngularJS main app inialization
 angular.module('BonsaiApp',[
-  'templates',
-  'BonsaiApp.index'
+  'BonsaiApp.index',
+  'BonsaiApp.newView',
+  'templates'
 ]);

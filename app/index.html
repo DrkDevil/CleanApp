@@ -15,9 +15,9 @@
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
-      <li><a href="/soon">Soon</a></li>
+      <li><a href="/newView">New Module View</a></li>
     </ul>	
-  </nav>
+  </nav>  
   <main ng-cloak>
     <!-- AngularJS Routing -->
     <div ng-view=""></div>
@@ -30,9 +30,14 @@
   <script src="components/angular-route/angular-route.min.js"></script> 
   <!-- Project files --> 
   <script defer src="scripts/templates.js"></script> 
-  <script defer src="scripts/main.js"></script> 
+  <script defer src="scripts/app.js"></script> 
+  <!-- Index --> 
   <script defer src="scripts/index/index.js"></script> 
   <script defer src="scripts/index/controllers.js"></script> 
   <script defer src="scripts/index/directives.js"></script> 
+  <!-- New View --> 
+  <script defer src="scripts/newView/index.js"></script> 
+  <script defer src="scripts/newView/controllers.js"></script> 
+  <script defer src="scripts/newView/directives.js"></script> 
 </body>
 </html>
