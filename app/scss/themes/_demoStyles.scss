@@ -1,0 +1,26 @@
+//Demo styles -- Please Replace when creating your own app.
+body {
+  background: #c3c3c3;
+  padding-top: 65px;
+  background: url('../../img/backgrounds/swirl_pattern.jpg');
+  background-repeat: repeat;
+}
+body:after {
+
+}
+
+p { margin-bottom: 15px;}
+
+//These Demo Styles Make the Grid Visible.
+.gridDemo [class*='col-'] {
+  padding-right: 5px !important;
+}
+.gridDemo [class*='col-'] > p {
+  background-color: #004d81;
+  padding: 10px;
+  margin-bottom: 0;	
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+}

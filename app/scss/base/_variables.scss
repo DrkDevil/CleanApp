@@ -2,21 +2,23 @@
 
 // Fonts
 $primary-font: 'Open Sans', sans-serif;
-$secondary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
 $tertiary-font: 'Open Sans', sans-serif;
 
 // ----- Component Variables ------------------------------------------
 
 // Navbar
+$navbar-color: #2c2c2c;
 $navbar-height: 20px;
-$navbar-link-spacing: 12px;
-
+$navbar-link-spacing: 8px;
+$navbar-text-color: #fff;
+$navbar-text-hover-color: #bbb;
 // ----- Helper Variables ---------------------------------------------
 
 // ----- Layout Variables ---------------------------------------------
 
 // Grid System  
-$gutters: 5px;
+$gutters: 50px;
 $gridPadding: 15px;
 $colSpacing: 5px;
 $gridsize: 12;

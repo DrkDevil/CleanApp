@@ -13,32 +13,32 @@
 
 @charset "utf-8";
 
-// App Base ------------------- ------------------------------
+// App Base ------------------- -------------------------------------
 @import 'base/variables';        // Application Configuration 
 @import 'base/global';           // Global Reset Styles
 @import 'base/typography';       // Typography Settings. 
 
 
-// Helpers -------------------- ------------------------------
+// Helpers -------------------- -------------------------------------
 @import 'helpers/functions';     // SCSS Functions
 @import 'helpers/mixins';        // SCSS Mixins
 @import 'helpers/helpers';       // CSS Helpers
 
-// Layout --------------------- ------------------------------
+// Layout --------------------- -------------------------------------
 @import 'layout/bui-grid';       // CSS Grid System
-@import 'layout/bui-flexGrid';   // Flex Grid System - in Dev
 
-// Components ----------------- ------------------------------
+// Components ----------------- -------------------------------------
 @import 'components/bui-navs';   // Navigation Types - in Dev
 
-// Page ---------------- ------------------------------
+// Page ----------------------- -------------------------------------
 @import 'pages/main';            // Main Page
 @import 'pages/about';           // About Us Page
 @import 'pages/contact';         // COntact Page
 
-// Themes --------------------- ------------------------------
-@import 'themes/bonsaiui';       // Default Theme - in Dev
-@import 'themes/bonsaiui-dark';  // Dark Theme - in Dev
+// Themes --------------------- -------------------------------------
+@import 'themes/demoStyles';     // Visual Styles for the Demo pages.
 
-// Vendor CSS ----------------- ------------------------------
+// Vendor CSS ----------------- -------------------------------------
 @import 'vendor/animate';        // Animate.css
+
+
