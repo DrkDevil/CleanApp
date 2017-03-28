@@ -12,10 +12,6 @@
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none; }
 
-/* Global Settings */
-* {
-  outline: 0; }
-
 /* Global Resets and Styling */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -36,11 +32,6 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
-
-html {
-  height: 100%;
-  font-family: "Open Sans", sans-serif;
-  overflow-x: hidden; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -64,6 +55,30 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+/* Global Site Settings */
+* {
+  outline: 0; }
+
+html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; }
+
+footer {
+  padding: 10px;
+  background-color: #2B2B2B;
+  color: #bbb;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem; }
+
+footer a {
+  color: #a33636;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #e2e2e2; }
 
 /* Fonts */
 h1 {
@@ -97,6 +112,12 @@ h2 {
 
 .center-content {
   text-align: center; }
+
+.flt-right {
+  float: right; }
+
+.flt-left {
+  float: left; }
 
 /* ----- Bonsai UI Grid System ----- */
 /* Removes padding behaviour on widths */
@@ -477,14 +498,14 @@ h2 {
   color: #bbb;
   font-size: .8rem; }
 
-.main body {
-  margin-top: -65px; }
-
 .bonsaiIntro {
-  margin-top: 20%; }
+  margin-top: 30%;
+  color: #2b2b2b; }
 
 .bonsaiIntro h1 {
-  font-size: 4.5rem; }
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-left: -4px; }
 
 .bonsaiIntro h2 {
   font-family: "Roboto", sans-serif;
@@ -498,6 +519,17 @@ h2 {
   font-size: 1.0rem;
   font-weight: 200;
   line-height: 1.5rem; }
+
+.seedFeature {
+  font-weight: 500;
+  font-style: italic;
+  color: #461617; }
+
+.main body {
+  background: #c3c3c3;
+  padding-top: -65px;
+  background: url("../../img/backgrounds/swirl_pattern.jpg");
+  background-repeat: repeat; }
 
 .shade:after {
   content: "";
@@ -513,11 +545,9 @@ h2 {
   background: -o-linear-gradient(top, rgba(174, 179, 171, 0) 0%, rgba(174, 179, 171, 0.47) 29%, #aeb3ab 62%, #aeb3ab 100%);
   background: -ms-linear-gradient(top, rgba(174, 179, 171, 0) 0%, rgba(174, 179, 171, 0.47) 29%, #aeb3ab 62%, #aeb3ab 100%); }
 
-body {
-  background: #c3c3c3;
-  padding-top: 65px;
-  background: url("../../img/backgrounds/swirl_pattern.jpg");
-  background-repeat: repeat; }
+.newView body {
+  margin-top: 65px;
+  background: rgba(174, 179, 171, 0.47); }
 
 p {
   margin-bottom: 15px; }

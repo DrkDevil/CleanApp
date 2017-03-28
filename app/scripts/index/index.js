@@ -11,6 +11,5 @@ angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directiv
   $locationProvider.html5Mode(true);
   $routeProvider
     .when('/', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'main.html', controller: 'IndexCtrl' })
-  	.when('/soon', { title: 'BonsaiApp - Coming Soon', templateUrl: 'soon.html', controller: 'IndexCtrl' })
     .otherwise({ redirectTo: '/' });
 }]);
