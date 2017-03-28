@@ -16,11 +16,7 @@ All the things you need to quickly get started builing your Angular application.
 BonsaiApp is preconfigured to start developing your app using SCSS, BOWER, and GULP.
 
 ###  Requirements
-GIT
-
-NPM
-
-NODE.JS
+GIT, NPM, NODE.JS
 
 ### Get Started
 Simply download BonsaiApp from our GitHub page, or within your terminal run the command:
