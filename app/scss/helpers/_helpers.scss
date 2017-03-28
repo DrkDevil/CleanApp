@@ -1,14 +1,9 @@
-//These Demo Styles Make the Grid Visible.
-body {
-  background: #c3c3c3; 
-}
-
-[class*='col-'] > p {
-  background-color: #004d81;
-  padding: 10px;
-  margin-bottom: 0;	
-  border-radius: 4px;
-  font-size: 0.8rem;
-  text-align: center;
-  color: #fff;
-}
+// Responsive Images
+.center-content { text-align: center;}
+.flexCon { height: 100vh; display: flex; justify-content: center; align-items: center; }
+.fixed { position: fixed !important; }
+.fixed-top { position: fixed !important; top:0; }
+.fixed-bottom { position: fixed !important; bottom:0;}
+.flt-left {float: left;}
+.flt-right {float: right;}
+.responsive-img {width: 100%; height: auto;}

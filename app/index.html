@@ -10,13 +10,14 @@
   <link rel="stylesheet" href="css/app.css" /> 
 </head>
 <body>
-  <nav class="navbar">
-   <header>BonsaiApp</header>
+  <nav class="navbar fixed-top">
+   <header><a href="/">BonsaiApp</a></header>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/newView">New Module View</a></li>
-    </ul>	
+      <li><a href="/newView">Blank Page</a></li> 
+      <li><a href="/soon">Philosophy</a></li>
+      <li><a href="/soon">Features</a></li>
+      <li><a href="/soon">Documentation</a></li>  
+    </ul>
   </nav>  
   <main ng-cloak>
     <!-- AngularJS Routing -->
@@ -39,5 +40,9 @@
   <script defer src="scripts/newView/index.js"></script> 
   <script defer src="scripts/newView/controllers.js"></script> 
   <script defer src="scripts/newView/directives.js"></script> 
+  <footer class="fixed-bottom">
+    <div class="flt-left">Copyright, MIT License</div> 
+    <div class="flt-right">Created by: <a href="http://www.digitalreligion.net">Digital Religion</a></div> 
+  </footer>
 </body>
 </html>
