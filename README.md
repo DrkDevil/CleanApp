@@ -32,10 +32,6 @@ $ npm install
 ```
 This will grab all the nesecary node moduals needed to run your project.
 
-The final step now is to run the command
-```
-$ bower install 
-```
 Now that all of BonsaiApp's dependencies have all been downloaded, you are ready to start creating your own custom App.
 
 Just open the index.html file in the root of BonsaiApp to start creating your own Angular App.
