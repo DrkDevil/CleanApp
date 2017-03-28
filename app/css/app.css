@@ -416,7 +416,7 @@ h2 {
   font-size: .8rem; }
 
 .bonsaiIntro {
-  margin-top: 30%;
+  margin-top: 25%;
   color: #2b2b2b; }
 
 .bonsaiIntro h1 {
@@ -481,3 +481,19 @@ body {
   font-size: 0.8rem;
   text-align: center;
   color: #fff; }
+
+.btn-outlined {
+  padding: 20px;
+  border: 1px solid #2b2b2b;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 3px; }
+
+.btn-outlined:hover {
+  border: 1px solid #2b2b2b;
+  background: #2b2b2b;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
