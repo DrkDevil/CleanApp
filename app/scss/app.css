@@ -12,7 +12,7 @@
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none; }
 
-/* Global Resets and Styling */
+/* Global Resets and Styling ------------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,30 +55,6 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-/* Global Site Settings */
-* {
-  outline: 0; }
-
-html {
-  height: 100%;
-  font-family: "Open Sans", sans-serif;
-  overflow-x: hidden; }
-
-footer {
-  padding: 10px;
-  background-color: #2B2B2B;
-  color: #bbb;
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.8rem; }
-
-footer a {
-  color: #a33636;
-  text-decoration: none; }
-
-footer a:hover {
-  color: #e2e2e2; }
 
 /* Fonts */
 h1 {
@@ -499,20 +475,21 @@ h2 {
   font-size: .8rem; }
 
 .bonsaiIntro {
-  margin-top: 30%;
+  margin-top: 22%;
   color: #2b2b2b; }
 
 .bonsaiIntro h1 {
   font-size: 4.5rem;
   font-weight: 600;
-  margin-left: -4px; }
+  margin-left: -4px;
+  color: #a33636; }
 
 .bonsaiIntro h2 {
   font-family: "Roboto", sans-serif;
   font-size: 2.0rem;
   font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 30px; }
+  margin-top: -10px;
+  margin-bottom: 20px; }
 
 .bonsaiIntro p {
   font-family: "Roboto", sans-serif;
@@ -520,13 +497,51 @@ h2 {
   font-weight: 200;
   line-height: 1.5rem; }
 
+.bonsaiIntro p:last-of-type {
+  margin-bottom: 35px; }
+
 .seedFeature {
   font-weight: 500;
   font-style: italic;
   color: #461617; }
 
-.main body {
-  padding-top: -65px; }
+[class*='btn-'] {
+  border-radius: 3px;
+  margin-bottom: 10px; }
+
+.btn-outlined {
+  padding: 15px;
+  border: 1px solid #2b2b2b;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.0rem;
+  font-family: "Roboto", sans-serif; }
+
+.btn-outlined:hover {
+  color: #fff;
+  border: 1px solid #4a0909;
+  background: #a33636;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.btn-solid {
+  padding: 15px;
+  color: #cecece;
+  border: 1px solid #2b2b2b;
+  background: #2b2b2b;
+  cursor: pointer;
+  font-size: 1.0rem;
+  font-family: "Roboto", sans-serif; }
+
+.btn-solid:hover {
+  border: 1px solid #4a0909;
+  background: #a33636;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .shade:after {
   content: "";
@@ -546,12 +561,31 @@ h2 {
   margin-top: 65px;
   background: rgba(174, 179, 171, 0.47); }
 
-p {
-  margin-bottom: 15px; }
+html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; }
 
 body {
-  background: url("../../img/backgrounds/swirl_pattern.jpg");
-  background-repeat: repeat; }
+  background: url("../../img/backgrounds/swirl_pattern.jpg") repeat; }
+
+footer {
+  padding: 10px;
+  background-color: #2B2B2B;
+  color: #bbb;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem; }
+
+footer a {
+  color: #a33636;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #e2e2e2; }
+
+p {
+  margin-bottom: 15px; }
 
 .gridDemo [class*='col-'] {
   padding-right: 5px !important; }
@@ -565,14 +599,5 @@ body {
   text-align: center;
   color: #fff; }
 
-.btn-outlined {
-  padding: 20px;
-  border: 1px solid #2b2b2b;
-  background: transparent;
-  cursor: pointer; }
-
-.btn-outlined:hover {
-  padding: 20px;
-  border: 1px solid #2b2b2b;
-  background: transparent;
-  cursor: pointer; }
+* {
+  outline: 0; }
