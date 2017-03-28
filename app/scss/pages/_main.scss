@@ -3,14 +3,9 @@
 .bonsaiIntro h2 { font-family: $secondary-font; font-size: 2.0rem; font-weight: 300; margin-top: 0; margin-bottom: 30px; }
 .bonsaiIntro p { font-family: $secondary-font; font-size: 1.0rem; font-weight: 200; line-height: 1.5rem; }
 .seedFeature {font-weight: 500; font-style: italic; color: rgba(70,22,23,1.00);}
-.main body {
-  background: #c3c3c3;
-  padding-top: -65px;
-  background: url('../../img/backgrounds/swirl_pattern.jpg');
-  background-repeat: repeat;
-}
+.main body { padding-top: -65px; }
 .shade:after { 
-  content: ""; display: block; width: 100%; position: absolute; min-height: 100vh; z-index: -2;
+  content: ""; display: block; width: 100%; position: absolute; height: 100vh; z-index: -2;
   background: rgba(174,179,171,0);
   background: -moz-linear-gradient(top, rgba(174,179,171,0) 0%, rgba(174,179,171,0.47) 29%, rgba(174,179,171,1) 62%, rgba(174,179,171,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(174,179,171,0)), color-stop(29%, rgba(174,179,171,0.47)), color-stop(62%, rgba(174,179,171,1)), color-stop(100%, rgba(174,179,171,1)));
