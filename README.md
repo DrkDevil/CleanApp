@@ -7,7 +7,9 @@
 
 ### What is BonsaiApp - Seed Edition?
 BonsaiApp is a Zen-like Angular Modular BaseApp with a Modern, & Elegant UI built with HTML 5, & SCSS for Rapid Application Development.
+
 The Seed Edition is a bare minimum baseApp that utilizes only the BonsaiUI Grid System, Angular Routing, and a highly organizied folder sturcture.
+
 All the things you need to quickly get started builing your Angular application.
 
 ###  Little to no configuration at all.
@@ -15,7 +17,9 @@ BonsaiApp is preconfigured to start developing your app using SCSS, BOWER, and G
 
 ###  Requirements
 GIT
+
 NPM
+
 NODE.JS
 
 ### Get Started
