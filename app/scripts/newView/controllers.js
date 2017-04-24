@@ -4,7 +4,7 @@ angular.module('newView.controllers', [])
     $scope.pathUrl = $location.path();($scope.pathUrl);
   });
   // Add Page Class for more control over page specific classes
-  $("html").removeClass().addClass("newView");	
+  $('html').removeClass().addClass('newView');	
 
 }])
 
@@ -13,6 +13,5 @@ angular.module('newView.controllers', [])
     $scope.pathUrl = $location.path();($scope.pathUrl);
   });
   // Add Page Class for more control over page specific classes
-  $("html").removeClass().addClass("soonView");	
-
+  $('html').removeClass().addClass('soonView');	
 }]);
