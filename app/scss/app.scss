@@ -28,13 +28,16 @@
 @import 'layout/bui-grid';       // CSS Grid System
 
 // Components ----------------- -------------------------------------
-@import 'components/bui-navs';   // Navigation Types - in Dev
+@import 'components/bui-navs';     // Navigation Types - in Dev
+@import 'components/bui-dropDown'; // Drop Down Menus 
+@import 'components/bui-pageBanner'; // Page Banners
 
 // Page ----------------------- -------------------------------------
 @import 'pages/main';            // Main Page
 @import 'pages/features';        // Features Page
 @import 'pages/philosophy';      // Philosophy Page
 @import 'pages/newView';         // newView Page
+@import 'pages/components';      // Components Page
 @import 'pages/soon';            // Coming Soon Page
 
 // Themes --------------------- -------------------------------------

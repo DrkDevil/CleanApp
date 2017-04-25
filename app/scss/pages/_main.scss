@@ -1,5 +1,5 @@
 // Content Styling
-.bonsaiIntro { margin-top: 22%; color: #2b2b2b; }
+.bonsaiIntro { margin-top: 22%; color: #142029; }
 .bonsaiIntro h1 {font-size: 4.5rem; font-weight: 600;  margin-left: -4px;  color: #a33636;}
 .bonsaiIntro h2 { font-family: $secondary-font; font-size: 2.0rem; font-weight: 300; margin-top: -10px; margin-bottom: 20px; }
 .bonsaiIntro p { font-family: $secondary-font; font-size: 1.0rem; font-weight: 300; line-height: 1.5rem; }
@@ -8,9 +8,9 @@
 
 // Main Page Buttons
 [class*='btn-'] { border-radius: 3px; margin-bottom: 10px; }
-.btn-outlined { padding: 15px; border: 1px solid #2b2b2b; background: transparent; cursor: pointer; font-size: 1.0rem; font-family: $secondary-font; }
+.btn-outlined { padding: 15px; border: 1px solid #142029; background: transparent; cursor: pointer; font-size: 1.0rem; font-family: $secondary-font; }
 .btn-outlined:hover { color:#fff; border: 1px solid #4a0909; background: #a33636; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
-.btn-solid { padding: 15px;color: #cecece; border: 1px solid #2b2b2b; background: #2b2b2b; cursor: pointer;  font-size: 1.0rem; font-family: $secondary-font; }
+.btn-solid { padding: 15px;color: #cecece; border: 1px solid #142029; background: #142029; cursor: pointer;  font-size: 1.0rem; font-family: $secondary-font; }
 .btn-solid:hover { border: 1px solid #4a0909; background: #a33636; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
 
 // Page Gradient

@@ -10,26 +10,29 @@
   z-index: 9000; // Take it to 9000! And make sure its always on top.
 }
 .navbar li {
+  position: relative;
   display: inline-block;
-  padding: $navbar-height $navbar-link-spacing;
+  padding: $navbar-height 0;
 	
 }
 .navbar li:active {
   background-color: rgba(59,59,59,0.11);
-	
 }
 .navbar header  {
   float: left;
-  padding: $navbar-height;
+  padding: $navbar-height 0;
   color: $navbar-text-color;	
 }
 .navbar header a, .navbar header a:hover  {
  font-size: 1.0rem;
+ background-color: rgba(255,255,255,0.0);
 }
 
 .navbar a {
-	text-decoration: none;
+	line-height: 1.1rem;
+    padding: 20px 10px;
 	color: $navbar-text-color;
+	text-decoration: none;
 	font-size: .8rem;
 }
 

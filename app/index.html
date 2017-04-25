@@ -11,11 +11,23 @@
 </head>
 <body>
   <nav class="navbar fixed-top">
-   <header><a href="/">BonsaiApp</a></header>
+    <header>
+      <a href="/">BonsaiApp</a>
+    </header>
     <ul>
-      <li><a href="/newView">Blank Page</a></li> 
       <li><a href="/soon">Philosophy</a></li>
-      <li><a href="/soon">Features</a></li>
+      <!-- Drop Down Menu -->
+      <div class="dropDownMenu">
+        <a class="dropBtn" onclick="dropDownToggle()" data-toggle="dropDownMenu" href="#">Bonsai UI</a>
+        <ul id="dropDownItems" class="dropDownContent animated">
+          <li><a href="/newView">Structure</a></li> 
+          <li><a href="/components">Components</a></li> 
+          <li><a href="/newView">SCSS/CSS</a></li> 
+          <li><a href="/soon">JavaScript</a></li>
+          <li><a href="/newView">Blank Page</a></li> 
+        </ul>
+      </div>
+      <!-- /Drop Down Menu -->
       <li><a href="/soon">Documentation</a></li>  
     </ul>
   </nav>  
@@ -40,6 +52,9 @@
   <script defer src="scripts/newView/index.js"></script> 
   <script defer src="scripts/newView/controllers.js"></script> 
   <script defer src="scripts/newView/directives.js"></script> 
+  <!-- Bonsai UI JavaScript Core --> 
+  <script src="scripts/bonsai/dropDowns.js"></script>
+  
   <footer class="fixed-bottom">
     <div class="flt-left">Copyright, MIT License</div> 
     <div class="flt-right">Created by: <a href="http://www.digitalreligion.net">Digital Religion</a></div> 
