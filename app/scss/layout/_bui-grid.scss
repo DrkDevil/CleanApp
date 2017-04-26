@@ -5,13 +5,13 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Grid Container */
 .grid, .grid-fw {
-  padding: $gridPadding $gridPadding 0 $gridPadding;
+  padding:  0 $gridPadding;
   margin: 0 auto;
 }
 

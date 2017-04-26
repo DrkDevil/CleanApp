@@ -107,6 +107,9 @@ p {
 .hide {
   visibility: hidden; }
 
+.cell {
+  border: 1px solid #fff; }
+
 /* ----- Bonsai UI Grid System ----- */
 /* Removes padding behaviour on widths */
 *, *:before, *:after {
@@ -118,7 +121,7 @@ p {
 
 /* Grid Container */
 .grid, .grid-fw {
-  padding: 15px 15px 0 15px;
+  padding: 0 15px;
   margin: 0 auto; }
 
 /* Row Clearfix */
@@ -459,10 +462,8 @@ p {
   background-color: #142029;
   width: 100%;
   position: relative;
-  z-index: 9000;
-  content: "";
-  display: table;
-  clear: both; }
+  padding: 0 10px;
+  z-index: 9000; }
 
 .navbar .grid {
   padding: 0; }
@@ -596,7 +597,8 @@ p {
   padding: 60px 0; }
 
 .main body {
-  padding-top: 0; }
+  padding-top: 0;
+  background-image: url("../../img/backgrounds/swirl_pattern.jpg"); }
 
 .bonsaiIntro {
   margin-top: 22%;
@@ -687,8 +689,7 @@ p {
 
 .component body {
   padding-top: 58px;
-  background: none;
-  background-color: #e8e8e8; }
+  background: none; }
 
 .soon body {
   padding-top: 0; }

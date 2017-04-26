@@ -11,13 +11,15 @@
 </head>
 <body>
 <nav class="navbar fixed-top">
-  <header> <a href="/">BonsaiApp</a> </header>
-  <ul>
+  <header>
+    <a href="/">BonsaiApp</a> 
+  </header>
+  <ul class="flt-left">
     <li><a href="/philosophy">Philosophy</a></li>
     <!-- Drop Down Menu -->
     <div class="dropDownMenu"> <a class="dropBtn" onclick="dropDownToggle()" data-toggle="dropDownMenu" href="#">Bonsai UI</a>
       <ul id="dropDownItems" class="dropDownContent animated">
-        <li><a href="/newView">Structure</a></li>
+        <li><a href="/structure">Structure</a></li>
         <li><a href="/components">Components</a></li>
         <li><a href="/newView">SCSS/CSS</a></li>
         <li><a href="/soon">JavaScript</a></li>
@@ -26,6 +28,9 @@
     </div>
     <!-- /Drop Down Menu -->
     <li><a href="/soon">Documentation</a></li>
+  </ul>
+  <ul class="flt-right">
+	  <li><a href="JavaScript:void;()">Download</a></li>
   </ul>
 </nav>
 <main ng-cloak> 

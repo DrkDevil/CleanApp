@@ -9,10 +9,8 @@
   background-color: $navbar-color;
   width: 100%;
   position: relative;
+  padding: 0 10px;
   z-index: 9000; // Take it to 9000! And make sure its always on top.
-	  content: "";
-  display: table;
-  clear: both;
 }
 .navbar .grid {
  padding: 0;
