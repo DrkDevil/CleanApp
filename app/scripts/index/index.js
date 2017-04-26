@@ -13,6 +13,7 @@ angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directiv
     .when('/', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'main.html', controller: 'IndexCtrl' })
     .when('/components', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'components.html', controller: 'ComponentCtrl' })
     .when('/philosophy', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'philosophy.html', controller: 'PhilosCtrl' })
-    .when('/structure', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'structure.html', controller: 'StructCtrl' })
+    .when('/css', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'structure.html', controller: 'CssCtrl' })
+	.when('/structure', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'structure.html', controller: 'StructCtrl' })
     .otherwise({ redirectTo: '/' });
 }]);

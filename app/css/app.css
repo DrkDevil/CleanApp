@@ -41,8 +41,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   padding-top: 58px;
-  background: none;
-  background-color: #e8e8e8; }
+  background-color: #f7f7f7; }
 
 ol, ul {
   list-style: none; }
@@ -615,9 +614,6 @@ html {
   height: 100%;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden; }
-
-body {
-  background: url("../../img/backgrounds/swirl_pattern.jpg") repeat; }
 
 footer {
   padding: 10px;
