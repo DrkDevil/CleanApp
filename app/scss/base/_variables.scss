@@ -12,6 +12,7 @@ $navbar-height: 20px;
 $navbar-link-spacing: 8px;
 $navbar-text-color: #fff;
 $navbar-text-hover-color: #68a097;
+
 // ----- Helper Variables ---------------------------------------------
 
 // ----- Layout Variables ---------------------------------------------
@@ -20,8 +21,8 @@ $navbar-text-hover-color: #68a097;
 $gutters: 50px;
 $gridPadding: 15px;
 $colSpacing: 5px;
-$gridsize: 12;
-$breakpoints: ("xs": 420px, "sm": 768px, "md": 992px, "lg": 1200px);
+$gridsize: 12; // Grid Sizes must be divisible by two.
+$breakpoints: ("xs": 576px, "sm": 768px, "md": 992px, "lg": 1200px);
 
 // The Variable below are used for demo purposes and should be 
 // replaced with your own. They are left in here for you to see

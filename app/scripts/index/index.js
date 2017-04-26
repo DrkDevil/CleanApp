@@ -12,5 +12,6 @@ angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directiv
   $routeProvider
     .when('/', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'main.html', controller: 'IndexCtrl' })
     .when('/components', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'components.html', controller: 'ComponentCtrl' })
+    .when('/philosophy', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'philosophy.html', controller: 'PhilosCtrl' })
     .otherwise({ redirectTo: '/' });
 }]);

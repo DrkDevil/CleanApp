@@ -3,11 +3,19 @@
 // and this is just the bare minium used for the demonstration of BonsaiApp.
 // Please feel free to delete and create your own.
 // And remeber, the easiest way to edit BonsaiUI is via the variables.scss
+
+// Main Navbars
 .navbar {
   background-color: $navbar-color;
   width: 100%;
   position: relative;
   z-index: 9000; // Take it to 9000! And make sure its always on top.
+	  content: "";
+  display: table;
+  clear: both;
+}
+.navbar .grid {
+ padding: 0;
 }
 .navbar li {
   position: relative;
@@ -27,7 +35,6 @@
  font-size: 1.0rem;
  background-color: rgba(255,255,255,0.0);
 }
-
 .navbar a {
 	line-height: 1.1rem;
     padding: 20px 10px;
@@ -35,9 +42,34 @@
 	text-decoration: none;
 	font-size: .8rem;
 }
-
 .navbar a:hover {
 	text-decoration: none;
 	color: $navbar-text-hover-color;
 	font-size: .8rem;
+}
+
+// In Page Side Navigations
+.sidebar {
+	font-family: $secondary-font;
+	font-size: .8rem;
+	color: #233441;
+}
+.sidebar li {
+	padding: 8px;
+}
+.sidebar li:hover, .sidebar li:active {
+	border-left: 1px solid #68a097;
+	margin-left: -1px;
+    color: #2c5f56;
+}
+.sidebar a:hover {
+	color: #2c5f56;
+}
+.sidebar a {
+	text-decoration: none;
+    color: #233441;
+}
+.sidebar a:hover, .sidebar a:active,  {
+	text-decoration: none;
+    color: #2c5f56;
 }
