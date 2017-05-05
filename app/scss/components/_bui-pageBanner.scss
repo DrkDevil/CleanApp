@@ -10,7 +10,6 @@
 	background-color: #233441;
 	border-bottom: 2px solid #2c2c2c;
 	display: flex; justify-content: left; align-items: center;
-	margin-bottom: 20px;
 }
 
 [class*='pageBanner-'] h1 {
@@ -26,10 +25,33 @@
     line-height: 2.0rem;
 }
     
-.bannerBgImage {
-	 background-image:  url(../../img/backgrounds/swirl_pattern.jpg) repeat;
-}
-
 .pageBanner-sm { padding: 20px 0; }
 .pageBanner-md { padding: 40px 0; }
 .pageBanner-lg { padding: 60px 0; }
+
+// Animated Banner Background
+
+.animatedBanner {
+background: linear-gradient(40deg, #1b3261, #233441 );
+background-size: 400% 400%;
+
+-webkit-animation: animatedBanner 30s ease infinite;
+-moz-animation: animatedBanner 30s ease infinite;
+animation: animatedBanner 30s ease infinite;
+
+@-webkit-keyframes animatedBanner {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-moz-keyframes animatedBanner {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@keyframes animatedBanner { 
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+}

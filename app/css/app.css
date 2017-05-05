@@ -109,6 +109,9 @@ p {
 .cell {
   border: 1px solid #fff; }
 
+.headline {
+  border-bottom: 1px solid #fff; }
+
 /* ----- Bonsai UI Grid System ----- */
 /* Removes padding behaviour on widths */
 *, *:before, *:after {
@@ -414,7 +417,7 @@ p {
   font-size: .8rem; }
 
 .sidebar {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Tahoma, Verdana, Segoe, sans-serif;
   font-size: .8rem;
   color: #233441; }
 
@@ -436,6 +439,9 @@ p {
 .sidebar a:hover, .sidebar a:active {
   text-decoration: none;
   color: #2c5f56; }
+
+#sidebarSubmenu {
+  visibility: hidden; }
 
 .dropDownMenu {
   position: relative;
@@ -478,6 +484,48 @@ p {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px; }
 
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer; }
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41; }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1; }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block; }
+
 [class*='pageBanner-'] {
   width: 100%;
   color: #fff;
@@ -485,23 +533,19 @@ p {
   border-bottom: 2px solid #2c2c2c;
   display: flex;
   justify-content: left;
-  align-items: center;
-  margin-bottom: 20px; }
+  align-items: center; }
 
 [class*='pageBanner-'] h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 3.5rem;
   font-weight: 600;
   color: #68a097; }
 
 [class*='pageBanner-'] h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.0rem; }
-
-.bannerBgImage {
-  background-image: url(../../img/backgrounds/swirl_pattern.jpg) repeat; }
 
 .pageBanner-sm {
   padding: 20px 0; }
@@ -511,6 +555,37 @@ p {
 
 .pageBanner-lg {
   padding: 60px 0; }
+
+.animatedBanner {
+  background: linear-gradient(40deg, #1b3261, #233441);
+  background-size: 400% 400%;
+  -webkit-animation: animatedBanner 30s ease infinite;
+  -moz-animation: animatedBanner 30s ease infinite;
+  animation: animatedBanner 30s ease infinite; }
+
+@-webkit-keyframes animatedBanner {
+  0% {
+    background-position: 100% 0%; }
+  50% {
+    background-position: 0% 100%; }
+  100% {
+    background-position: 100% 0%; } }
+
+@-moz-keyframes animatedBanner {
+  0% {
+    background-position: 100% 0%; }
+  50% {
+    background-position: 0% 100%; }
+  100% {
+    background-position: 100% 0%; } }
+
+@keyframes animatedBanner {
+  0% {
+    background-position: 100% 0%; }
+  50% {
+    background-position: 0% 100%; }
+  100% {
+    background-position: 100% 0%; } }
 
 .main body {
   padding-top: 0;
@@ -527,14 +602,14 @@ p {
   color: #a33636; }
 
 .bonsaiIntro h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 2.0rem;
   font-weight: 300;
   margin-top: -10px;
   margin-bottom: 20px; }
 
 .bonsaiIntro p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.0rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -557,7 +632,7 @@ p {
   background: transparent;
   cursor: pointer;
   font-size: 1.0rem;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", Tahoma, Verdana, Segoe, sans-serif; }
 
 .btn-outlined:hover {
   color: #fff;
@@ -575,7 +650,7 @@ p {
   background: #142029;
   cursor: pointer;
   font-size: 1.0rem;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", Tahoma, Verdana, Segoe, sans-serif; }
 
 .btn-solid:hover {
   border: 1px solid #4a0909;
@@ -612,7 +687,7 @@ p {
 
 html {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Tahoma, Verdana, Segoe, sans-serif;
   overflow-x: hidden; }
 
 footer {
@@ -620,7 +695,7 @@ footer {
   background-color: #142029;
   color: #bbb;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Tahoma, Verdana, Segoe, sans-serif;
   font-size: 0.8rem; }
 
 footer a {

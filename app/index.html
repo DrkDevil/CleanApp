@@ -17,13 +17,29 @@
   <ul class="flt-left">
     <li><a href="/philosophy">Philosophy</a></li>
     <!-- Drop Down Menu -->
+    <div class="dropdown">
+    <button data-dropdown="myDropDown" onclick="dropDown()" class="dropbtn">Dropdown</button>
+      <div id="myDropDown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <div class="dropdown">
+    <button data-dropdown="myDropDown2" onclick="dropDown()" class="dropbtn">Dropdown 2</button>
+      <div id="myDropDown2" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <!-- Drop Down Menu
     <div class="dropDownMenu"> <a class="dropBtn" onclick="dropDownToggle()" data-toggle="dropDownMenu" href="#">Bonsai UI</a>
       <ul id="dropDownItems" class="dropDownContent animated">
         <li><a href="/structure">Structure</a></li>
         <li><a href="/components">Components</a></li>
         <li><a href="/css">SCSS/CSS</a></li>
-        <li><a href="/soon">JavaScript</a></li>
-        <li><a href="/newView">Blank Page</a></li>
+        <li><a href="/newView">Starter Page</a></li>
       </ul>
     </div>
     <!-- /Drop Down Menu -->
@@ -56,6 +72,7 @@
 <script defer src="scripts/newView/directives.js"></script> 
 <!-- Bonsai UI JavaScript Core --> 
 <script src="scripts/bonsai/dropDowns.js"></script>
+<script src="scripts/bonsai/sidebar.js"></script>
 <footer class="fixed-bottom">
   <div class="flt-left">Copyright, MIT License</div>
   <div class="flt-right">Created by: <a href="http://www.digitalreligion.net">Digital Religion</a></div>

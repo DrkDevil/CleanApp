@@ -43,7 +43,8 @@ gulp.task('view', [], function() {
   browserSync({
     notify: false,            // Enable or Disables the 'BrowserSync is running' notification
     logPrefix: 'BonsaiApp',   // Name you want displayed in your console log's prefix. 
-    server: ['./app']         // The folder the application is running from.
+    server: ['./app'],
+	// The folder the application is running from.
     // https: true;
 	// Run as an https by uncommenting 'https: true'
 	// Note: this uses an unsigned certificate which on first access

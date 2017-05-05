@@ -1,28 +1,150 @@
-<div class="pageBanner-lg">
+<div id="top" class="pageBanner-lg animatedBanner">
   <div class="grid">
     <div class="row">
-      <h1>The Bonsai Way</h1>
-      <h2>Get the lowdown on the key pieces of Bootstrap's infrastructure, including our approach to better, faster, stronger web development.</h2>
+      <h1>BonsaiUI Style Guide</h1>
+      <div class="col-10sm">
+        <h2>Dozens of styles built to provide easy customization. Helpers, Mix-ins, functions, and more.</h2>
+      </div>
     </div>
   </div>
 </div>
-<div class="grid"> 
-  <!-- Drop Downs -->
-  <div class="row" id="dropDown" >
-    <h1>Structure</h1>
-    <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content.</p>
-    <p>Here's how the BonsaiUI SCSS Grid System works:</p>
-    <ul>
-      <li>Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.</li>
-      <li>Use rows to create horizontal groups of columns.</li>
-      <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
-      <li>Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
-      <li>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.</li>
-      <li>The negative margin is why the examples below are outdented. It's so that content within grid columns is lined up with non-grid content.</li>
-      <li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.</li>
-      <li>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</li>
-      <li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg-* class is not present.</li>
-      <li>Look to the examples for applying these principles to your code.</li>
-    </ul>
+<div class="grid">
+  <div class="row">
+    <div class="col-10sm">
+      <div class="row" id="grid">
+        <h1>SaSS Grid Systems</h1>
+        <p>In its most basic terms, a grid system is a structure comprising a series of horizontal and vertical lines which intersect and are then used to arrange content. In even more basic terms (which make it easier to understand!) a grid system is a way of providing a system that designers can work with to structure and present content and imagery in a much more readable, manageable way.</p>
+        <p>Ours is built with Sass and is easily customizable in the variable.scss</p>
+      </div>
+      <div class="gridDemo">
+        <div class="row">
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+          <div class="col-1xs">
+            <p>col-1</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6xs">
+            <p>col-6</p>
+          </div>
+          <div class="col-4xs">
+            <p>col-4</p>
+          </div>
+          <div class="col-2xs">
+            <p>col-2</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6xs col-8lg">
+            <p>col-8</p>
+          </div>
+          <div class="col-6xs col-4lg">
+            <p>col-4</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4xs">
+            <p>col-4</p>
+          </div>
+          <div class="col-4xs">
+            <p>col-4</p>
+          </div>
+          <div class="col-4xs">
+            <p>col-4</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12xs">
+            <p>col-12</p>
+          </div>
+        </div>
+      </div>
+      <!-- Drop Downs -->
+      <div class="row" id="dropDown" >
+      	<h1>Dropdowns</h1>
+      </div>
+      <!-- Drop Downs -->
+      <div class="row" id="inputs" >
+      	<h1>Inputs</h1>
+      </div>
+    </div>
+    <div class="col-2sm">
+      <h2>Style Guide</h2>
+      <nav class="sidebar">
+       <ul>
+        <li>
+          <a id="sidebarCollapse" href="#" onClick="sidebarCollapse()">Getting Started</a>
+          <ul id="sidebarSubmenu">
+          	<li><a href="#">HTML 5</a></li>
+          	<li><a href="#">Mobile First</a></li>
+          	<li><a href="#">Typography and Links</a></li>
+          	<li><a href="#">Variables</a></li>
+          </ul>  
+        </li>
+        <li>
+          <a href="#grid">SaSS Grid</a>
+          <ul class="sidebar-submenu">
+          	<li><a href="#">HTML 5</a></li>
+          	<li><a href="#">Mobile First</a></li>
+          	<li><a href="#">Typography and Links</a></li>
+          	<li><a href="#">Variables</a></li>
+          </ul>
+        
+        </li>
+        <li><a href="#dropDown">Typography</a></li>
+        <li><a href="JavaScript:void();">Tables</a></li>
+        <li><a href="JavaScript:void();">Forms</a></li>
+        <li><a href="JavaScript:void();">Input groups</a></li>
+        <li><a href="JavaScript:void();">Navs</a></li>
+        <li><a href="JavaScript:void();">Navbar</a></li>
+        <li><a href="JavaScript:void();">Breadcrumbs</a></li>
+        <li><a href="JavaScript:void();">Pagination</a></li>
+        <li><a href="JavaScript:void();">Labels</a></li>
+        <li><a href="JavaScript:void();">Badges</a></li>
+        <li><a href="JavaScript:void();">Jumbotron</a></li>
+        <li><a href="JavaScript:void();">Page header</a></li>
+        <li><a href="JavaScript:void();">Thumbnails</a></li>
+        <li><a href="JavaScript:void();">Alerts</a></li>
+        <li><a href="JavaScript:void();">Progress bars</a></li>
+        <li><a href="JavaScript:void();">Media object</a></li>
+        <li><a href="JavaScript:void();">List group</a></li>
+        <li><a href="JavaScript:void();">Panels</a></li>
+        <li><a href="JavaScript:void();">Responsive embed</a></li>
+        <li><a href="JavaScript:void();">Wells</a></li>
+      </ul>
+      </nav>
+    </div>
   </div>
 </div>
