@@ -5,3 +5,5 @@ build
 *.log
 
 app/scripts/bonsai/dropDowns - Copy\.js
+
+package-lock\.json
