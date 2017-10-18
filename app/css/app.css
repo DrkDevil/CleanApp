@@ -7,6 +7,7 @@
   * Github: https://github.com/DrkDevil
 */
 /*  Allow angular.js to be loaded in body, hiding cloaked elements until templates compile. */
+@import url("http://css.wikidot.com/cssnippet:better-code-blocks/code_");
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none; }
 
@@ -742,9 +743,6 @@ ul.rightbar {
   transform: scale(0, 0);
   opacity: .2;
   transition: 0s; }
-
-.newView body {
-  margin-top: 15px; }
 
 .soon body {
   padding-top: 0; }

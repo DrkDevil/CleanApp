@@ -17,7 +17,7 @@
 @import 'base/variables';        //  Application Configuration 
 @import 'base/global';           //  Global Reset Styles
 @import 'base/typography';       //  Typography Settings. 
-
+@import url('http://css.wikidot.com/cssnippet:better-code-blocks/code_');
 
 // Helpers -------------------- -------------------------------------
 @import 'helpers/functions';     //  SCSS Functions
@@ -36,7 +36,6 @@
 
 // Page ----------------------- -------------------------------------
 @import 'pages/main';            // Main Page
-@import 'pages/newView';         // newView Page
 @import 'pages/soon';            // Coming Soon Page
 
 // Themes --------------------- -------------------------------------
