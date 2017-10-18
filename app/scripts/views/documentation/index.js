@@ -1,5 +1,5 @@
 'use strict';
-angular.module('BonsaiApp.docs', ['ngRoute','docs.controllers','index.directives'])
+angular.module('BonsaiApp.docs', ['ngRoute','docs.controllers','docs.directives'])
 .run(['$rootScope', '$route', '$location', function($rootScope, $route, $location) {
   $rootScope.$on('$routeChangeSuccess', function(newVal, oldVal) {
     if (oldVal !== newVal) {
