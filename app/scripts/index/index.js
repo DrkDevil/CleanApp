@@ -2,7 +2,7 @@
 angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directives'])
 
 // Configure the fakeBrowser. Do not set these values in actual projects.
-.constant('initUrl', 'http://www.digitalreligion.net/app/path?a=b#h')
+.constant('initUrl', '/')
 .constant('baseHref', '/base/index.html')
 .value('$sniffer', { history: true })
 
@@ -13,14 +13,11 @@ angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directiv
     if (oldVal !== newVal) { document.title = $route.current.title; }
   });
 }])
+
 // Set Routes
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
   $routeProvider
-    .when('/', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'main.html', controller: 'IndexCtrl' })
-    .when('/components', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'components.html', controller: 'ComponentCtrl' })
-    .when('/philosophy', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'philosophy.html', controller: 'PhilosCtrl' })
-    .when('/css', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'css.html', controller: 'CssCtrl' })
-	.when('/structure', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'structure.html', controller: 'StructCtrl' })
+    .when('/', { title: 'BonsaiApp - Angular BaseApp with Modern UI', templateUrl: 'main.html', controller: 'IndexCtrl' })
     .otherwise({ redirectTo: '/' });
 }]);

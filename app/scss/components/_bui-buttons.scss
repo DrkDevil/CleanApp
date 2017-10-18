@@ -1,0 +1,6 @@
+// Main Page Buttons
+[class*='btn-'] { border-radius: 3px; margin-bottom: 10px; }
+.btn-outlined { padding: 15px; border: 1px solid #142029; background: transparent; cursor: pointer; font-size: 1.0rem; font-family: $secondary-font; }
+.btn-outlined:hover { color:#fff; border: 1px solid #142029; background: #a33636; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+.btn-solid { padding: 15px;color: #cecece; border: 1px solid #142029; background: #142029; cursor: pointer;  font-size: 1.0rem; font-family: $secondary-font; }
+.btn-solid:hover { border: 1px solid #4a0909; background: #a33636; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }

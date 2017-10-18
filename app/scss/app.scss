@@ -14,30 +14,29 @@
 @charset "utf-8";
 
 // App Base ------------------- -------------------------------------
-@import 'base/variables';        // Application Configuration 
-@import 'base/global';           // Global Reset Styles
-@import 'base/typography';       // Typography Settings. 
+@import 'base/variables';        //  Application Configuration 
+@import 'base/global';           //  Global Reset Styles
+@import 'base/typography';       //  Typography Settings. 
 
 
 // Helpers -------------------- -------------------------------------
-@import 'helpers/functions';     // SCSS Functions
-@import 'helpers/mixins';        // SCSS Mixins
-@import 'helpers/helpers';       // CSS Helpers
+@import 'helpers/functions';     //  SCSS Functions
+@import 'helpers/mixins';        //  SCSS Mixins
+@import 'helpers/helpers';       //  CSS Helpers
 
 // Layout --------------------- -------------------------------------
-@import 'layout/bui-grid';       // CSS Grid System
+@import 'layout/bui-grid';       //  CSS Grid System
 
 // Components ----------------- -------------------------------------
-@import 'components/bui-navs';     // Navigation Types - in Dev
-@import 'components/bui-dropDown'; // Drop Down Menus 
-@import 'components/bui-pageBanner'; // Page Banners
+@import 'components/bui-navbar';      //  Navigation - Navbar
+@import 'components/bui-sidebar';     //  Navigation - Dual Sidebars
+@import 'components/bui-buttons';     //  Bonsai UI Buttons
+@import 'components/bui-pageBanner';  //  PageBanners
+@import 'components/bui-effects';     //  Bonsai UI Effects
 
 // Page ----------------------- -------------------------------------
 @import 'pages/main';            // Main Page
-@import 'pages/features';        // Features Page
-@import 'pages/philosophy';      // Philosophy Page
 @import 'pages/newView';         // newView Page
-@import 'pages/components';      // Components Page
 @import 'pages/soon';            // Coming Soon Page
 
 // Themes --------------------- -------------------------------------

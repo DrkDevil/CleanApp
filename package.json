@@ -26,5 +26,7 @@
     "postinstall": "bower install",
     "prod": "gulp prod"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-cli": "^1.4.0"
+  }
 }

@@ -5,25 +5,81 @@ $body-color: #f7f7f7;
 $body-line-height: 1;
 
 // Fonts
-$primary-font: 'Open Sans',Tahoma,Verdana,Segoe,sans-serif;
-$secondary-font: 'Roboto',Tahoma,Verdana,Segoe,sans-serif;
+$primary-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$secondary-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+//Base Color Scheme
+$primary-color:blue;
+$secondary-color:green;
+$tertiary-color:red;
+
+//Alternate Color Schemes
+$success-color:green;
+$failure-color:red;
+$warning-color:yellow;
+$info-color:purple;
 
 // ----- Component Variables ------------------------------------------
 
 // Navbar
-$navbar-color: #142029;
-// Navbars height is controlled by the padding of the Navbars links.
-$navbar-padding: 20px;
-$navbar-link-spacing: 8px;
-$navbar-text-color: #fff;
-$navbar-text-hover-color: #68a097;
+$navbar-color: #1d1d1d;
+// Navbars height is controlled by the padding of the Navbars links.#132e4a
+$navbar-padding: .5rem 1rem;
+$navbar-link-spacing: 8px 0;
+$navbar-text-color: rgba(255, 255, 255, 0.75);
+$navbar-text-hover-color: #fff;
+
+// Navbar Buttons
+// Outlined Buttons
+$navbar-button-outline-color: #458047;
+$navbar-button-outline-color-hover: #4eaf45;
+// Solid Buttons
+$navbar-button-text-color:#000;
+$navbar-button-text-color-hover:#fff;
+$navbar-button-color:#271010;
+$navbar-button-color-hover:#458047;
+
+// sidebar
+$sidebar-color: #f7f7f7 ;
+$sidebar-padding:  15px;
+$sidebar-link-spacing: 8px;
+$sidebar-text-color: #000;
+$sidebar-text-hover-color: #68a097;
+
+// sidebar Buttons
+// Outlined Buttons
+$sidebar-button-outline-color: #458047;
+$sidebar-button-outline-color-hover: #4eaf45;
+// Solid Buttons
+$sidebar-button-text-color:#000;
+$sidebar-button-text-color-hover:#fff;
+$sidebar-button-color:#271010;
+$sidebar-button-color-hover:#271010;
+
+// Page Buttons
+// Outlined Buttons
+$button-outline-text-color: #000;
+$button-outline-text-color-hover: #fff;
+$button-outline-color: #848483;
+$button-outline-color-hover: #271010;
+// Solid Buttons
+$navbar-button-text-color:#000;
+$navbar-button-text-color-hover:#fff;
+$sidebar-button-text-color:#000;
+$sidebar-button-text-color-hover:#fff;
+$button-color:#271010;
+$button-color-hover:#142029;
+
+// Dual Sidebars
+$right-sidebar-width: 250px;
+$left-sidebar-width: 200px;
 
 // ----- Helper Variables ---------------------------------------------
 
 // ----- Layout Variables ---------------------------------------------
 
 // Grid System  
-$gutters: 50px;
+$gutters: 15px;
 $gridPadding: 15px;
 $colSpacing: 5px;
 $gridsize: 12; // Grid Sizes must be divisible by two.

@@ -9,46 +9,23 @@
 <link rel="author" href="humans.txt" />
 <link rel="stylesheet" href="css/app.css" />
 </head>
-<body>
-<nav class="navbar fixed-top">
-  <header>
-    <a href="/">BonsaiApp</a> 
-  </header>
-  <ul class="flt-left">
-    <li><a href="/philosophy">Philosophy</a></li>
-    <!-- Drop Down Menu -->
-    <div class="dropdown">
-    <button data-dropdown="myDropDown"  class="dropbtn">Dropdown</button>
-      <div id="myDropDown" class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-    <div class="dropdown">
-    <button data-dropdown="myDropDown2"  class="dropbtn">Dropdown 2</button>
-      <div id="myDropDown2" class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-    <!-- Drop Down Menu
-    <div class="dropDownMenu"> <a class="dropBtn" onclick="dropDownToggle()" data-toggle="dropDownMenu" href="#">Bonsai UI</a>
-      <ul id="dropDownItems" class="dropDownContent animated">
-        <li><a href="/structure">Structure</a></li>
-        <li><a href="/components">Components</a></li>
-        <li><a href="/css">SCSS/CSS</a></li>
-        <li><a href="/newView">Starter Page</a></li>
-      </ul>
-    </div>
-    <!-- /Drop Down Menu -->
-    <li><a href="/soon">Documentation</a></li>
+<div ng-app="app">
+<body id="scrollArea">
+<header class="navbar fixed-top">
+  <div class="title">
+    <a href="/">BonsaiApp</a>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/docs">Documentation</a></li>
+    <li><a href="/docs-alt">Examples</a></li>
+    <li><a href="/soon">Blog</a></li>
   </ul>
-  <ul class="flt-right">
-	  <li><a href="JavaScript:void;()">Download</a></li>
+  <ul class="flt-right hidden-md ">
+    <!-- This li is using an effect class located in the scss components folder -->
+    <li><a class="btn-outlined" href="JavaScript:void;()">Download</a></li>
   </ul>
-</nav>
+</header>
 <main ng-cloak> 
   <!-- AngularJS Routing -->
   <div ng-view=""></div>
@@ -71,11 +48,8 @@
 <script defer src="scripts/newView/controllers.js"></script> 
 <script defer src="scripts/newView/directives.js"></script> 
 <!-- Bonsai UI JavaScript Core --> 
-<script src="scripts/bonsai/dropDowns.js"></script>
 <script src="scripts/bonsai/sidebar.js"></script>
-<footer class="fixed-bottom">
-  <div class="flt-left">Copyright, MIT License</div>
-  <div class="flt-right">Created by: <a href="http://www.digitalreligion.net">Digital Religion</a></div>
-</footer>
+<script src="scripts/bonsai/anchorScroll.js"></script>
 </body>
+</div>
 </html>

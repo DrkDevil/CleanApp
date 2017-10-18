@@ -19,7 +19,7 @@ font: inherit; vertical-align: baseline; }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 display: block;}
-body { line-height: $body-line-height; padding-top: 58px; background-color: $body-color; }
+body { line-height: $body-line-height;  background-color: $body-color; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
