@@ -1,0 +1,19 @@
+.main body { padding-top: 0; background-image: url('../../img/backgrounds/swirl_pattern.jpg'); }
+// Content Styling
+.bonsaiIntro { margin-top: 22%; color: #142029; }
+.bonsaiIntro h1 {font-size: 4.5rem; font-weight: 600;  margin-left: -4px;  color: #a33636;}
+.bonsaiIntro h2 { font-family: $secondary-font; font-size: 2.0rem; font-weight: 300; margin-top: -10px; margin-bottom: 20px; }
+.bonsaiIntro p { font-family: $secondary-font; font-size: 1.0rem; font-weight: 300; line-height: 1.5rem; }
+.bonsaiIntro p:last-of-type { margin-bottom: 35px;}
+.seedFeature { font-weight: 500; font-style: italic; color: rgba(70,22,23,1.00); }
+
+// Page Gradient
+.shade:after { 
+  content: ""; display: block; width: 100%; position: absolute; height: 100vh; z-index: -2;
+  background: rgba(255,255,255,0);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.47) 29%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(29%, rgba(255,255,255,0.47)), color-stop(62%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.47) 29%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.47) 29%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.47) 29%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 100%);
+}

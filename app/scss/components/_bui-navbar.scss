@@ -5,8 +5,8 @@
 
 // Main Navbars
 .navbar { width: 100%; text-align: center; padding: 0 .75rem ; background-color: $navbar-color;	 z-index: 9000; letter-spacing: .05rem; }
-.navbar .title { padding: 1rem 0.35rem 0 0.35rem; }
-.navbar .title a, .navbar .title a:hover  { text-align: center; font-size: 1.3rem !important; line-height: 1.125rem;  }
+.navbar .brand { padding: 1rem 0.35rem 0 0.35rem; }
+.navbar .brand a, .navbar .brand a:hover  { text-align: center; font-size: 1.3rem !important; line-height: 1.125rem;  }
 .navbar ul { display: inline-block; }
 .navbar li { padding: 1.0rem .35rem; line-height: 1.8rem; float: left; }
 .navbar a { color: rgba(255, 255, 255, 0.75);	text-decoration: none; font-size: .75rem;  }
@@ -23,7 +23,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  .navbar .title  { float: left; display: inline-block; padding: 1.25rem .35rem; }
+  .navbar .brand  { float: left; display: inline-block; padding: 1.25rem .35rem; }
   .navbar a { font-size: .75rem;  }
   .navbar ul { display: inline-block; float: left; }
 }

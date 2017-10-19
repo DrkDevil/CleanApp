@@ -6,7 +6,6 @@
 
 /* Dual Sidebars -  Brian Orr - @digitalreligion (http://www.digitalreligion.net/) */
 
-/* ----------DUAL SIDEBAR STYLES ---------- */
 /* Position & Size your Side bars */
 #leftSidebar { left: 0px; width: $left-sidebar-width; height: 100%;  z-index: 1; position: fixed;  overflow-y: hidden; border-right: 1px solid #cecece; }
 #rightSidebar { right: 0; width: $right-sidebar-width; height: 100%; z-index: 1; position: fixed; overflow-y: hidden; }
@@ -15,25 +14,36 @@
 #rightSidebar,#leftSidebar {@include easeIn; width: 0;}
 
 /* Left Sidebar Styles */
-.leftbar { position: absolute; top: 15px; width: 250px; margin: 0; padding: 0; list-style: none; }
-.leftbar li { text-indent: 20px; line-height: 40px; }
+.leftbar { position: absolute; top: 15px; width: 100%; margin: 0; padding: 0; list-style: none; }
+.leftbar li { text-indent: 18px; line-height: 35px; }
+.leftbar li a.heading { font-weight: 600; color: #000; }
 .leftbar li a { display: block; text-decoration: none; color: #929292; }
 .leftbar li a:hover { text-decoration: none; color: #1d1d1d; background: rgba(197,197,197,0.17);}
 .leftbar li a:active,
 .leftbar li a:focus { text-decoration: none; color: #000; background: rgba(197,197,197,0.50); }
+
+/* Left Sidebar Submenu Styles*/ 
+.leftbar .headline { color: black; font-weight: 600; border: 0; }
+.leftbar .submenu li { text-indent: 30px; line-height: 30px; }
+.leftbar .submenu li:last-of-type { padding-bottom: 15px; }
+.leftbar .submenu li a { display: block; text-decoration: none; color: #929292; }
+.leftbar .submenu li a:hover { text-decoration: none; color: #1d1d1d; background: rgba(197,197,197,0.17);}
+.leftbar .submenu li a:active,
+.leftbar .submenu li a:focus { text-decoration: none; color: #000; background: rgba(197,197,197,0.50); }
+
 /* Right Sidebar Styles */
  ul.rightbar {
-	 padding-top: 15px;
-    border-left: 1px;
-    border-style: solid;
-    -webkit-border-image:-webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
-    -moz-border-image:-moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;    
-    -o-border-image:-o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
-    border-image:linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%;
+  padding-top: 15px;
+  border-left: 1px;
+  border-style: solid;
+  -webkit-border-image:-webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image:-moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;    
+  -o-border-image:-o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  border-image:linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%;
 }
 
-.rightbar { position: absolute; top: 0; width: 250px; margin: 0; padding: 0; list-style: none; font-size: .8rem; }
+.rightbar { position: absolute; top: 0; width: 100%; margin: 0; padding: 0; list-style: none; font-size: .8rem; }
 .rightbar li { text-indent: 20px; line-height: 30px; }
 .rightbar li a { display: block; text-decoration: none; color: #999999; }
 .rightbar li a:hover { text-decoration: none; color: #1d1d1d;}
@@ -67,5 +77,12 @@
 	  #pageWrapper { padding: 0 $right-sidebar-width 0 300px; }
   #leftSidebar {width: 300px; }
   .leftbar {width: 300px; }
+
+}
+// Extra Lalrge Devices in FUllSCREEN 1080p in most cases. 
+@media(min-width : 1500px) {
+  #pageWrapper { padding: 0 375px 0 300px; }
+  #rightSidebar {width: 375px; }
+  .righttbar {width: 375px; }
 
 }

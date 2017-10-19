@@ -402,14 +402,14 @@ p {
   width: 100%;
   text-align: center;
   padding: 0 .75rem;
-  background-color: #1d1d1d;
+  background-color: #142029;
   z-index: 9000;
   letter-spacing: .05rem; }
 
-.navbar .title {
+.navbar .brand {
   padding: 1rem 0.35rem 0 0.35rem; }
 
-.navbar .title a, .navbar .title a:hover {
+.navbar .brand a, .navbar .brand a:hover {
   text-align: center;
   font-size: 1.3rem !important;
   line-height: 1.125rem; }
@@ -453,7 +453,7 @@ p {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  .navbar .title {
+  .navbar .brand {
     float: left;
     display: inline-block;
     padding: 1.25rem .35rem; }
@@ -469,7 +469,6 @@ p {
     font-size: 1.0rem; } }
 
 /* Dual Sidebars -  Brian Orr - @digitalreligion (http://www.digitalreligion.net/) */
-/* ----------DUAL SIDEBAR STYLES ---------- */
 /* Position & Size your Side bars */
 #leftSidebar {
   left: 0px;
@@ -482,7 +481,7 @@ p {
 
 #rightSidebar {
   right: 0;
-  width: 250px;
+  width: 270px;
   height: 100%;
   z-index: 1;
   position: fixed;
@@ -500,14 +499,18 @@ p {
 .leftbar {
   position: absolute;
   top: 15px;
-  width: 250px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none; }
 
 .leftbar li {
-  text-indent: 20px;
-  line-height: 40px; }
+  text-indent: 18px;
+  line-height: 35px; }
+
+.leftbar li a.heading {
+  font-weight: 600;
+  color: #000; }
 
 .leftbar li a {
   display: block;
@@ -521,6 +524,35 @@ p {
 
 .leftbar li a:active,
 .leftbar li a:focus {
+  text-decoration: none;
+  color: #000;
+  background: rgba(197, 197, 197, 0.5); }
+
+/* Left Sidebar Submenu Styles*/
+.leftbar .headline {
+  color: black;
+  font-weight: 600;
+  border: 0; }
+
+.leftbar .submenu li {
+  text-indent: 30px;
+  line-height: 30px; }
+
+.leftbar .submenu li:last-of-type {
+  padding-bottom: 15px; }
+
+.leftbar .submenu li a {
+  display: block;
+  text-decoration: none;
+  color: #929292; }
+
+.leftbar .submenu li a:hover {
+  text-decoration: none;
+  color: #1d1d1d;
+  background: rgba(197, 197, 197, 0.17); }
+
+.leftbar .submenu li a:active,
+.leftbar .submenu li a:focus {
   text-decoration: none;
   color: #000;
   background: rgba(197, 197, 197, 0.5); }
@@ -539,7 +571,7 @@ ul.rightbar {
 .rightbar {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -574,7 +606,7 @@ ul.rightbar {
   padding-left: 200px; }
 
 #pageWrapper.right-toggled {
-  padding-right: 250px; }
+  padding-right: 270px; }
 
 #pageContent {
   width: 100%;
@@ -594,7 +626,7 @@ ul.rightbar {
     padding: 0 20px;
     margin: 0 auto; }
   #pageWrapper.left-toggled {
-    padding: 0 250px 0 0px; }
+    padding: 0 270px 0 0px; }
   #pageWrapper.right-toggled {
     padding: 0 0 0 200px; }
   #pageWrapper.left-toggled.right-toggled {
@@ -611,17 +643,40 @@ ul.rightbar {
 
 @media (min-width: 992px) {
   #pageWrapper {
-    padding: 0 250px 0 200px; }
+    padding: 0 270px 0 200px; }
   #rightSidebar {
-    width: 250px; } }
+    width: 270px; } }
 
 @media (min-width: 1200px) {
   #pageWrapper {
-    padding: 0 250px 0 300px; }
+    padding: 0 270px 0 300px; }
   #leftSidebar {
     width: 300px; }
   .leftbar {
     width: 300px; } }
+
+@media (min-width: 1500px) {
+  #pageWrapper {
+    padding: 0 375px 0 300px; }
+  #rightSidebar {
+    width: 375px; }
+  .righttbar {
+    width: 375px; } }
+
+footer {
+  padding: 10px;
+  background-color: #142029;
+  color: #bbb;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 0.8rem; }
+
+footer a {
+  color: #a33636;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #e2e2e2; }
 
 [class*='btn-'] {
   border-radius: 3px;
@@ -744,8 +799,72 @@ ul.rightbar {
   opacity: .2;
   transition: 0s; }
 
+.main body {
+  padding-top: 0;
+  background-image: url("../../img/backgrounds/swirl_pattern.jpg"); }
+
+.bonsaiIntro {
+  margin-top: 22%;
+  color: #142029; }
+
+.bonsaiIntro h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-left: -4px;
+  color: #a33636; }
+
+.bonsaiIntro h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.0rem;
+  font-weight: 300;
+  margin-top: -10px;
+  margin-bottom: 20px; }
+
+.bonsaiIntro p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.0rem;
+  font-weight: 300;
+  line-height: 1.5rem; }
+
+.bonsaiIntro p:last-of-type {
+  margin-bottom: 35px; }
+
+.seedFeature {
+  font-weight: 500;
+  font-style: italic;
+  color: #461617; }
+
+.shade:after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  z-index: -2;
+  background: rgba(255, 255, 255, 0);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 29%, white 62%, white 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(29%, rgba(255, 255, 255, 0.47)), color-stop(62%, white), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 29%, white 62%, white 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 29%, white 62%, white 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 29%, white 62%, white 100%); }
+
 .soon body {
   padding-top: 0; }
+
+.gridDemo [class*='col-'] {
+  padding-right: 5px !important; }
+
+.gridDemo [class*='col-'] > p {
+  background-color: #68a097;
+  padding: 10px;
+  margin-bottom: 0;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff; }
+
+* {
+  outline: 0; }
 
 /*!
  * animate.css -http://daneden.me/animate
