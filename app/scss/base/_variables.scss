@@ -1,7 +1,7 @@
 // ----- Base Variables -----------------------------------------------
 
 // Base Elements for all pages Body tag
-$body-color: #f7f7f7;
+$body-color: #fff;
 $body-line-height: 1;
 
 // Fonts
@@ -23,7 +23,6 @@ $info-color:purple;
 
 // Navbar
 $navbar-color: #142029;
-// Navbars height is controlled by the padding of the Navbars links.#132e4a
 $navbar-padding: .5rem 1rem;
 $navbar-link-spacing: 8px 0;
 $navbar-text-color: rgba(255, 255, 255, 0.75);

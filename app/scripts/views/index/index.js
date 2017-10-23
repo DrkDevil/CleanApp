@@ -10,7 +10,9 @@ angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directiv
 // Page RoutingChange the page titles
 .run(['$rootScope', '$route', '$location', function($rootScope, $route, $location) {
   $rootScope.$on('$routeChangeSuccess', function(newVal, oldVal) {
-    if (oldVal !== newVal) { document.title = $route.current.title; }
+    if (oldVal !== newVal) { 
+      document.title = $route.current.title; 
+    }
   });
 }])
 
