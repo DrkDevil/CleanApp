@@ -28,15 +28,18 @@
 @import 'layout/bui-grid';       //  CSS Grid System
 
 // Components ----------------- -------------------------------------
+@import 'components/bui-alerts';      //  Alerts & Notifications
 @import 'components/bui-navbar';      //  Navigation - Navbar
 @import 'components/bui-sidebar';     //  Navigation - Dual Sidebars
-@import 'components/bui-footer';     //  Bonsai Footer
+@import 'components/bui-pillbar';     //  Navigation - Pillbars
+@import 'components/bui-footer';      //  Bonsai Footer
 @import 'components/bui-buttons';     //  Bonsai UI Buttons
 @import 'components/bui-pageBanner';  //  PageBanners
 @import 'components/bui-effects';     //  Bonsai UI Effects
 
 // Page ----------------------- -------------------------------------
 @import 'pages/main';            // Main Page
+@import 'pages/docs';            // Coming Soon Page
 @import 'pages/soon';            // Coming Soon Page
 
 // Themes --------------------- -------------------------------------

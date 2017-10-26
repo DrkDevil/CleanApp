@@ -1,12 +1,12 @@
 // Responsive Images
 .center-content { text-align: center;}
-.flexCon { height: 100vh; display: flex; justify-content: center; align-items: center; }
+.flexCon { width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; }
 .fixed { position: fixed !important; }
 .fixed-top { position: fixed !important; top:0; }
 .fixed-bottom { position: fixed !important; bottom:0;}
 .flt-left { float: left !important; }
 .flt-right { float: right !important; }
-.responsive-img { width: 100%; height: auto; }
+.responsive-img { max-width: 100%; height: auto; }
 .show { visibility: visible !important; }
 .hide { visibility: hidden; }
 

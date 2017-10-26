@@ -10,7 +10,7 @@ angular.module('BonsaiApp.newView', ['ngRoute','newView.controllers','newView.di
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider
     .when('/newView', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'newView.html', controller: 'newViewCtrl' })
-    .when('/docs', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'docs.html', controller: 'newViewCtrl' })
+    //.when('/docs', { title: 'BonsaiApp - BaseApp with Modern UI', templateUrl: 'docs.html', controller: 'newViewCtrl' })
     .when('/soon', { title: 'BonsaiApp - About BonsaiApp', templateUrl: 'soon.html', controller: 'soonCtrl' })
     .otherwise({ redirectTo: '/' });
   $locationProvider.html5Mode(true);

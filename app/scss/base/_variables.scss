@@ -73,6 +73,23 @@ $button-color-hover:#142029;
 $right-sidebar-width: 270px;
 $left-sidebar-width: 200px;
 
+// pillbar
+$pillbar-color: #142029;
+$pillbar-padding: .5rem 1rem;
+$pillbar-link-spacing: 8px 0;
+$pillbar-text-color: rgba(255, 255, 255, 0.75);
+$pillbar-text-hover-color: #fff;
+
+// pillbar Buttons
+// Outlined Buttons
+$pillbar-button-outline-color: #458047;
+$pillbar-button-outline-color-hover: #4eaf45;
+// Solid Buttons
+$pillbar-button-text-color:#000;
+$pillbar-button-text-color-hover:#fff;
+$pillbar-button-color:#271010;
+$pillbar-button-color-hover:#458047;
+
 // ----- Helper Variables ---------------------------------------------
 
 // ----- Layout Variables ---------------------------------------------

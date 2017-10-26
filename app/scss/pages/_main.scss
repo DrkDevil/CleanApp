@@ -1,11 +1,16 @@
-.main body { padding-top: 0; background-image: url('../../img/backgrounds/swirl_pattern.jpg'); }
+.main body { padding-top: 0; background: url('../../img/backgrounds/AdobeStock_101916353.jpeg')no-repeat center center; 
+	-webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;}
 // Content Styling
-.bonsaiIntro { margin-top: 22%; color: #142029; }
+.bonsaiIntro { margin-top: 22%; color: #142029; padding: 20px; }
 .bonsaiIntro h1 {font-size: 4.5rem; font-weight: 600;  margin-left: -4px;  color: #a33636;}
 .bonsaiIntro h2 { font-family: $secondary-font; font-size: 2.0rem; font-weight: 300; margin-top: -10px; margin-bottom: 20px; }
 .bonsaiIntro p { font-family: $secondary-font; font-size: 1.0rem; font-weight: 300; line-height: 1.5rem; }
 .bonsaiIntro p:last-of-type { margin-bottom: 35px;}
 .seedFeature { font-weight: 500; font-style: italic; color: rgba(70,22,23,1.00); }
+
 
 // Page Gradient
 .shade:after { 

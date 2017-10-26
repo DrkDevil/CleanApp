@@ -75,6 +75,7 @@ p {
   text-align: center; }
 
 .flexCon {
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -98,7 +99,7 @@ p {
   float: right !important; }
 
 .responsive-img {
-  width: 100%;
+  max-width: 100%;
   height: auto; }
 
 .show {
@@ -398,7 +399,58 @@ p {
   .offset-12lg {
     margin-left: 100%; } }
 
-.navbar {
+[class*='alert'] {
+  padding: 20px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(12, 12, 12, 0.22); }
+
+.alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff; }
+
+.alert-secondary {
+  color: #464a4e;
+  background-color: #e7e8ea;
+  border-color: #dddfe2; }
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb; }
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb; }
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba; }
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb; }
+
+.alert-light {
+  color: #818182;
+  background-color: #fefefe;
+  border-color: #fdfdfe; }
+
+.alert-dark {
+  color: #1b1e21;
+  background-color: #d6d8d9;
+  border-color: #c6c8ca; }
+
+.alert-clear {
+  color: #000;
+  background-color: transparent;
+  border: 0; }
+
+.pillbar {
   width: 100%;
   text-align: center;
   padding: 0 .75rem;
@@ -406,66 +458,66 @@ p {
   z-index: 9000;
   letter-spacing: .05rem; }
 
-.navbar .brand {
+.pillbar .brand {
   padding: 1rem 0.35rem 0 0.35rem; }
 
-.navbar .brand a, .navbar .brand a:hover {
+.pillbar .brand a, .pillbar .brand a:hover {
   text-align: center;
   font-size: 1.3rem !important;
   line-height: 1.125rem; }
 
-.navbar ul {
+.pillbar ul {
   display: inline-block; }
 
-.navbar li {
+.pillbar li {
   padding: 1.0rem .35rem;
   line-height: 1.8rem;
   float: left; }
 
-.navbar a {
+.pillbar a {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
   font-size: .75rem; }
 
-.navbar a:hover {
+.pillbar a:hover {
   text-decoration: none;
   color: #fff; }
 
-.navbar .active a {
+.pillbar .active a {
   text-decoration: none;
   color: #fff;
   font-weight: 600; }
 
-.navbar .btn-solid {
+.pillbar .btn-solid {
   border-radius: 0;
   background: #271010; }
 
-.navbar .btn-outlined {
+.pillbar .btn-outlined {
   border-color: #458047;
   padding: 10px 15px;
   font-weight: 600;
   font-size: .75rem; }
 
-.navbar .btn-outlined:hover {
+.pillbar .btn-outlined:hover {
   color: #fff;
   border: 1px solid #4eaf45;
   background: #458047; }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  .navbar .brand {
+  .pillbar .brand {
     float: left;
     display: inline-block;
     padding: 1.25rem .35rem; }
-  .navbar a {
+  .pillbar a {
     font-size: .75rem; }
-  .navbar ul {
+  .pillbar ul {
     display: inline-block;
     float: left; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  .navbar a {
+  .pillbar a {
     font-size: 1.0rem; } }
 
 /* Dual Sidebars -  Brian Orr - @digitalreligion (http://www.digitalreligion.net/) */
@@ -663,6 +715,76 @@ ul.rightbar {
   .righttbar {
     width: 375px; } }
 
+.navbar {
+  width: 100%;
+  text-align: center;
+  padding: 0 .75rem;
+  background-color: #142029;
+  z-index: 9000;
+  letter-spacing: .05rem; }
+
+.navbar .brand {
+  padding: 1rem 0.35rem 0 0.35rem; }
+
+.navbar .brand a, .navbar .brand a:hover {
+  text-align: center;
+  font-size: 1.3rem !important;
+  line-height: 1.125rem; }
+
+.navbar ul {
+  display: inline-block; }
+
+.navbar li {
+  padding: 1.0rem .35rem;
+  line-height: 1.8rem;
+  float: left; }
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: .75rem; }
+
+.navbar a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+.navbar .active a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600; }
+
+.navbar .btn-solid {
+  border-radius: 0;
+  background: #271010; }
+
+.navbar .btn-outlined {
+  border-color: #458047;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: .75rem; }
+
+.navbar .btn-outlined:hover {
+  color: #fff;
+  border: 1px solid #4eaf45;
+  background: #458047; }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .navbar .brand {
+    float: left;
+    display: inline-block;
+    padding: 1.25rem .35rem; }
+  .navbar a {
+    font-size: .75rem; }
+  .navbar ul {
+    display: inline-block;
+    float: left; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .navbar a {
+    font-size: 1.0rem; } }
+
 footer {
   padding: 10px;
   background-color: #142029;
@@ -801,11 +923,16 @@ footer a:hover {
 
 .main body {
   padding-top: 0;
-  background-image: url("../../img/backgrounds/swirl_pattern.jpg"); }
+  background: url("../../img/backgrounds/AdobeStock_101916353.jpeg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .bonsaiIntro {
   margin-top: 22%;
-  color: #142029; }
+  color: #142029;
+  padding: 20px; }
 
 .bonsaiIntro h1 {
   font-size: 4.5rem;
@@ -847,6 +974,9 @@ footer a:hover {
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 29%, white 62%, white 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 29%, white 62%, white 100%);
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 29%, white 62%, white 100%); }
+
+.docs [class*='alert'] {
+  margin: 10px 0; }
 
 .soon body {
   padding-top: 0; }
