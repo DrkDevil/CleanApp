@@ -27,6 +27,7 @@
     "prod": "gulp prod"
   },
   "dependencies": {
-    "gulp-cli": "^1.4.0"
+    "gulp-cli": "^1.4.0",
+    "sweetalert": "^2.0.8"
   }
 }

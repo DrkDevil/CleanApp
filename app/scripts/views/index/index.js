@@ -18,7 +18,7 @@ angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directiv
 
 // Set Routes
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
+  //$locationProvider.html5Mode(true);
   $routeProvider
     .when('/', { title: 'BonsaiApp - Angular BaseApp with Modern UI', templateUrl: 'main.html', controller: 'IndexCtrl' })
     .otherwise({ redirectTo: '/' });
