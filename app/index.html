@@ -22,7 +22,7 @@
   </ul>
   <ul class="flt-right hidden-md ">
     <!-- This li is using an effect class located in the scss components folder -->
-    <li><a class="btn-outlined" href="JavaScript:void;()">Download</a></li>
+    <li><a class="btn-outlined" onclick="noDownload()">Download</a></li>
   </ul>
 </header>
 <main ng-cloak> 
@@ -38,6 +38,7 @@
 <!-- Required Project files --> 
 <script defer src="scripts/templates.js"></script> 
 <script defer src="scripts/app.js"></script> 
+<!------- Vendor Scripts ------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.js"></script>
 <!------- VIEWS ------->
 <!-- Index --> 
@@ -52,6 +53,11 @@
 <script defer src="scripts/views/newView/index.js"></script> 
 <script defer src="scripts/views/newView/controllers.js"></script> 
 <script defer src="scripts/views/newView/directives.js"></script> 
+<script>
+ function noDownload() {
+  swal( 'Download not available.')
+ }
+</script>
 </body>
 </div>
 </html>
