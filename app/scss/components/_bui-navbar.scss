@@ -4,7 +4,7 @@
 // And remeber, the easiest way to edit BonsaiUI is via the variables.scss
 
 // Main pillbars
-.pillbar { width: 100%; text-align: center; padding: 0 .75rem ; background-color: $pillbar-color;	 z-index: 9000; letter-spacing: .05rem; }
+.pillbar { width: 100%; text-align: center; padding: 0 .75rem ; background-color: $pillbar-color; z-index: 9000; letter-spacing: .05rem; }
 .pillbar .brand { padding: 1rem 0.35rem 0 0.35rem; }
 .pillbar .brand a, .pillbar .brand a:hover  { text-align: center; font-size: 1.3rem !important; line-height: 1.125rem;  }
 .pillbar ul { display: inline-block; }

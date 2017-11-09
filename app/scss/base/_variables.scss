@@ -22,9 +22,12 @@ $info-color:purple;
 // ----- Component Variables ------------------------------------------
 
 // Navbar
+$navbar-font-size-sm: 0.75rem;
+$navbar-font-size-md: 0.875rem;
 $navbar-color: #142029;
 $navbar-padding: .5rem 1rem;
 $navbar-link-spacing: 8px 0;
+$navbar-line-height: 1.75rem;
 $navbar-text-color: rgba(255, 255, 255, 0.75);
 $navbar-text-hover-color: #fff;
 
@@ -72,6 +75,8 @@ $button-color-hover:#142029;
 // Dual Sidebars
 $right-sidebar-width: 270px;
 $left-sidebar-width: 200px;
+$left-sidebar-active-fntsize: 1.09rem;
+
 
 // pillbar
 $pillbar-color: #142029;
@@ -90,9 +95,29 @@ $pillbar-button-text-color-hover:#fff;
 $pillbar-button-color:#271010;
 $pillbar-button-color-hover:#458047;
 
-// ----- Helper Variables ---------------------------------------------
+// Buttons
+$btn-font-size: 1.0rem;
+$btn-padding: 0.9375rem;
+$btn-border-radius: 3px;
+$btn-margin-bottom: 10px;
 
-// ----- Layout Variables ---------------------------------------------
+// Outlined Buttons
+$btn-outlined-border:1px solid #142029;  
+$btn-outlined-background: transparent;
+
+// Outlined Button Hovers
+$btn-outlined-color-hover:#fff;
+$btn-outlined-border-hover: 1px solid #142029;
+$btn-outlined-background-hover: #a33636; 
+
+// Solid Buttons
+$btn-solid-border: 1px solid #142029;  
+$btn-solid-background: #142029;
+
+// Solid Button Hovers
+$btn-solid-color-hover:#cecece;
+$btn-solid-border-hover: 1px solid #4a0909;
+$btn-solid-background-hover: #a33636; 
 
 // Grid System  
 $gutters: 15px;

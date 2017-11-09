@@ -8,7 +8,7 @@
 .navbar .brand { padding: 1rem 0.35rem 0 0.35rem; }
 .navbar .brand a, .navbar .brand a:hover  { text-align: center; font-size: 1.3rem !important; line-height: 1.125rem;  }
 .navbar ul { display: inline-block; }
-.navbar li { padding: 1.0rem .35rem; line-height: 1.8rem; float: left; }
+.navbar li { padding: 1.0rem .35rem; line-height: $navbar-line-height; float: left; }
 .navbar a { color: rgba(255, 255, 255, 0.75);	text-decoration: none; font-size: .75rem;  }
 .navbar a:hover { text-decoration: none; color: #fff; }
 .navbar .active a { text-decoration: none; color: #fff; font-weight: 600; }
@@ -24,11 +24,11 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
   .navbar .brand  { float: left; display: inline-block; padding: 1.25rem .35rem; }
-  .navbar a { font-size: .75rem;  }
+  .navbar a { font-size:$navbar-font-size-sm; }
   .navbar ul { display: inline-block; float: left; }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-  .navbar a { font-size: 1.0rem;  }
+  .navbar a { font-size: $navbar-font-size-md;  }
 }
