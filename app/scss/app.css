@@ -687,15 +687,20 @@ p {
   color: #1d1d1d;
   background: rgba(197, 197, 197, 0.17); }
 
-.leftbar .submenu li a:active,
-.leftbar .submenu li a:focus {
+.leftbar .submenu li .active {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600; }
+
+.leftbar .submenu li a:active, .leftbar .submenu li a:focus {
   text-decoration: none;
   color: #000;
   background: rgba(197, 197, 197, 0.5); }
 
 /* Right Sidebar Styles */
 ul.rightbar {
-  padding-top: 15px;
+  position: fixed;
+  padding-top: 85px;
   border-left: 1px;
   border-style: solid;
   -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(transparent)) 1 100%;
@@ -829,7 +834,7 @@ ul.rightbar {
 
 .navbar li {
   padding: 1.0rem .35rem;
-  line-height: 1.75rem;
+  line-height: 1.875rem;
   float: left; }
 
 .navbar a {
@@ -866,7 +871,7 @@ ul.rightbar {
   .navbar .brand {
     float: left;
     display: inline-block;
-    padding: 1.25rem .35rem; }
+    padding: 1.25rem .875rem 1.25rem .45rem; }
 
   .navbar a {
     font-size: 0.75rem; }

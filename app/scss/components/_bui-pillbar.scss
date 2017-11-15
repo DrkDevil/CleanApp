@@ -23,7 +23,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  .navbar .brand  { float: left; display: inline-block; padding: 1.25rem .35rem; }
+  .navbar .brand  { float: left; display: inline-block; padding: 1.25rem .875rem 1.25rem .45rem; }
   .navbar a { font-size:$navbar-font-size-sm; }
   .navbar ul { display: inline-block; float: left; }
 }
