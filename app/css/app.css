@@ -451,69 +451,67 @@ p {
   background-color: transparent;
   border: 0; }
 
-.pillbar {
+.navbar {
   width: 100%;
   text-align: center;
   padding: 0 .75rem;
   background-color: #142029;
   z-index: 9000;
   letter-spacing: .05rem; }
-  .pillbar.brand {
-    padding: 1rem .35rem 0 .035rem; }
-    .pillbar.brand a {
+  .navbar .brand {
+    padding: 1rem 0.35rem 0 0.35rem; }
+    .navbar .brand a {
       text-align: center;
       font-size: 1.3rem !important;
       line-height: 1.125rem; }
-      .pillbar.brand a:hover {
-        text-align: center;
-        font-size: 1.3rem !important;
-        line-height: 1.125rem; }
-  .pillbar ul {
+    .navbar .brand:hover {
+      text-align: center;
+      font-size: 1.3rem !important;
+      line-height: 1.125rem; }
+    @media only screen and (min-width: 768px) {
+      .navbar .brand {
+        float: left;
+        display: inline-block;
+        padding: 1.25rem .875rem 1.25rem .45rem; } }
+  .navbar ul {
     display: inline-block; }
-  .pillbar li {
+    @media only screen and (min-width: 768px) {
+      .navbar ul {
+        display: inline-block;
+        float: left; } }
+  .navbar li {
     padding: 1.0rem .35rem;
-    line-height: 1.8rem;
+    line-height: 1.875rem;
     float: left; }
-  .pillbar a {
+  .navbar a {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
     font-size: .75rem; }
-    .pillbar a:hover {
+    .navbar a:hover {
       text-decoration: none;
       color: #fff; }
-  .pillbar .active a {
+    @media only screen and (min-width: 768px) {
+      .navbar a {
+        font-size: 0.75rem; } }
+    @media only screen and (min-width: 992px) {
+      .navbar a {
+        font-size: 0.875rem; } }
+  .navbar .active a {
     text-decoration: none;
     color: #fff;
     font-weight: 600; }
-  .pillbar .btn-solid {
+  .navbar .btn-solid {
     border-radius: 0;
     background: #271010; }
-  .pillbar .btn-outlined {
+  .navbar .btn-outlined {
     border-color: #458047;
     padding: 10px 15px;
     font-weight: 600;
     font-size: .75rem; }
-    .pillbar .btn-outlined:hover {
+    .navbar .btn-outlined:hover {
       color: #fff;
       border: 1px solid #4eaf45;
       background: #458047; }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  .pillbar .brand {
-    float: left;
-    display: inline-block;
-    padding: 1.25rem .35rem; }
-  .pillbar a {
-    font-size: .75rem; }
-  .pillbar ul {
-    display: inline-block;
-    float: left; } }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  .pillbar a {
-    font-size: 1.0rem; } }
 
 /* Dual Sidebars -  Brian Orr - @digitalreligion (http://www.digitalreligion.net/) */
 /* Position & Size your Side bars */
@@ -719,67 +717,69 @@ ul.rightbar {
   .righttbar {
     width: 375px; } }
 
-.navbar {
+.pillbar {
   width: 100%;
   text-align: center;
   padding: 0 .75rem;
   background-color: #142029;
   z-index: 9000;
   letter-spacing: .05rem; }
-  .navbar .brand {
-    padding: 1rem 0.35rem 0 0.35rem; }
-    .navbar .brand a {
+  .pillbar.brand {
+    padding: 1rem .35rem 0 .035rem; }
+    .pillbar.brand a {
       text-align: center;
       font-size: 1.3rem !important;
       line-height: 1.125rem; }
-    .navbar .brand:hover {
-      text-align: center;
-      font-size: 1.3rem !important;
-      line-height: 1.125rem; }
-    @media only screen and (min-width: 768px) {
-      .navbar .brand {
-        float: left;
-        display: inline-block;
-        padding: 1.25rem .875rem 1.25rem .45rem; } }
-  .navbar ul {
+      .pillbar.brand a:hover {
+        text-align: center;
+        font-size: 1.3rem !important;
+        line-height: 1.125rem; }
+  .pillbar ul {
     display: inline-block; }
-    @media only screen and (min-width: 768px) {
-      .navbar ul {
-        display: inline-block;
-        float: left; } }
-  .navbar li {
+  .pillbar li {
     padding: 1.0rem .35rem;
-    line-height: 1.875rem;
+    line-height: 1.8rem;
     float: left; }
-  .navbar a {
+  .pillbar a {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
     font-size: .75rem; }
-    .navbar a:hover {
+    .pillbar a:hover {
       text-decoration: none;
       color: #fff; }
-    @media only screen and (min-width: 768px) {
-      .navbar a {
-        font-size: 0.75rem; } }
-    @media only screen and (min-width: 992px) {
-      .navbar a {
-        font-size: 0.875rem; } }
-  .navbar .active a {
+  .pillbar .active a {
     text-decoration: none;
     color: #fff;
     font-weight: 600; }
-  .navbar .btn-solid {
+  .pillbar .btn-solid {
     border-radius: 0;
     background: #271010; }
-  .navbar .btn-outlined {
+  .pillbar .btn-outlined {
     border-color: #458047;
     padding: 10px 15px;
     font-weight: 600;
     font-size: .75rem; }
-    .navbar .btn-outlined:hover {
+    .pillbar .btn-outlined:hover {
       color: #fff;
       border: 1px solid #4eaf45;
       background: #458047; }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .pillbar .brand {
+    float: left;
+    display: inline-block;
+    padding: 1.25rem .35rem; }
+  .pillbar a {
+    font-size: .75rem; }
+  .pillbar ul {
+    display: inline-block;
+    float: left; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .pillbar a {
+    font-size: 1.0rem; } }
 
 footer {
   padding: 10px;

@@ -1,81 +1,91 @@
 // ------ NOTE!!! ------
-// This Navbars from BonsaiUI is still in development,
+// This pillbars from BonsaiUI is still in development,
 // Please feel free to delete and create your own.
 // And remeber, the easiest way to edit BonsaiUI is via the variables.scss
 
-// Main Navbar
-.navbar { 
-  width: 100%; 
-  text-align: center; 
+.pillbar {
+  width: 100%; text-align: center; 
   padding: 0 .75rem ; 
-  background-color: $navbar-color;	 
-  z-index: 9000; 
+  background-color: $pillbar-color;
+  z-index: 9000;
   letter-spacing: .05rem;
-  .brand { 
-    padding: 1rem 0.35rem 0 0.35rem; 
-	a { 
-	  text-align: center; 
-	  font-size: 1.3rem !important;
-	  line-height: 1.125rem;
+	&.brand {
+	  padding: 1rem .35rem 0 .035rem;
+		a {
+	  	  text-align: center;
+		  font-size: 1.3rem !important;
+		  line-height: 1.125rem;
+		  &:hover {
+			text-align: center;
+			font-size: 1.3rem !important;
+			line-height: 1.125rem;
+  	      }
+       }
 	}
-	&:hover {
-	  text-align: center; 
-	  font-size: 1.3rem !important;
-	  line-height: 1.125rem;
-    }
-	@include mq('tablet') {
-	  float: left;
-	  display: inline-block;
-	  padding: 1.25rem .875rem 1.25rem .45rem;
-	}
-  }
-  ul {
-    display: inline-block;
-	  @include mq('tablet') {
-	    display: inline-block; float: left; 
-	  }
+  ul { 
+    display: inline-block; 
   }
   li { 
     padding: 1.0rem .35rem;
-    line-height: $navbar-line-height;
-    float: left; 
+	line-height: 1.8rem;
+	float: left; 
   }
   a { 
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);	
 	text-decoration: none; 
 	font-size: .75rem;
-	  &:hover { 
-        text-decoration: none;
-		color: #fff;
-	  }
-	  @include mq('tablet') {
-	    font-size:$navbar-font-size-sm; 	  
-      }
-	  @include mq('md') {
-	    font-size: $navbar-font-size-md;  	  
-	  }
-  }
-  .active {
-    a { 
-      text-decoration: none;
-      color: #fff;
-      font-weight: 600; 
+	 &:hover { 
+	   text-decoration: none;
+	   color: #fff;
     }
   }
-// Navbar Buttons
-  .btn-solid {
-    border-radius: 0;
-	background:$navbar-button-color;  
+	.active {
+	  a { 
+        text-decoration: none;
+	    color: #fff; 
+	    font-weight: 600;
+      }
   }
-  .btn-outlined { 
-    border-color:$navbar-button-outline-color; 
-	padding: 10px 15px;
-	font-weight: 600;
-	font-size: .75rem;
-	  &:hover {
-	    color:#fff; 
-		border: 1px solid $navbar-button-outline-color-hover; 
-		background: $navbar-button-color-hover; 
+  // pillbar Buttons
+  .btn-solid { 
+    border-radius: 0;
+	background:$pillbar-button-color;
+	 &:hover {
+	   
 	 }
   }
+  .btn-outlined { 
+	border-color:$pillbar-button-outline-color;
+	padding: 10px 15px;
+	font-weight: 600;
+	font-size: .75rem; 
+	 &:hover {
+       color:#fff;
+	   border: 1px solid $pillbar-button-outline-color-hover;
+	   background: $pillbar-button-color-hover;
+	}
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .pillbar {
+	.brand  { 
+	  float: left;
+	  display: inline-block; 
+	  padding: 1.25rem .35rem; 
+	}
+	a { 
+	  font-size: .75rem;  
+	}
+	ul { 
+       display: inline-block;
+	   float: left; 
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .pillbar a { font-size: 1.0rem;  }
 }
