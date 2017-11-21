@@ -3,29 +3,86 @@
 // Please feel free to delete and create your own.
 // And remeber, the easiest way to edit BonsaiUI is via the variables.scss
 
-// Main pillbars
-.pillbar { width: 100%; text-align: center; padding: 0 .75rem ; background-color: $pillbar-color; z-index: 9000; letter-spacing: .05rem; }
-.pillbar .brand { padding: 1rem 0.35rem 0 0.35rem; }
-.pillbar .brand a, .pillbar .brand a:hover  { text-align: center; font-size: 1.3rem !important; line-height: 1.125rem;  }
-.pillbar ul { display: inline-block; }
-.pillbar li { padding: 1.0rem .35rem; line-height: 1.8rem; float: left; }
-.pillbar a { color: rgba(255, 255, 255, 0.75);	text-decoration: none; font-size: .75rem;  }
-.pillbar a:hover { text-decoration: none; color: #fff; }
-.pillbar .active a { text-decoration: none; color: #fff; font-weight: 600; }
-
-// pillbar Buttons
-.pillbar .btn-solid { border-radius: 0; background:$pillbar-button-color;  }
-.pillbar .btn-outlined { border-color:$pillbar-button-outline-color; padding: 10px 15px; font-weight: 600; font-size: .75rem; }
-.pillbar .btn-outlined:hover { color:#fff; border: 1px solid $pillbar-button-outline-color-hover; background: $pillbar-button-color-hover; }
-
-// pillbar Hamburger
-
+.pillbar {
+  width: 100%; text-align: center; 
+  padding: 0 .75rem ; 
+  background-color: $pillbar-color;
+  z-index: 9000;
+  letter-spacing: .05rem;
+	&.brand {
+	  padding: 1rem .35rem 0 .035rem;
+		a {
+	  	  text-align: center;
+		  font-size: 1.3rem !important;
+		  line-height: 1.125rem;
+		  &:hover {
+			text-align: center;
+			font-size: 1.3rem !important;
+			line-height: 1.125rem;
+  	      }
+       }
+	}
+  ul { 
+    display: inline-block; 
+  }
+  li { 
+    padding: 1.0rem .35rem;
+	line-height: 1.8rem;
+	float: left; 
+  }
+  a { 
+    color: rgba(255, 255, 255, 0.75);	
+	text-decoration: none; 
+	font-size: .75rem;
+	 &:hover { 
+	   text-decoration: none;
+	   color: #fff;
+    }
+  }
+	.active {
+	  a { 
+        text-decoration: none;
+	    color: #fff; 
+	    font-weight: 600;
+      }
+  }
+  // pillbar Buttons
+  .btn-solid { 
+    border-radius: 0;
+	background:$pillbar-button-color;
+	 &:hover {
+	   
+	 }
+  }
+  .btn-outlined { 
+	border-color:$pillbar-button-outline-color;
+	padding: 10px 15px;
+	font-weight: 600;
+	font-size: .75rem; 
+	 &:hover {
+       color:#fff;
+	   border: 1px solid $pillbar-button-outline-color-hover;
+	   background: $pillbar-button-color-hover;
+	}
+  }
+}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  .pillbar .brand  { float: left; display: inline-block; padding: 1.25rem .35rem; }
-  .pillbar a { font-size: .75rem;  }
-  .pillbar ul { display: inline-block; float: left; }
+  .pillbar {
+	.brand  { 
+	  float: left;
+	  display: inline-block; 
+	  padding: 1.25rem .35rem; 
+	}
+	a { 
+	  font-size: .75rem;  
+	}
+	ul { 
+       display: inline-block;
+	   float: left; 
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
