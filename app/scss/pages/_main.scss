@@ -1,8 +1,7 @@
-.main body { padding-top: 0; background: url('../../img/backgrounds/AdobeStock_101916353.jpeg')no-repeat center center; 
-	-webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;}
+.main body { 
+  padding-top: 0; background: url('../../img/backgrounds/AdobeStock_101916353.jpeg')no-repeat center center fixed; 
+  @include cover;
+}
 // Content Styling
 .bonsaiIntro { margin-top: 22%; color: #142029; padding: 20px; }
 .bonsaiIntro h1 {font-size: 4.5rem; font-weight: 600;  margin-left: -4px;  color: #a33636;}

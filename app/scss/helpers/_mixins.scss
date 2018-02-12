@@ -44,3 +44,11 @@
   display: $display;
   position: $pos;
 }
+
+// ----- Full Page Background Cover -----------------------------------------------------
+@mixin cover {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
