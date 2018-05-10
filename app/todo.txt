@@ -1,1 +1,25 @@
 <!-- TODO: Create style switcher -->
+<!-- TODO: Move all html for documentation to the documentation folder -->
+<!-- TODO: Create ALL BASE UI/UX Elements
+            - alerts
+            - badges
+            - breadcrumbs
+            - Buttons
+            - Cards
+            - Carousel
+            - Collapse
+            - Dropdowns
+            - Forms
+            - Inputs
+            - Page Banners
+            - List Groups
+            - Modals
+            - Navbars
+            - Sidebars
+            - Pillbars
+            - Paganation
+            - Popovers
+            - Progress
+            - Tooltips          
+   -->
+<!-- TODO: Create Bonsai Factory for reusable JavaScript modules -->
