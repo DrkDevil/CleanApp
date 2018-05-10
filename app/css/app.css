@@ -616,11 +616,11 @@ ul.rightbar {
   padding-top: 85px;
   border-left: 1px;
   border-style: solid;
-  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(transparent)) 1 100%;
-  -webkit-border-image: -webkit-linear-gradient(#929292, transparent) 1 100%;
-  -moz-border-image: -moz-linear-gradient(#929292, transparent) 1 100%;
-  -o-border-image: -o-linear-gradient(#929292, transparent) 1 100%;
-  border-image: linear-gradient(to bottom, #929292, transparent) 1 100%; }
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image: -moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: -o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%; }
 
 .rightbar {
   position: absolute;
@@ -809,28 +809,26 @@ footer a:hover {
   background: transparent;
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
-
-.btn-outlined:hover {
-  color: #fff;
-  border: 1px solid #142029;
-  background: #a33636;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  .btn-outlined:hover {
+    color: #fff;
+    border: 1px solid #142029;
+    background: #a33636;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 .btn-solid {
   color: #cecece;
   border: 1px solid #142029;
   background: #142029; }
-
-.btn-solid:hover {
-  border: 1px solid #4a0909;
-  background: #a33636;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  .btn-solid:hover {
+    border: 1px solid #4a0909;
+    background: #a33636;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 [class*='pageBanner-'] {
   width: 100%;
@@ -917,7 +915,7 @@ footer a:hover {
 
 .main body {
   padding-top: 0;
-  background: url("../../img/backgrounds/AdobeStock_101916353.jpeg") no-repeat center center;
+  background: url("../../img/backgrounds/AdobeStock_101916353.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

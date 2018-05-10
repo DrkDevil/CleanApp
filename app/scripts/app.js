@@ -2,6 +2,5 @@
 angular.module('BonsaiApp',[
   'BonsaiApp.index',
   'BonsaiApp.docs',
-  'BonsaiApp.newView',
   'templates'
 ]);

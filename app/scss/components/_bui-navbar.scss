@@ -2,26 +2,26 @@
 // Ver. 1.0
 // ----------------------------------------------------------------------
 
-// ----- NOTE: -----------------------------------------------
-// The easiest way to edit BonsaiUI is via the variables.scss
+// NOTE: The easiest way to edit BonsaiUI is via the variables.scss 
+//
 
 // Main Navbar
-.navbar { 
-  width: 100%; 
-  text-align: center; 
-  padding: 0 .75rem ; 
-  background-color: $navbar-color;	 
-  z-index: 9000; 
+.navbar {
+  width: 100%;
+  text-align: center;
+  padding: 0 .75rem ;
+  background-color: $navbar-color;
+  z-index: 9000;
   letter-spacing: .05rem;
-  .brand { 
-    padding: 1rem 0.35rem 0 0.35rem; 
-	a { 
-	  text-align: center; 
+  .brand {
+    padding: 1rem 0.35rem 0 0.35rem;
+	a {
+	  text-align: center;
 	  font-size: 1.3rem !important;
 	  line-height: 1.125rem;
 	}
 	&:hover {
-	  text-align: center; 
+	  text-align: center;
 	  font-size: 1.3rem !important;
 	  line-height: 1.125rem;
     }
@@ -34,50 +34,50 @@
   ul {
     display: inline-block;
 	  @include mq('tablet') {
-	    display: inline-block; float: left; 
+	    display: inline-block; float: left;
 	  }
   }
-  li { 
+  li {
     padding: 1.0rem .35rem;
     line-height: $navbar-line-height;
-    float: left; 
+    float: left;
   }
-  a { 
+  a {
     color: rgba(255, 255, 255, 0.75);
-	text-decoration: none; 
+	text-decoration: none;
 	font-size: .75rem;
-	  &:hover { 
+	  &:hover {
         text-decoration: none;
 		color: #fff;
 	  }
 	  @include mq('tablet') {
-	    font-size:$navbar-font-size-sm; 	  
+	    font-size:$navbar-font-size-sm;
       }
 	  @include mq('md') {
-	    font-size: $navbar-font-size-md;  	  
+	    font-size: $navbar-font-size-md;
 	  }
   }
   .active {
-    a { 
+    a {
       text-decoration: none;
       color: #fff;
-      font-weight: 600; 
+      font-weight: 600;
     }
   }
 // Navbar Buttons
   .btn-solid {
     border-radius: 0;
-	background:$navbar-button-color;  
+	background:$navbar-button-color;
   }
-  .btn-outlined { 
-    border-color:$navbar-button-outline-color; 
+  .btn-outlined {
+    border-color:$navbar-button-outline-color;
 	padding: 10px 15px;
 	font-weight: 600;
 	font-size: .75rem;
 	  &:hover {
-	    color:#fff; 
-		border: 1px solid $navbar-button-outline-color-hover; 
-		background: $navbar-button-color-hover; 
+	    color:#fff;
+		border: 1px solid $navbar-button-outline-color-hover;
+		background: $navbar-button-color-hover;
 	 }
   }
 }
