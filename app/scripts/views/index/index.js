@@ -4,14 +4,14 @@ angular.module('BonsaiApp.index', ['ngRoute','index.controllers','index.directiv
 // Configure the fakeBrowser. Do not set these values in actual projects.
 .constant('initUrl', '/')
 .constant('baseHref', '/base/index.html')
-.value('$sniffer', { history: true })
+.value('$sniffer', { history: false })
 
 
 // Page RoutingChange the page titles
 .run(['$rootScope', '$route', '$location', function($rootScope, $route, $location) {
   $rootScope.$on('$routeChangeSuccess', function(newVal, oldVal) {
-    if (oldVal !== newVal) { 
-      document.title = $route.current.title; 
+    if (oldVal !== newVal) {
+      document.title = $route.current.title;
     }
   });
 }])
