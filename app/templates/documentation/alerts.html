@@ -13,57 +13,55 @@
   <article class="pagecontent">
     <section class="pageBanner-md">
       <div class="grid-fw">
-        <div class="row">
-          <h1>Alerts &amp; Notifications</h1>
-          <h2>Alerts provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</h2>
-        </div>
+        <h1>Alerts &amp; Notifications</h1>
+        <h2>Alerts provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</h2>
       </div>
     </section>
     <div class="grid-fw">
-      <section id="how" class="row">
-        <h1>Examples.</h1>
-        <p>Alerts are available for any length of text, as well as an optional dismiss button.</p>
-      </section>
-      <section class="row">
-        <div class="col-6lg">
-          <div class="alert" role="alert"> This is a default unstyled alert with <a href="#">an example link</a>.</div>
-        </div>
-        <div class="col-6lg">
-          <div hljs>
-            <div class="alert" role="alert">
-              This is a default unstyled alert.
-            </div>
+      <h1>Default Alerts.</h1>
+      <p>Alerts are available for any length of text, as well as an optional dismiss button.</p>
+      <section>
+        <div class="alert" role="alert"> This is a default unstyled alert with <a href="#">an example link</a>.</div>
+        <h3>Code Sample.</h3>
+        <div hljs>
+          <div class="alert" role="alert">
+            This is a default unstyled alert.
           </div>
         </div>
+      </section>
+      <section>
+        <h1>Dismissing Alerts.</h1>
+        <div class="alert-primary" role="alert">
+          This is a primary styled alert with a dismiss button.
+          <a href="#">an example link</a>.
+          <button type="button" class="flt-right" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <h2>Code Sample.</h2>
+          <p> We have simplified things with our css to give you multiple class colors for your alerts and thier styles using one class as shown in the example. </p>
+          <div hljs>
+            <div class="alert-primary" >
+              This is a primary styled alert with a dismiss button.
+              <a href="#">an example link</a>.
+              <button type="button" class="flt-right" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
 
-      </section>
-      <section class="row">
-        <h1>Dismissing Alerts</h1>
-        <div class="col-6lg">
-         <div class="alert-warning" role="alert"> This is a warning alert with <a href="#">an example link</a>.</div>
-        </div>
-        <div class="col-6lg">
-          <div hljs>
-            <div class="alert" role="alert">
-              This is a default unstyled alert.
-            </div>
-          </div>
-        </div>
       </section>
       <section class="row">
         <h1>Alternative Colors &amp; Links</h1>
         <p>
           Unlike other frameworks we try to limit the use of multiple classes to style things.
-          For example.. Instead of using <code>.alert</code> to declare your div as an alert and <code>.alert-yourcolor</code>
-          to style the alert.
-        </p>
-        <p>
-          We have simplified things with our css to give you multiple class colors for your alerts and thier styles using one class as shown in the example.
-        </p>
-        <p>
-          Link colors are automatically determined by the alert style type. primary, warning, etc...
+          <br />For example.. Instead of using <code>.alert</code> to declare your div as an alert and <code>.alert-yourcolor</code> to style the alert.
         </p>
         <div class="col-6lg">
+          <h2>Examples.</h2>
+          <p>
+            Link &amp; colors are automatically determined by the alert style type. primary, warning, etc...
+          </p>
           <div class="alert-primary" role="alert"> This is a primary alert with <a href="#">an example link</a>.</div>
           <div class="alert-secondary" role="alert"> This is a secondary alert with <a href="#">an example link</a>.</div>
           <div class="alert-success" role="alert"> This is a success alert with <a href="#">an example link</a>.</div>
@@ -74,11 +72,26 @@
           <div class="alert-dark" role="alert"> This is a dark alert with <a href="#">an example link</a>.</div>
         </div>
         <div class="col-6lg">
+          <h2>Code Sample.</h2>
+          <p>
+            We have simplified things with our css to give you multiple class colors for your alerts and thier styles using one class as shown in the example.
+          </p>
           <div hljs>
+
             <div class="alert" role="alert">
-              This is a default unstyled alert.
+              This is the default alert with <a href="#">an example link</a>.
             </div>
+
+            <div class="alert-primary" role="alert">
+              This is a primary alert with <a href="#">an example link</a>.
+            </div>
+
+            <div class="alert-secondary" role="alert">
+              This is a secondary alert with <a href="#">an example link</a>.
+            </div>
+
           </div>
+
         </div>
 
 

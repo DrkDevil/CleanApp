@@ -45,16 +45,16 @@
 @media (max-width: 419px) {
   [class*='col-'] {
     padding-right: 0;
-  }	
+  }
 }
 
 @each $mqSlug, $size in $breakpoints {
   @media (min-width: #{$size}) {
     .grid {
-      width: -webkit-calc( #{$size} - 60px);
+    width: -webkit-calc( #{$size} - 60px);
 	  width:    -moz-calc( #{$size} - 60px);
 	  width:         calc( #{$size} - 60px);
-    }	  
+    }
   }
 }
 
