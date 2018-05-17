@@ -1,4 +1,4 @@
-/* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. --- */ 
+/* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. --- */
 
 /*
   * BonsaiApp - Clean: CSS
@@ -14,16 +14,16 @@
 @charset "utf-8";
 
 // App Base ------------------- -------------------------------------
-@import 'base/variables';        //  Application Configuration 
+@import 'base/variables';        //  Application Configuration
 @import 'base/global';           //  Global Reset Styles
-@import 'base/typography';       //  Typography Settings. 
+@import 'base/typography';       //  Typography Settings.
 @import url('http://css.wikidot.com/cssnippet:better-code-blocks/code_');
 
 // Helpers -------------------- -------------------------------------
-@import 'helpers/functions';     //  SCSS Functions
-@import 'helpers/mixins';        //  SCSS Mixins
-@import 'helpers/helpers';       //  CSS Helpers
-
+@import 'helpers/functions';             //  SCSS Functions
+@import 'helpers/mixins';                //  SCSS Mixins
+@import 'helpers/helpers';               //  CSS Helpers
+@import 'helpers/syntax-highlighting';   //  Syntax Highlighting
 // Layout --------------------- -------------------------------------
 @import 'layout/bui-grid';       //  CSS Grid System
 
@@ -47,5 +47,3 @@
 
 // Vendor CSS ----------------- -------------------------------------
 @import 'vendor/animate';        // Animate.css
-
-
