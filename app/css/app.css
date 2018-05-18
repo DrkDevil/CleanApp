@@ -523,7 +523,7 @@ code {
   border: 1px solid rgba(12, 12, 12, 0.22); }
 
 .alert-primary {
-  color: #004085;
+  color: #005ea5;
   background-color: #cce5ff;
   border-color: rgba(12, 12, 12, 0.22); }
 
@@ -739,11 +739,11 @@ ul.rightbar {
   padding-top: 85px;
   border-left: 1px;
   border-style: solid;
-  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(transparent)) 1 100%;
-  -webkit-border-image: -webkit-linear-gradient(#929292, transparent) 1 100%;
-  -moz-border-image: -moz-linear-gradient(#929292, transparent) 1 100%;
-  -o-border-image: -o-linear-gradient(#929292, transparent) 1 100%;
-  border-image: linear-gradient(to bottom, #929292, transparent) 1 100%; }
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image: -moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: -o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%; }
 
 .rightbar {
   position: absolute;
