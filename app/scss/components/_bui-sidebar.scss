@@ -4,29 +4,40 @@
 // Please feel free to delete and create your own.
 // And remeber, the easiest way to edit BonsaiUI is via the variables.scss
 
-/* Dual Sidebars -  Brian Orr - @digitalreligion (http://www.digitalreligion.net/) */
+/* Navigation Toggle */
+.nav-toggle {
+  position: relative;
+  float: right;
+  z-index: 1000;
+  display: block;
+  top: -10px;
+  padding: 20px;
 
+}
+.nav-toggle a {
+  color: $blue;
+  }
 /* Position & Size your Side bars */
-#leftSidebar { left: 0px; width: $left-sidebar-width; height: 100%;  z-index: 1; position: fixed;  overflow-y: hidden; border-right: 1px solid #cecece; }
-#rightSidebar { right: 0; width: $right-sidebar-width; height: 100%; z-index: 1; position: fixed; overflow-y: hidden; }
+#leftSidebar { left: 0px; width: $left-sidebar-width; height: 100%;  z-index: 1; position: fixed;  overflow-y: hidden; border-right: 1px solid #cecece;  background-color: $left-sidebar-color;  }
+#rightSidebar { right: 0; width: $right-sidebar-width; height: 100%; z-index: 1; position: fixed; overflow-y: hidden;   background-color: $right-sidebar-color;}
+
 
 /* Smoothen Animation */
 #rightSidebar,#leftSidebar {@include easeIn; width: 0;}
 
 /* Left Sidebar Styles */
-.leftbar { position: absolute; top: 15px; width: 100%; margin: 0; padding: 0; list-style: none; }
+.leftbar { position: absolute; width: 100%; margin: 0; padding: 0; list-style: none;}
 .leftbar li { text-indent: 18px; line-height: 35px; }
-.leftbar li a.heading { font-weight: 600; color: #000; font-size: 1.025rem; background: rgba(0, 0, 0, 0.06); }
+.leftbar li a.header { font-weight: 600; color: #fff; font-size: 1.025rem; background: rgba(0, 0, 0, 0.06); }
 .leftbar li a { display: block; text-decoration: none; color: #929292; }
 .leftbar li a:hover { text-decoration: none; color: #1d1d1d; background: rgba(197,197,197,0.17);}
 .leftbar li a:active,
 .leftbar li a:focus { text-decoration: none; color: #000; background: rgba(197,197,197,0.50); }
 
-/* Left Sidebar Submenu Styles*/ 
-.leftbar .headline { color: black; font-weight: 600; border: 0; }
+/* Left Sidebar Submenu Styles*/
 .leftbar .submenu li { text-indent: 30px; line-height: 30px; }
 .leftbar .submenu li:last-of-type { padding-bottom: 15px; }
-.leftbar .submenu li a { display: block; text-decoration: none; color: #929292; font-size: 0.85rem; cursor: pointer;}
+.leftbar .submenu li a { display: block; text-decoration: none; color:$sidebar-text-color; font-size: 0.85rem; cursor: pointer;}
 .leftbar .submenu li a:hover { text-decoration: none; color: #1d1d1d; background: rgba(197,197,197,0.17);}
 .leftbar .submenu li .active { text-decoration: none; color: #000; font-weight: 600; }
 .leftbar .submenu li a:active, .leftbar .submenu li a:focus { text-decoration: none; color: #000; background: rgba(197,197,197,0.50); }
@@ -37,11 +48,11 @@
   padding-top: 85px;
   border-left: 1px;
   border-style: solid;
-  -webkit-border-image:-webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
   -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
-  -moz-border-image:-moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;    
-  -o-border-image:-o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
-  border-image:linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image: -moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: -o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 .rightbar { position: absolute; top: 0; width: 100%; margin: 0; padding: 0; list-style: none; font-size: .8rem; }
@@ -75,15 +86,14 @@
   #rightSidebar { width:$right-sidebar-width; }
 }
 @media(min-width : 1200px) {
-	  #pageWrapper { padding: 0 $right-sidebar-width 0 300px; }
+	#pageWrapper { padding: 0 $right-sidebar-width 0 300px; }
   #leftSidebar {width: 300px; }
   .leftbar {width: 300px; }
 
 }
-// Extra Lalrge Devices in FUllSCREEN 1080p in most cases. 
+// Extra Lalrge Devices in FUllSCREEN 1080p in most cases.
 @media(min-width : 1500px) {
   #pageWrapper { padding: 0 375px 0 300px; }
   #rightSidebar {width: 375px; }
   .righttbar {width: 375px; }
-
 }

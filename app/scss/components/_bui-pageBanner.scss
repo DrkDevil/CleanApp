@@ -6,7 +6,7 @@
 
 [class*='pageBanner-']{
 	width: 100%;
-	background-color: #f1f1f1;
+	background-color: $subtle-grey;
 	border-bottom: 1px solid #cecece;
 }
 
@@ -22,7 +22,7 @@
     font-weight: 300;
     line-height: 2.0rem;
 }
-    
+
 .pageBanner-sm { padding: 20px 0; }
 .pageBanner-md { padding: 40px 0; }
 .pageBanner-lg { padding: 60px 0; }
@@ -47,7 +47,7 @@ animation: animatedBanner 30s ease infinite;
     50%{background-position:0% 100%}
     100%{background-position:100% 0%}
 }
-@keyframes animatedBanner { 
+@keyframes animatedBanner {
     0%{background-position:100% 0%}
     50%{background-position:0% 100%}
     100%{background-position:100% 0%}

@@ -6,6 +6,8 @@ angular.module('index.controllers', [])
     })
 
     $('html').removeClass().addClass('main');
+
   }
+
 
 ]);

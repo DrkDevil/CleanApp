@@ -8,12 +8,14 @@
 <meta name="description" content="A Zen-like Angular Modular BaseApp with Modern, and Elegant UI for Rapid Application Development.">
 <link rel="author" href="humans.txt" />
 <link rel="stylesheet" href="css/app.css" />
+  <!-- Vendor CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <div ng-app="app">
 <body id="scrollArea">
 <header class="navbar fixed-top" role="navigation">
   <div class="brand">
-    <a href="/">BonsaiApp</a>
+    <a href="/">CVS Compliance Style Guides</a>
   </div>
   <ul>
     <li><a href="/">Home</a></li>
@@ -22,7 +24,7 @@
   </ul>
   <ul class="flt-right hidden-md ">
     <!-- This li is using an effect class located in the scss components folder -->
-    <li><a class="btn-outlined" onclick="noDownload()">Download</a></li>
+    <li><a class="btn-outlined" onclick="sidebarCollapse()">Download</a></li>
   </ul>
 </header>
 <main ng-cloak>

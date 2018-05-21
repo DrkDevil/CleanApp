@@ -11,12 +11,12 @@
 .hide { visibility: hidden; }
 
 
-// Hidden Elements 
+// Hidden Elements
 // Hidden elements work on a max-width and down.
 // This allows for easier control, on when your element will disapear.
 // We also use display instead of visibility so the element is actually removed from the DOM
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   .hidden-sm { display: none !important; }
 }
@@ -31,7 +31,7 @@
   .hidden-md { display: none !important; }
 }
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) { 
+@media only screen and (max-width : 1200px) {
   .hidden-lg { display: none !important; }
 }
 

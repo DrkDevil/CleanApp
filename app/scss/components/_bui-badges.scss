@@ -1,0 +1,19 @@
+// ------ NOTE!!! ------
+// This Badges CSS is from BonsaiUI is still in development,
+// Please feel free to delete and create your own.
+// And remeber, the easiest way to edit BonsaiUI is via the variables.scss
+[class*='badge'] {
+    display: inline-block;
+    padding: .25em .4em;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: $primary;
+}
+[class*='pill-badge'] {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+}

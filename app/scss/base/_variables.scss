@@ -33,20 +33,33 @@ $body-line-height: 1;
 $primary-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 $secondary-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
-//Base Color Scheme
-$primary-color:blue;
-$secondary-color:green;
-$tertiary-color:red;
+// Main Color Schemes
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
 
-//Alternate Color Schemes
-$success-color:green;
-$danger-color:yellow;
-$warning-color:yellow;
-$info-color:yellow;
-$failure-color:red;
+// Color Pallete
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$off-white: #f8f9fa;
+$grey: #6c757d;
+$dark-grey: #343a40;
+$subtle-grey: #e9ecef;
 
-
-$info-color:purple;
 
 // ----- Component Variables ------------------------------------------
 
@@ -70,12 +83,17 @@ $navbar-button-text-color-hover:#fff;
 $navbar-button-color:#271010;
 $navbar-button-color-hover:#458047;
 
-// sidebar
-$sidebar-color: #f7f7f7 ;
+// Left Sidebar
+$left-sidebar-color: $grey ;
 $sidebar-padding:  15px;
 $sidebar-link-spacing: 8px;
-$sidebar-text-color: #000;
-$sidebar-text-hover-color: #68a097;
+$sidebar-text-color: $white;
+$sidebar-text-hover-color: $purple;
+
+//nav-header
+// Right Sidebar
+$right-sidebar-color: #fff ;
+
 
 // sidebar Buttons
 // Outlined Buttons

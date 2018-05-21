@@ -4,4 +4,10 @@ angular.module('BonsaiApp.factory', [])
     this.myFunc = function (x) {
         return x.toString(16);
     }
+})
+.service('menu-toggle', function($scope) {
+  $scope.isOpen = true;
+  $scope.menuToggle = function () {
+      $scope.isOpen =!$scope.isOpen;
+  }
 });
