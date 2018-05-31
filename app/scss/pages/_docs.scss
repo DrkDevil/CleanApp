@@ -2,3 +2,12 @@
 .docs [class*='alert'] {
   margin: 10px 0;
 }
+
+// Custom styles for the Sidebars
+.leftSidebar {
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image: -moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: -o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%;
+}

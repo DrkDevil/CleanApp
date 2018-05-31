@@ -44,6 +44,7 @@ $light: #f8f9fa;
 $dark: #343a40;
 
 // Color Pallete
+$transparent: rgba(255, 255, 255, 0);
 $blue: #007bff;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -54,7 +55,7 @@ $yellow: #ffc107;
 $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
-$white: #fff;
+$white: #ffffff;
 $off-white: #f8f9fa;
 $grey: #6c757d;
 $dark-grey: #343a40;
@@ -66,12 +67,15 @@ $subtle-grey: #e9ecef;
 // Navbar
 $navbar-font-size-sm: 0.75rem;
 $navbar-font-size-md: 0.875rem;
-$navbar-color: #142029;
-$navbar-padding: .5rem 1rem;
-$navbar-link-spacing: 8px 0;
+$navbar-background-color: #142029;
+$navbar-padding: 0 .75rem;
+$navbar-letter-spacing: .05rem;
 $navbar-line-height: 1.875rem;
 $navbar-text-color: rgba(255, 255, 255, 0.75);
-$navbar-text-hover-color: #fff;
+$navbar-hover-text-color: $white;
+$navbar-hover-background: $white;
+$navbar-hover-active-background: $white;
+$navbar-hover-focus-background: $white;
 
 // Navbar Buttons
 // Outlined Buttons
@@ -83,17 +87,36 @@ $navbar-button-text-color-hover:#fff;
 $navbar-button-color:#271010;
 $navbar-button-color-hover:#458047;
 
+
 // Left Sidebar
-$left-sidebar-color: $grey ;
-$sidebar-padding:  15px;
-$sidebar-link-spacing: 8px;
-$sidebar-text-color: $white;
-$sidebar-text-hover-color: $purple;
+$left-sidebar-padding-top: 10px;
+$left-sidebar-width: 280px;
+$left-sidebar-fntsize: 0.875rem;
+$left-sidebar-color: #282a36 ;
+$left-sidebar-text-color: $white;
+
+// Left Sidebar Border Style
+$left-sidebar-border-color: $transparent;
+$left-sidebar-border-style: solid;
+$left-sidebar-border-size: 1px;
+
+// Left Sidebar navHeader
+$left-sidebar-navHeader-color: $grey;
+$left-sidebar-navHeader-font-size: 1.2rem;
+$left-sidebar-navHeader-font-weight: 700;
+$left-sidebar-nav-items-spacing: 15px;
+
+// Left Sidebar Link Hover States
+$left-sidebar-hover-text-color: $white;
+$left-sidebar-hover-background: $purple;
+$left-sidebar-hover-active-background: $dark-grey;
+$left-sidebar-hover-focus-background: $dark-grey;
+
+
 
 //nav-header
 // Right Sidebar
-$right-sidebar-color: #fff ;
-
+$right-sidebar-color: #fff;
 
 // sidebar Buttons
 // Outlined Buttons
@@ -121,8 +144,6 @@ $button-color-hover:#142029;
 
 // Dual Sidebars
 $right-sidebar-width: 270px;
-$left-sidebar-width: 200px;
-$left-sidebar-active-fntsize: 1.09rem;
 
 
 // pillbar

@@ -5,9 +5,14 @@ angular.module('BonsaiApp.factory', [])
         return x.toString(16);
     }
 })
-.service('menu-toggle', function($scope) {
-  $scope.isOpen = true;
-  $scope.menuToggle = function () {
-      $scope.isOpen =!$scope.isOpen;
-  }
+
+
+
+.service('navToggle', function() {
+    this.navToggle = $(function() {
+      $("#left-toggle").click(function(e) {
+        e.preventDefault();
+      $("#pageWrapper").toggleClass("left-toggled");
+      });
+     });
 });

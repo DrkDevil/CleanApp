@@ -1,8 +1,10 @@
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function sidebarCollapse() {
-  'use strict';
-  document.getElementById('sidebarSubmenu').classList.toggle('show');
-  //console.log('clicked');
-  document.getElementById('sidebarCollapse').classList.add('active');
-}
+$("#left-toggle").click(function(e) {
+  e.preventDefault();
+$("#pageWrapper").toggleClass("left-toggled");
+});
+$("#right-toggle").click(function(e) {
+  e.preventDefault();
+$("#pageWrapper").toggleClass("right-toggled");
+});
