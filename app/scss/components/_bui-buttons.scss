@@ -1,10 +1,7 @@
-// Main Page Buttons
-button {
-  border-style: none !important;
-}
+// Default Button Styles
 [class*='btn'] {
   font-size: $btn-font-size;
-  font-family: $secondary-font;
+  font-family: $btn-font-family;
   border-radius: $btn-border-radius;
   margin-bottom: $btn-margin-bottom;
   padding: $btn-padding;

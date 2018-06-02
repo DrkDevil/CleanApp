@@ -1,16 +1,53 @@
-/* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. --- */
 /*
-  * BonsaiApp - Clean: CSS
   * Version: 0.0.1
   * Author: Brian Orr @digitalreligion
   * Author URL: http://www.digitalreligion.net/
   * Github: https://github.com/DrkDevil
 */
-/*  Allow angular.js to be loaded in body, hiding cloaked elements until templates compile. */
-@import url("http://css.wikidot.com/cssnippet:better-code-blocks/code_");
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none; }
 
+/*
+  *    #Grid System Variables:       (Base variables to control the grid system)
+	*     -- Base Settings
+	*     -- Mixin Breakpoints
+	*			   -- Grid Specific
+	*        -- Custom Breakpoints
+	*
+	*    #Typography Variables:                 (Font & Color Scheme declarations)
+	*     -- Fonts
+	*     -- Context Colors
+	*     -- HTML Color Pallete Resets
+	*     -- Custom Grey Scale
+	*
+  *    #Body Variables                                (Basic Common Body Styles)
+	*     -- Base body
+	*     -- Navbar body top push
+	*
+	*    #Main Navbar                             (Syles for BonsaiUI Main Navbar)
+	*     -- Navbar Base Styles
+	*     -- Navbar Links and Hover States
+	*     -- Navbar Brand
+	*
+	*    #Sidebars                      (Styles for left, right, or dual sidebars)
+	*     -- Left Sidebar Base
+	*     -- Left Sidebar Border Style
+	*     -- Left Sidebar navHeader
+  *     -- Left Sidebar Link Hover States
+	*     -- Right Sidebar Base
+	*     -- Right Sidebar Border Style
+	*     -- Right Sidebar navHeader
+  *     -- Right Sidebar Link Hover States
+	*
+	*    #Buttons                      (Styles for left, right, or dual sidebars)
+	*     -- Left Sidebar Base
+	*     -- Left Sidebar Border Style
+	*     -- Left Sidebar navHeader
+  *     -- Left Sidebar Link Hover States
+	*     -- Right Sidebar Base
+	*
+	*
+*/
 /* Global Resets and Styling ------------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -39,7 +76,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-color: #fff; }
+  background-color: #f8f9fa; }
 
 ol, ul {
   list-style: none; }
@@ -157,102 +194,6 @@ code {
 
 .headline {
   border-bottom: 1px solid #fff; }
-
-/* Bonsai Syntax Highlighting Theme for Highlight.js v1.0 */
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 20px 0 0 0;
-  margin: 10px 0;
-  line-height: 1.257rem;
-  background: #282a36;
-  border-radius: 3px;
-  color: #f8f8f2; }
-
-.hljs-built_in {
-  color: #8be9fd; }
-
-.hljs-selector-tag {
-  color: #8be9fd;
-  font-weight: bold; }
-
-.hljs-section {
-  color: #8be9fd;
-  font-weight: bold; }
-
-.hljs-link {
-  color: #8be9fd; }
-
-.hljs-keyword {
-  color: #ff79c6;
-  font-weight: bold; }
-
-.hljs-subst {
-  color: #f8f8f2; }
-
-.hljs-title {
-  color: #50fa7b;
-  font-weight: bold; }
-
-.hljs-string {
-  color: #f1fa8c; }
-
-.hljs-meta {
-  color: #f1fa8c; }
-
-.hljs-name {
-  color: #f1fa8c;
-  font-weight: bold; }
-
-.hljs-type {
-  color: #f1fa8c;
-  font-weight: bold; }
-
-.hljs-attr {
-  color: #f1fa8c; }
-
-.hljs-symbol {
-  color: #f1fa8c; }
-
-.hljs-bullet {
-  color: #f1fa8c; }
-
-.hljs-addition {
-  color: #f1fa8c; }
-
-.hljs-variable {
-  color: #f1fa8c; }
-
-.hljs-template-tag {
-  color: #f1fa8c; }
-
-.hljs-template-variable {
-  color: #f1fa8c; }
-
-.hljs-comment {
-  color: #6272a4; }
-
-.hljs-quote {
-  color: #6272a4; }
-
-.hljs-deletion {
-  color: #6272a4; }
-
-.hljs-literal {
-  font-weight: bold;
-  color: #bd93f9; }
-
-.hljs-doctag {
-  font-weight: bold; }
-
-.hljs-strong {
-  font-weight: bold; }
-
-.hljs-number {
-  color: #bd93f9; }
-
-.hljs-emphasis {
-  font-style: italic; }
 
 /* ----- Bonsai UI Grid System ----- */
 /* Removes padding behaviour on widths */
@@ -600,26 +541,26 @@ code {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: #D3D3D3;
   border-radius: 0.25rem; }
 
-.breadcrumb-item + .breadcrumb-item {
+.breadcrumb li {
   padding-left: 0.5rem; }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb li:first-of-type {
+  padding-left: 0; }
+
+.breadcrumb li:first-child:before {
+  content: ""; }
+
+.breadcrumb li::before {
   display: inline-block;
   padding-right: 0.5rem;
-  color: #6c757d;
+  color: #282a36;
   content: "/"; }
 
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: underline; }
-
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: none; }
-
-.breadcrumb-item.active {
-  color: #6c757d; }
+.breadcrumb li.active {
+  color: #8d1422; }
 
 .card {
   position: relative;
@@ -848,25 +789,21 @@ code {
 .navbar {
   width: 100%;
   text-align: center;
-  padding: 0 .75rem;
-  background-color: #142029;
   z-index: 9000;
-  letter-spacing: .05rem; }
+  padding: 0 0.75rem;
+  background-color: #142029;
+  letter-spacing: 0.05rem; }
   .navbar .brand {
-    padding: 1rem 0.35rem 0 0.35rem; }
+    padding: 30px 0 18px 0; }
     .navbar .brand a {
       text-align: center;
-      font-size: 1.3rem !important;
-      line-height: 1.125rem; }
-    .navbar .brand:hover {
-      text-align: center;
-      font-size: 1.3rem !important;
+      font-size: 1.3rem;
       line-height: 1.125rem; }
     @media only screen and (min-width: 768px) {
       .navbar .brand {
         float: left;
         display: inline-block;
-        padding: 1.25rem .875rem 1.25rem .45rem; } }
+        padding: 22px 18px 0 8px; } }
   .navbar ul {
     display: inline-block; }
     @media only screen and (min-width: 768px) {
@@ -874,42 +811,32 @@ code {
         display: inline-block;
         float: left; } }
   .navbar li {
-    padding: 1.0rem .35rem;
+    padding: 0.5rem 0.35rem;
     line-height: 1.875rem;
     float: left; }
+    @media only screen and (min-width: 768px) {
+      .navbar li {
+        padding: 1.1rem 0.35rem; } }
   .navbar a {
-    color: rgba(255, 255, 255, 0.75);
+    color: #ffffff;
     text-decoration: none;
-    font-size: .75rem; }
+    font-size: 0.75rem; }
     .navbar a:hover {
       text-decoration: none;
-      color: #fff; }
+      color: #D3D3D3; }
     @media only screen and (min-width: 768px) {
       .navbar a {
         font-size: 0.75rem; } }
     @media only screen and (min-width: 992px) {
       .navbar a {
-        font-size: 0.875rem; } }
+        font-size: 0.8rem; } }
   .navbar .active a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600; }
-  .navbar .btn-solid {
-    border-radius: 0;
-    background: #271010; }
-  .navbar .btn-outlined {
-    border-color: #458047;
-    padding: 10px 15px;
-    font-weight: 600;
-    font-size: .75rem; }
-    .navbar .btn-outlined:hover {
-      color: #fff;
-      border: 1px solid #4eaf45;
-      background: #458047; }
+    color: #D3D3D3;
+    font-weight: 500; }
 
 #pageWrapper {
   padding-left: 0;
-  padding-top: 97px;
+  padding-top: 113px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -959,8 +886,8 @@ code {
   padding-bottom: 15px; }
 
 .navHeader {
-  color: #6c757d;
-  font-size: 1.2rem;
+  color: #f8f9fa;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -975,18 +902,19 @@ code {
     color: #ffffff; }
     .sidebarItems li a:hover {
       color: #ffffff;
-      background: #6f42c1; }
+      background: #8d1422; }
     .sidebarItems li a:active {
-      background: #343a40; }
+      background: #8d1422; }
     .sidebarItems li a:focus {
-      background: #343a40; }
+      background: #8d1422; }
 
 @media (min-width: 768px) {
   #pageWrapper {
     padding-left: 280px;
     padding-top: 62px; }
   #pageWrapper.toggled {
-    padding-left: 0px; }
+    padding-left: 0px;
+    position: absolute; }
     #pageWrapper.toggled #sidebar {
       width: 0px; }
     #pageWrapper.toggled #page-content {
@@ -997,74 +925,14 @@ code {
   #page-content {
     position: relative; } }
 
+#pageWrapper.toggled #sidebar:hover {
+  position: fixed;
+  width: 280px; }
+
 .sidebarItems .fa-fw {
   width: 47px;
   margin-left: -23px;
   margin-right: 10px; }
-
-.pillbar {
-  width: 100%;
-  text-align: center;
-  padding: 0 .75rem;
-  background-color: #142029;
-  z-index: 9000;
-  letter-spacing: .05rem; }
-  .pillbar.brand {
-    padding: 1rem .35rem 0 .035rem; }
-    .pillbar.brand a {
-      text-align: center;
-      font-size: 1.3rem !important;
-      line-height: 1.125rem; }
-      .pillbar.brand a:hover {
-        text-align: center;
-        font-size: 1.3rem !important;
-        line-height: 1.125rem; }
-  .pillbar ul {
-    display: inline-block; }
-  .pillbar li {
-    padding: 1.0rem .35rem;
-    line-height: 1.8rem;
-    float: left; }
-  .pillbar a {
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-    font-size: .75rem; }
-    .pillbar a:hover {
-      text-decoration: none;
-      color: #fff; }
-  .pillbar .active a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600; }
-  .pillbar .btn-solid {
-    border-radius: 0;
-    background: #271010; }
-  .pillbar .btn-outlined {
-    border-color: #458047;
-    padding: 10px 15px;
-    font-weight: 600;
-    font-size: .75rem; }
-    .pillbar .btn-outlined:hover {
-      color: #fff;
-      border: 1px solid #4eaf45;
-      background: #458047; }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  .pillbar .brand {
-    float: left;
-    display: inline-block;
-    padding: 1.25rem .35rem; }
-  .pillbar a {
-    font-size: .75rem; }
-  .pillbar ul {
-    display: inline-block;
-    float: left; } }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  .pillbar a {
-    font-size: 1.0rem; } }
 
 footer {
   padding: 10px;
@@ -1081,9 +949,6 @@ footer a {
 footer a:hover {
   color: #e2e2e2; }
 
-button {
-  border-style: none !important; }
-
 [class*='btn'] {
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -1093,8 +958,8 @@ button {
   cursor: pointer; }
 
 .btn-outlined {
-  border: 1px solid #142029;
-  background: transparent;
+  border: 1px solid #8d1422;
+  background: rgba(255, 255, 255, 0);
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
   .btn-outlined:hover {
@@ -1120,7 +985,7 @@ button {
 
 [class*='pageBanner-'] {
   width: 100%;
-  background-color: #e9ecef;
+  background-color: #D3D3D3;
   border-bottom: 1px solid #cecece; }
 
 [class*='pageBanner-'] h1 {
@@ -1174,32 +1039,6 @@ button {
     background-position: 0% 100%; }
   100% {
     background-position: 100% 0%; } }
-
-.ripple {
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0); }
-
-.ripple:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  transform: scale(10, 10);
-  opacity: 0;
-  transition: transform .5s,opacity 1s; }
-
-.ripple:active:after {
-  transform: scale(0, 0);
-  opacity: .2;
-  transition: 0s; }
 
 .main body {
   padding-top: 0;
@@ -1305,7 +1144,7 @@ button {
   background-color: #e83e8c; }
 
 [class*='-red'] {
-  background-color: #dc3545; }
+  background-color: #8d1422; }
 
 [class*='-orange'] {
   background-color: #fd7e14; }
@@ -1326,7 +1165,7 @@ button {
   background-color: #ffffff; }
 
 [class*='-grey'] {
-  background-color: #6c757d; }
+  background-color: #282a36; }
 
 [class*='-dark-grey'] {
   background-color: #343a40; }
@@ -1368,7 +1207,7 @@ button {
   color: #e83e8c; }
 
 .red {
-  color: #dc3545; }
+  color: #8d1422; }
 
 .orange {
   color: #fd7e14; }
@@ -1389,7 +1228,7 @@ button {
   color: #ffffff; }
 
 .grey {
-  color: #6c757d; }
+  color: #282a36; }
 
 .dark-grey {
   color: #343a40; }
@@ -1401,7 +1240,7 @@ button {
   padding-right: 5px !important; }
 
 .gridDemo [class*='col-'] > p {
-  background-color: #6c757d;
+  background-color: #282a36;
   padding: 10px;
   margin-bottom: 0;
   border-radius: 4px;
@@ -3777,3 +3616,99 @@ button {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
+
+/* Bonsai Syntax Highlighting Theme for Highlight.js v1.0 */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 20px 0 0 0;
+  margin: 10px 0;
+  line-height: 1.257rem;
+  background: #282a36;
+  border-radius: 3px;
+  color: #f8f8f2; }
+
+.hljs-built_in {
+  color: #8be9fd; }
+
+.hljs-selector-tag {
+  color: #8be9fd;
+  font-weight: bold; }
+
+.hljs-section {
+  color: #8be9fd;
+  font-weight: bold; }
+
+.hljs-link {
+  color: #8be9fd; }
+
+.hljs-keyword {
+  color: #ff79c6;
+  font-weight: bold; }
+
+.hljs-subst {
+  color: #f8f8f2; }
+
+.hljs-title {
+  color: #50fa7b;
+  font-weight: bold; }
+
+.hljs-string {
+  color: #f1fa8c; }
+
+.hljs-meta {
+  color: #f1fa8c; }
+
+.hljs-name {
+  color: #f1fa8c;
+  font-weight: bold; }
+
+.hljs-type {
+  color: #f1fa8c;
+  font-weight: bold; }
+
+.hljs-attr {
+  color: #f1fa8c; }
+
+.hljs-symbol {
+  color: #f1fa8c; }
+
+.hljs-bullet {
+  color: #f1fa8c; }
+
+.hljs-addition {
+  color: #f1fa8c; }
+
+.hljs-variable {
+  color: #f1fa8c; }
+
+.hljs-template-tag {
+  color: #f1fa8c; }
+
+.hljs-template-variable {
+  color: #f1fa8c; }
+
+.hljs-comment {
+  color: #6272a4; }
+
+.hljs-quote {
+  color: #6272a4; }
+
+.hljs-deletion {
+  color: #6272a4; }
+
+.hljs-literal {
+  font-weight: bold;
+  color: #bd93f9; }
+
+.hljs-doctag {
+  font-weight: bold; }
+
+.hljs-strong {
+  font-weight: bold; }
+
+.hljs-number {
+  color: #bd93f9; }
+
+.hljs-emphasis {
+  font-style: italic; }

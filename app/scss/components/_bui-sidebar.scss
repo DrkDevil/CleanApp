@@ -1,6 +1,6 @@
 #pageWrapper {
   padding-left: 0;
-  padding-top: 97px;
+  padding-top: $body-top-push-mobile;
   @include easeIn;
 }
 
@@ -83,10 +83,11 @@
 @media (min-width:768px) {
   #pageWrapper {
     padding-left: $left-sidebar-width;
-    padding-top: 62px;
+    padding-top: $body-top-push;
   }
   #pageWrapper.toggled {
     padding-left: 0px;
+    position:absolute;
     #sidebar {
       width: 0px;
     }
@@ -103,7 +104,14 @@
   }
 }
 
-// Font Awesome 5 Resets for icon placement
+// Hover state for navbar when in the toggled mode while in Fullscreen
+// (only if icons are available)
+#pageWrapper.toggled #sidebar:hover {
+    position: fixed;
+    width: 280px;
+}
+
+// Font Awesome 5 Resets for icon placement (will be placed in docs scss)
 .sidebarItems {
   .fa-fw {
     width: 47px;

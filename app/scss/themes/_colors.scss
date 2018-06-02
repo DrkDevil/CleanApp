@@ -1,5 +1,4 @@
 // Classes to change an elements background colors
-
 // Main Color
 [class*='-primary'] { background-color:  $primary; }
 [class*='-secondary'] { background-color:  $secondary; }
@@ -26,7 +25,6 @@
 [class*='-dark-grey'] { background-color:  $dark-grey; }
 
 // Classes to change an elements color
-
 .primary { color:  $primary; }
 .secondary { color:  $secondary; }
 .success { color:  $success; }

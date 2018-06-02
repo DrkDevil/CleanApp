@@ -1,39 +1,93 @@
-// ----- Grid System Variables -----------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------  BonsaiUI - Variables: Table of Contents  -----------------
+// -----------------------------------------------------------------------------
+// --  Easily navigate to a location by searching for its section, or title.  --
+// -----------------------------------------------------------------------------
+//     Search for a Main Section by looking up the #Section Name
+//     Search for a SubSection by looking up the -- Sub Section Name
+//     Remember to include the  (#) and (--) in your searches for accuracy.
+// -----------------------------------------------------------------------------
+/*
+  *    #Grid System Variables:       (Base variables to control the grid system)
+	*     -- Base Settings
+	*     -- Mixin Breakpoints
+	*			   -- Grid Specific
+	*        -- Custom Breakpoints
+	*
+	*    #Typography Variables:                 (Font & Color Scheme declarations)
+	*     -- Fonts
+	*     -- Context Colors
+	*     -- HTML Color Pallete Resets
+	*     -- Custom Grey Scale
+	*
+  *    #Body Variables                                (Basic Common Body Styles)
+	*     -- Base body
+	*     -- Navbar body top push
+	*
+	*    #Main Navbar                             (Syles for BonsaiUI Main Navbar)
+	*     -- Navbar Base Styles
+	*     -- Navbar Links and Hover States
+	*     -- Navbar Brand
+	*
+	*    #Sidebars                      (Styles for left, right, or dual sidebars)
+	*     -- Left Sidebar Base
+	*     -- Left Sidebar Border Style
+	*     -- Left Sidebar navHeader
+  *     -- Left Sidebar Link Hover States
+	*     -- Right Sidebar Base
+	*     -- Right Sidebar Border Style
+	*     -- Right Sidebar navHeader
+  *     -- Right Sidebar Link Hover States
+	*
+	*    #Buttons                      (Styles for left, right, or dual sidebars)
+	*     -- Left Sidebar Base
+	*     -- Left Sidebar Border Style
+	*     -- Left Sidebar navHeader
+  *     -- Left Sidebar Link Hover States
+	*     -- Right Sidebar Base
+	*
+	*
+*/
+// -----------------------------------------------------------------------------
+
+
+// ----- #Grid System Variables ------------------------------------------------
+// These are the base variables to control the grid system.
+// -----------------------------------------------------------------------------
 $gutters: 15px;
 $gridPadding: 15px;
 $colSpacing: 5px;
 $gridsize: 12; // Grid Sizes must be divisible by two.
-// Note: Breakpoints in grid are named for your classes.
-// To edit Media queries for easier use in your css use the Mixins Variables
 $breakpoints: ("xs": 576px, "sm": 768px, "md": 992px, "lg": 1200px);
-// ----- Mixin Breakpoints -----------------------------------------------
+
+// To edit Media queries for easier use in your scss use the Mixins Variables
+// ----- Mixin Breakpoints -----------------------------------------------------
 $mixinBreakpoints: (
-	// Grid Specific
+	// -- Grid Specific
 	"xs": 576px,
 	"sm": 768px,
 	"md": 992px,
 	"lg": 1200px,
-	// Custom Breakpoints
-    "phone":        400px,
-    "phone-wide":   480px,
-    "phablet":      560px,
-    "tablet-small": 640px,
-    "tablet":       768px,
-    "tablet-wide":  1024px,
-    "desktop":      1248px,
-    "desktop-wide": 1440px
+	// -- Custom Breakpoints
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      560px,
+  "tablet-small": 640px,
+  "tablet":       768px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "desktop-wide": 1440px
 );
-// ----- Base Variables -----------------------------------------------
 
-// Base Elements for all pages Body tag
-$body-color: #fff;
-$body-line-height: 1;
+// ----- #Typography Variables -------------------------------------------------
+// Font & Color Scheme declarations
+// -----------------------------------------------------------------------------
 
-// Fonts
+// -- Fonts
 $primary-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 $secondary-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
-// Main Color Schemes
+// -- Context Colors
 $primary: #007bff;
 $secondary: #6c757d;
 $success: #28a745;
@@ -43,155 +97,143 @@ $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #343a40;
 
-// Color Pallete
-$transparent: rgba(255, 255, 255, 0);
+// -- HTML Color Pallete Resets
 $blue: #007bff;
 $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #e83e8c;
-$red: #dc3545;
+$red: #8d1422;
 $orange: #fd7e14;
 $yellow: #ffc107;
 $green: #28a745;
 $teal: #20c997;
 $cyan: #17a2b8;
+$transparent: rgba(255, 255, 255, 0);
+
+// -- Custom Grey Scale
 $white: #ffffff;
 $off-white: #f8f9fa;
-$grey: #6c757d;
+$white-smoke: #F5F5F5;
+$light-grey: #D3D3D3;
+$silver:#C0C0C0;
+$X11grey: #BEBEBE;
+$grey: #282a36;
+$mid-grey: #6c757d;
+$grey-blue: #282a36;
 $dark-grey: #343a40;
-$subtle-grey: #e9ecef;
+$black: #000000;
 
+// ----- #Body Variables -------------------------------------------------
+// Basic Common Body Styles
+// -----------------------------------------------------------------------------
+// -- Base body
+$body-color: $off-white;
+$body-line-height: 1;
 
-// ----- Component Variables ------------------------------------------
+// -- Navbar body top push to place the content below the navbar.
+$body-top-push:62px;
+$body-top-push-mobile:113px;
 
-// Navbar
-$navbar-font-size-sm: 0.75rem;
-$navbar-font-size-md: 0.875rem;
-$navbar-background-color: #142029;
+// ----- #Main Navbar ----------------------------------------------------------
+// The Main Syles for BonsaiUI Navbar
+// -----------------------------------------------------------------------------
+
+// -- Navbar Base Styles
+$navbar-zindex:9000;
 $navbar-padding: 0 .75rem;
+$navbar-font-size-sm: 0.75rem;
+$navbar-font-size-md: 0.8rem;
 $navbar-letter-spacing: .05rem;
 $navbar-line-height: 1.875rem;
-$navbar-text-color: rgba(255, 255, 255, 0.75);
-$navbar-hover-text-color: $white;
+$navbar-text-color: $white;
+$navbar-background-color: #142029;
+
+// -- Navbar Links and Hover States
+$navbar-links-padding: .5rem .35rem;
+$navbar-links-padding-mq: 1.1rem .35rem;
+$navbar-active-text-color: $light-grey;
+$navbar-hover-text-color: $light-grey;
 $navbar-hover-background: $white;
 $navbar-hover-active-background: $white;
 $navbar-hover-focus-background: $white;
 
-// Navbar Buttons
-// Outlined Buttons
-$navbar-button-outline-color: #458047;
-$navbar-button-outline-color-hover: #4eaf45;
-// Solid Buttons
-$navbar-button-text-color:#000;
-$navbar-button-text-color-hover:#fff;
-$navbar-button-color:#271010;
-$navbar-button-color-hover:#458047;
+// -- Navbar Brand
+$navbar-brand-padding: 30px 0 18px 0;
+$navbar-brand-padding-mq-tablet: 22px 18px 0 8px;
+$navbar-brand-font-size:1.3rem;
+$navbar-brand-line-height: 1.125rem;
 
 
-// Left Sidebar
+// ----- #Sidebars -------------------------------------------------------------
+// Styles for left, right, or dual sidebars
+// -----------------------------------------------------------------------------
+
+// -- Left Sidebar Base
 $left-sidebar-padding-top: 10px;
 $left-sidebar-width: 280px;
 $left-sidebar-fntsize: 0.875rem;
-$left-sidebar-color: #282a36 ;
+$left-sidebar-color: #282a36;
 $left-sidebar-text-color: $white;
 
-// Left Sidebar Border Style
+// -- Left Sidebar Border Style
 $left-sidebar-border-color: $transparent;
 $left-sidebar-border-style: solid;
 $left-sidebar-border-size: 1px;
 
-// Left Sidebar navHeader
-$left-sidebar-navHeader-color: $grey;
-$left-sidebar-navHeader-font-size: 1.2rem;
+// -- Left Sidebar navHeader
+$left-sidebar-navHeader-color: $off-white;
+$left-sidebar-navHeader-font-size: 1.0rem;
 $left-sidebar-navHeader-font-weight: 700;
 $left-sidebar-nav-items-spacing: 15px;
 
-// Left Sidebar Link Hover States
+// -- Left Sidebar Link Hover States
 $left-sidebar-hover-text-color: $white;
-$left-sidebar-hover-background: $purple;
-$left-sidebar-hover-active-background: $dark-grey;
-$left-sidebar-hover-focus-background: $dark-grey;
+$left-sidebar-hover-background: $red;
+$left-sidebar-hover-active-background: $red;
+$left-sidebar-hover-focus-background: $red;
 
+// -- Right Sidebar Base
+// -- Right Sidebar Border Style
+// -- Right Sidebar navHeader
+// -- Right Sidebar Link Hover States
 
+// ----- #Buttons -------------------------------------------------------------
+// Default styling of solid and outlined buttons
+// -----------------------------------------------------------------------------
 
-//nav-header
-// Right Sidebar
-$right-sidebar-color: #fff;
-
-// sidebar Buttons
-// Outlined Buttons
-$sidebar-button-outline-color: #458047;
-$sidebar-button-outline-color-hover: #4eaf45;
-// Solid Buttons
-$sidebar-button-text-color:#000;
-$sidebar-button-text-color-hover:#fff;
-$sidebar-button-color:#271010;
-$sidebar-button-color-hover:#271010;
-
-// Page Buttons
-// Outlined Buttons
-$button-outline-text-color: #000;
-$button-outline-text-color-hover: #fff;
-$button-outline-color: #848483;
-$button-outline-color-hover: #271010;
-// Solid Buttons
-$navbar-button-text-color:#000;
-$navbar-button-text-color-hover:#fff;
-$sidebar-button-text-color:#000;
-$sidebar-button-text-color-hover:#fff;
-$button-color:#271010;
-$button-color-hover:#142029;
-
-// Dual Sidebars
-$right-sidebar-width: 270px;
-
-
-// pillbar
-$pillbar-color: #142029;
-$pillbar-padding: .5rem 1rem;
-$pillbar-link-spacing: 8px 0;
-$pillbar-text-color: rgba(255, 255, 255, 0.75);
-$pillbar-text-hover-color: #fff;
-
-// pillbar Buttons
-// Outlined Buttons
-$pillbar-button-outline-color: #458047;
-$pillbar-button-outline-color-hover: #4eaf45;
-// Solid Buttons
-$pillbar-button-text-color:#000;
-$pillbar-button-text-color-hover:#fff;
-$pillbar-button-color:#271010;
-$pillbar-button-color-hover:#458047;
-
-// Buttons
+// -- Buttons
 $btn-font-size: 1.0rem;
+$btn-font-family: $secondary-font;
 $btn-padding: 0.9375rem;
 $btn-border-radius: 3px;
 $btn-margin-bottom: 10px;
 
-// Outlined Buttons
-$btn-outlined-border:1px solid #142029;
-$btn-outlined-background: transparent;
+// -- Outlined Buttons
+$btn-outlined-border:1px solid $red;
+$btn-outlined-background: $transparent;
+$button-outline-text-color: #000;
+$button-outline-text-color-hover: #fff;
+$button-outline-color: #848483;
+$button-outline-color-hover: #271010;
 
-// Outlined Button Hovers
+// -- Solid Buttons
+$button-color:#271010;
+$button-color-hover:#142029;
+
+
+
+
+
+// -- Outlined Button Hovers
 $btn-outlined-color-hover:#fff;
 $btn-outlined-border-hover: 1px solid #142029;
 $btn-outlined-background-hover: #a33636;
 
-// Solid Buttons
+// -- Solid Buttons
 $btn-solid-border: 1px solid #142029;
 $btn-solid-background: #142029;
 
-// Solid Button Hovers
+// -- Solid Button Hovers
 $btn-solid-color-hover:#cecece;
 $btn-solid-border-hover: 1px solid #4a0909;
 $btn-solid-background-hover: #a33636;
-
-
-// The Variable below are used for demo purposes and should be
-// replaced with your own. They are left in here for you to see
-// the structure of the scss.
-
-// ----- Page Variables -----------------------------------------------
-
-// ----- Theme Variables ----------------------------------------------
