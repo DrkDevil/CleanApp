@@ -1046,17 +1046,20 @@ footer a:hover {
         color: #ffffff;
         background-color: #343a40; }
 
-.grouped-buttons [class*='btn'] {
-  border-radius: 0;
-  margin: -3px; }
-
-.grouped-buttons :first-child {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
-
-.grouped-buttons :last-child {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px; }
+.grouped-buttons {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle; }
+  .grouped-buttons [class*='btn'] {
+    border-radius: 0;
+    margin: -3px; }
+  .grouped-buttons :first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .grouped-buttons :last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
 
 [class*='pageBanner-'] {
   width: 100%;
