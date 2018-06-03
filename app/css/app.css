@@ -14,7 +14,7 @@
 	*			   -- Grid Specific
 	*        -- Custom Breakpoints
 	*
-	*    #Typography & Color Scheme Variables:                 (Font & Color Scheme declarations)
+	*    #Typography & Color Scheme Variables:  (Font & Color Scheme declarations)
 	*     -- Fonts
 	*     -- Context Colors
 	*     -- HTML Color Pallete Resets
@@ -899,11 +899,11 @@ code {
     color: #ffffff; }
     .sidebarItems li a:hover {
       color: #ffffff;
-      background: #8d1422; }
+      background: rgba(12, 12, 12, 0.25); }
     .sidebarItems li a:active {
-      background: #8d1422; }
+      background: #142029; }
     .sidebarItems li a:focus {
-      background: #8d1422; }
+      background: rgba(12, 12, 12, 0.25); }
 
 @media (min-width: 768px) {
   #pageWrapper {

@@ -14,7 +14,7 @@
 	*			   -- Grid Specific
 	*        -- Custom Breakpoints
 	*
-	*    #Typography & Color Scheme Variables:                 (Font & Color Scheme declarations)
+	*    #Typography & Color Scheme Variables:  (Font & Color Scheme declarations)
 	*     -- Fonts
 	*     -- Context Colors
 	*     -- HTML Color Pallete Resets
@@ -202,9 +202,9 @@ $left-sidebar-nav-items-spacing: 15px;
 
 // -- Left Sidebar Link Hover States
 $left-sidebar-hover-text-color: $white;
-$left-sidebar-hover-background: $red;
-$left-sidebar-hover-active-background: $red;
-$left-sidebar-hover-focus-background: $red;
+$left-sidebar-hover-background: $semiTrans;
+$left-sidebar-hover-active-background: #142029;
+$left-sidebar-hover-focus-background: $semiTrans;
 
 // -- Right Sidebar Base
 // -- Right Sidebar Border Style
