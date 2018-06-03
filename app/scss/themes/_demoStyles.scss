@@ -2,6 +2,17 @@
 .alrt [class*='alert'] {
   margin: 10px 0;
 }
+// Grid Reset for BonsaiUI Documentation
+.grid, .grid-fw {
+    padding: 0 30px;
+    margin: 0 auto;
+}
+// pageBanner Reset for BonsaiUI Documentation
+[class*='pageBanner-']{
+	width: 100%;
+	background-color: $transparent;
+	border: 0 ;
+}
 
 // These Demo Styles Make the Grid Visible.
 .gridDemo [class*='col-'] { padding-right: 5px !important; }

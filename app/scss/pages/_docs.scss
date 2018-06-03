@@ -3,11 +3,25 @@
   margin: 10px 0;
 }
 
-// Custom styles for the Sidebars
-.leftSidebar {
-  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
-  -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
-  -moz-border-image: -moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
-  -o-border-image: -o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
-  border-image: linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%;
+// code-example-box
+.code-example-box {
+  margin: 20px 0 30px 0;
+}
+.code-example-box [class*='btn'] {
+  margin-bottom: 5px;
+}
+.example-panel {
+    padding: 20px;
+    background: $white-smoke;
+    border: 3px solid $light-grey;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+}
+.code-example-box .hljs {
+	margin: -10px 0 10px 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }

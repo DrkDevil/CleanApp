@@ -1,51 +1,50 @@
-$alertBorder:  (rgba(12, 12, 12, 0.22));
 
 [class*='alert'] {
   padding: 20px;
   width: 100%;
   border-radius: 4px;
-  border: 1px solid $alertBorder;
+  border: 1px solid $semiTrans;
 }
 .alert-primary {
   color: #005ea5;
   background-color: #cce5ff;
-  border-color: $alertBorder;
+  border-color: $semiTrans;
 }
 .alert-secondary {
   color: #464a4e;
   background-color: #e7e8ea;
-  border-color: $alertBorder;
+  border-color: $semiTrans;
   //border-color: #dddfe2;
 }
 .alert-success {
   color: #155724;
   background-color: #d4edda;
-  border-color: $alertBorder;
+  border-color: $semiTrans;
 }
 .alert-danger {
   color: #721c24;
   background-color: #f8d7da;
-  border-color: $alertBorder;
+  border-color: $semiTrans;
 }
 .alert-warning {
   color: #856404;
   background-color: #fff3cd;
-  border-color: $alertBorder;
+  border-color: $semiTrans;
 }
 .alert-info {
   color: #0c5460;
   background-color: #d1ecf1;
-  border-color: $alertBorder;
+  border-color: $semiTrans;
 }
 .alert-light {
   color: #818182;
   background-color: #fefefe;
-  border-color: $alertBorder;
+  border-color: $semiTrans;
 }
 .alert-dark {
   color: #1b1e21;
   background-color: #d6d8d9;
-  border-color: $alertBorder;
+  border-color: $semiTrans;
 }
 .alert-clear {
   color: #000;

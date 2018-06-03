@@ -1,5 +1,5 @@
 // Classes to change an elements background colors
-// Main Color
+// Background Colors
 [class*='-primary'] { background-color:  $primary; }
 [class*='-secondary'] { background-color:  $secondary; }
 [class*='-success'] { background-color:  $success; }
@@ -9,7 +9,7 @@
 [class*='-light'] { background-color:  $light; }
 [class*='-dark'] { background-color:  $dark; }
 
-// Alternative Colors
+// Background Colors
 [class*='-blue'] { background-color:  $blue; }
 [class*='-indigo'] { background-color:  $indigo; }
 [class*='-purple'] { background-color:  $purple; }

@@ -14,7 +14,7 @@
 	*			   -- Grid Specific
 	*        -- Custom Breakpoints
 	*
-	*    #Typography Variables:                 (Font & Color Scheme declarations)
+	*    #Typography & Color Scheme Variables:                 (Font & Color Scheme declarations)
 	*     -- Fonts
 	*     -- Context Colors
 	*     -- HTML Color Pallete Resets
@@ -39,13 +39,12 @@
 	*     -- Right Sidebar navHeader
   *     -- Right Sidebar Link Hover States
 	*
-	*    #Buttons                      (Styles for left, right, or dual sidebars)
-	*     -- Left Sidebar Base
-	*     -- Left Sidebar Border Style
-	*     -- Left Sidebar navHeader
-  *     -- Left Sidebar Link Hover States
-	*     -- Right Sidebar Base
-	*
+	*    #Buttons                                               (<button> Styling)
+	*     --  Button Base
+	*     --  Solid Buttons
+	*         --  Solid Button Hover States
+	*     --  Outlined Buttons
+	*         --  Outlined Button Hover States
 	*
 */
 // -----------------------------------------------------------------------------
@@ -97,6 +96,19 @@ $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #343a40;
 
+// -- Shade Colors
+//  These are a slightly darker version of your Context colors
+//  They are primarily used as hover state colors of buttons, and border colors
+
+$primary-shade: #0760bf;
+$secondary-shade: #575e65;
+$success-shade: #23943d;
+$info-shade: #0e8496;
+$warning-shade: #e6ae06;
+$danger-shade: #bd2b3a;
+$light-shade: #dfe3e7;
+$dark-shade: #282a36;
+
 // -- HTML Color Pallete Resets
 $blue: #007bff;
 $indigo: #6610f2;
@@ -110,17 +122,19 @@ $teal: #20c997;
 $cyan: #17a2b8;
 $transparent: rgba(255, 255, 255, 0);
 
+
 // -- Custom Grey Scale
+$semiTrans:  (rgba(12, 12, 12, 0.25));
 $white: #ffffff;
 $off-white: #f8f9fa;
 $white-smoke: #F5F5F5;
 $light-grey: #D3D3D3;
 $silver:#C0C0C0;
 $X11grey: #BEBEBE;
-$grey: #282a36;
+$grey: #808080;
 $mid-grey: #6c757d;
-$grey-blue: #282a36;
 $dark-grey: #343a40;
+$grey-blue: #282a36;
 $black: #000000;
 
 // ----- #Body Variables -------------------------------------------------
@@ -204,9 +218,10 @@ $left-sidebar-hover-focus-background: $red;
 // -- Buttons
 $btn-font-size: 1.0rem;
 $btn-font-family: $secondary-font;
-$btn-padding: 0.9375rem;
+$btn-padding: 0.5rem 1rem;
+$btn-border:1px solid $transparent;
 $btn-border-radius: 3px;
-$btn-margin-bottom: 10px;
+$btn-default-backgroud: $light-grey;
 
 // -- Outlined Buttons
 $btn-outlined-border:1px solid $red;

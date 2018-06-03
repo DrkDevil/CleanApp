@@ -8,21 +8,19 @@
 	width: 100%;
 	background-color: $light-grey;
 	border-bottom: 1px solid #cecece;
-}
-
-[class*='pageBanner-'] h1 {
-	font-family: $primary-font ;
-	font-size: 3.5rem;
+  h1 {
+	  font-family: $primary-font ;
+	  font-size: 3.5rem;
     font-weight: 600;
-	color: #142029;
-}
-[class*='pageBanner-'] h2 {
-	font-family: $secondary-font ;
+	  color: #142029;
+ }
+ h2 {
+ 	font-family: $secondary-font ;
 	font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 2.0rem;
+  font-weight: 300;
+  line-height: 2.0rem;
+ }
 }
-
 .pageBanner-sm { padding: 20px 0; }
 .pageBanner-md { padding: 40px 0; }
 .pageBanner-lg { padding: 60px 0; }
@@ -33,9 +31,9 @@
 background: linear-gradient(40deg, #1b3261, #233441 );
 background-size: 400% 400%;
 
--webkit-animation: animatedBanner 30s ease infinite;
--moz-animation: animatedBanner 30s ease infinite;
-animation: animatedBanner 30s ease infinite;
+-webkit-animation: animatedBanner 3s ease infinite;
+-moz-animation: animatedBanner 3s ease infinite;
+animation: animatedBanner 3s ease infinite;
 
 @-webkit-keyframes animatedBanner {
     0%{background-position:100% 0%}
