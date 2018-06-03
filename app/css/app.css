@@ -831,7 +831,8 @@ code {
     color: #D3D3D3;
     font-weight: 500; }
 
-#pageWrapper {
+/* Position & Size your Side bars */
+#pageWrapper, #pageWrapper-dsb {
   padding-left: 0;
   padding-top: 113px;
   -webkit-transition: all 0.5s ease;
@@ -839,27 +840,35 @@ code {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-#pageWrapper.toggled {
-  padding-left: 280px; }
-  #pageWrapper.toggled #sidebar {
+#pageWrapper.toggled, #pageWrapper-dsb.toggled {
+  padding-left: 0; }
+  #pageWrapper.toggled #leftSidebar, #pageWrapper-dsb.toggled #leftSidebar {
     width: 280px; }
-  #pageWrapper.toggled #page-content {
+  #pageWrapper.toggled #page-content, #pageWrapper-dsb.toggled #page-content {
     position: absolute;
     margin-right: -280px; }
 
-#sidebar {
+/* Left & Right Sidebar Base Styles */
+#rightSidebar, #leftSidebar {
   width: 0;
   height: 100%;
   z-index: 1000;
   position: fixed;
-  left: 280px;
-  margin-left: -280px;
   overflow-y: auto;
-  background: #282a36;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
+
+/* Size your Side bars - Settings changed in variables.scss */
+#leftSidebar {
+  left: 280px;
+  margin-left: -280px;
+  background: #282a36; }
+
+#rightSidebar {
+  right: 0;
+  background: #f8f9fa; }
 
 #page-content {
   width: 100%;
@@ -906,23 +915,57 @@ code {
       background: rgba(12, 12, 12, 0.25); }
 
 @media (min-width: 768px) {
-  #pageWrapper {
+  #pageWrapper-dsb {
+    padding-right: 0; }
+  #pageWrapper, #pageWrapper-dsb {
     padding-left: 280px;
-    padding-top: 62px; }
-  #pageWrapper.toggled {
+    padding-top: 66px; }
+  #pageWrapper.toggled, #pageWrapper-dsb.toggled {
     padding-left: 0px;
     position: absolute; }
-    #pageWrapper.toggled #sidebar {
+    #pageWrapper.toggled #leftSidebar, #pageWrapper-dsb.toggled #leftSidebar {
       width: 0px; }
-    #pageWrapper.toggled #page-content {
-      position: relative;
-      margin-right: 0; }
-  #sidebar {
+  #leftSidebar {
     width: 280px; }
-  #page-content {
-    position: relative; } }
+  #rightSidebar {
+    width: 0x; }
+    #rightSidebar li {
+      text-indent: 30px;
+      line-height: 30px;
+      font-size: 1rem; }
+      #rightSidebar li a {
+        padding: 10px;
+        color: #000000;
+        display: block;
+        text-decoration: none;
+        cursor: pointer; }
+      #rightSidebar li a:hover {
+        color: #1d1d1d;
+        background: rgba(197, 197, 197, 0.17); }
+      #rightSidebar li a:active, #rightSidebar li a:focus {
+        text-decoration: none;
+        color: #000;
+        background: rgba(197, 197, 197, 0.5); } }
 
-#pageWrapper.toggled #sidebar:hover {
+@media (min-width: 992px) {
+  #pageWrapper-dsb {
+    padding: 66px 0 0 280px; }
+  #rightSidebar {
+    width: 0; } }
+
+@media (min-width: 1200px) {
+  #pageWrapper-dsb {
+    padding: 66px 250px 0 280px; }
+  #rightSidebar {
+    width: 250px; } }
+
+@media (min-width: 1500px) {
+  #pageWrapper-dsb {
+    padding: 66px 375px 0 280px; }
+  #rightSidebar {
+    width: 375px; } }
+
+#pageWrapper.toggled #leftSidebar:hover {
   position: fixed;
   width: 280px; }
 
@@ -1193,6 +1236,15 @@ footer a:hover {
   margin: -10px 0 10px 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
+
+#rightSidebar ul {
+  border-left: 1px;
+  border-style: solid;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image: -moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: -o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%; }
 
 .soon body {
   padding-top: 0; }

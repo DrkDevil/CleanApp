@@ -25,3 +25,16 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+// Border style reset for rightbar
+#rightSidebar {
+  ul {
+    border-left: 1px;
+    border-style: solid;
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+       -moz-border-image: -moz-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+         -o-border-image: -o-linear-gradient(#929292, rgba(0, 0, 0, 0)) 1 100%;
+            border-image: linear-gradient(to bottom, #929292, rgba(0, 0, 0, 0)) 1 100%;
+  }
+}

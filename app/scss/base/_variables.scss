@@ -145,7 +145,7 @@ $body-color: $off-white;
 $body-line-height: 1;
 
 // -- Navbar body top push to place the content below the navbar.
-$body-top-push:62px;
+$body-top-push:66px;
 $body-top-push-mobile:113px;
 
 // ----- #Main Navbar ----------------------------------------------------------
@@ -207,6 +207,7 @@ $left-sidebar-hover-active-background: #142029;
 $left-sidebar-hover-focus-background: $semiTrans;
 
 // -- Right Sidebar Base
+$right-sidebar-width: 250px;
 // -- Right Sidebar Border Style
 // -- Right Sidebar navHeader
 // -- Right Sidebar Link Hover States

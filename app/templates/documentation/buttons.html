@@ -1,7 +1,17 @@
-<div id="pageWrapper">
+<div id="pageWrapper-dsb">
   <div ng-include="'../../templates/includes/sidebar.html'"></div>
-
-  <article class="pagecontent">
+  <aside id="rightSidebar">
+    <nav>
+      <ul class="rightbar">
+        <li><a href="javascript:void(0);" scroll-to="Button Class">The <code>.btn</code> Class</a></li>
+        <li><a href="javascript:void(0);" scroll-to="Outlined Buttons">Outlined Buttons</a></li>
+        <li><a href="javascript:void(0);" scroll-to="Button Sizes">Button Sizes</a></li>
+        <li><a href="javascript:void(0);" scroll-to="Block Level Buttons">Block Level Buttons</a></li>
+        <li><a href="javascript:void(0);" scroll-to="Grouped Buttons">Grouped Buttons</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="page-content" >
     <section class="pageBanner-md">
       <div class="grid-fw">
         <div class="row">
@@ -11,7 +21,7 @@
       </div>
     </section>
     <div class="grid-fw">
-      <section class="row">
+      <section class="row" id="Button Class">
         <h1>The <code>.btn</code> Class</h1>
         <p>The <code>.btn</code> class is the base class that creates your default unstyled buttons. It is designed for use on <code>&lt;button&gt;</code> elements. However, you can also use it on other elements such as <code>&lt;div&gt;</code> or <code>&lt;a&gt;</code>.</p>
         <p>To add a color class simply add <code>-primary</code>, <code>-info</code>, or another color class listed in the <a href="JavaScript:void(0);">variables styleguide</a> directly to the <code>.btn</code> class.
@@ -42,7 +52,7 @@
           </div>
         </div>
       </section>
-      <h1>Outlined Buttons</h1>
+      <h1 id="Outlined Buttons">Outlined Buttons</h1>
       <p>An alternative to the default solid buttons you can allso attach the class <code>-outlined</code> to the <code>.btn</code> to give them a transparent look and feel.</p>
       <section class="row">
         <div class="code-example-box">
@@ -68,7 +78,7 @@
             <button type="button" class="btn-outlined-dark">Dark</button>
           </div>
       </section>
-      <h1>Button Sizes</h1>
+      <h1 id="Button Sizes">Button Sizes</h1>
       <p>Need a quick change in size for your buttons. Just add one of the button sizing classes. <code>-small</code>, or <code>-large</code> to the end of your buttons class. The medium sized button is the default size.</p>
       <section class="row">
         <div class="code-example-box">
@@ -97,7 +107,7 @@
             <button type="button" class="btn-outlined-info-large">Outlined Large</button>
           </div>
         </div>
-        <h1>Block Level Buttons</h1>
+        <h1 id="Block Level Buttons">Block Level Buttons</h1>
         <p>Create block level buttons that span the full width of a parent by adding <code>-block</code> to the end of your button class.</p>
         <div class="code-example-box">
           <div class="example-panel">
@@ -121,7 +131,7 @@
             <button type="button" class="btn-outlined-info-large-block">Large Oulined Block</button>
           </div>
         </div>
-        <h1>Grouped Buttons</h1>
+        <h1 id="Grouped Buttons">Grouped Buttons</h1>
         <p>Buttons can easily be grouped together by wrapping your buttons in a <code>div</code> tag and attaching the class <code>.grouped-buttons</code> as shown in the examples below.</p>
         <div class="code-example-box">
           <div class="example-panel">

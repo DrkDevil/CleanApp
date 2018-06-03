@@ -1,32 +1,38 @@
-#pageWrapper {
+
+
+/* Position & Size your Side bars */
+#pageWrapper, #pageWrapper-dsb { padding-left: 0; padding-top: $body-top-push-mobile; @include easeIn; }
+
+// Leftbar Toggle
+#pageWrapper.toggled, #pageWrapper-dsb.toggled {
+  // Switch padding to $left-sidebar-width for a push menu on mobile
   padding-left: 0;
-  padding-top: $body-top-push-mobile;
-  @include easeIn;
+  #leftSidebar { width: $left-sidebar-width; }
+  #page-content { position: absolute;  margin-right: -$left-sidebar-width; }
 }
 
-#pageWrapper.toggled {
-  padding-left: $left-sidebar-width;
-  #sidebar {
-    width: $left-sidebar-width;
-  }
-  #page-content {
-    position: absolute;
-    margin-right: -$left-sidebar-width;
-  }
-}
-
-#sidebar {
+/* Left & Right Sidebar Base Styles */
+#rightSidebar,#leftSidebar {
   width: 0;
   height: 100%;
   z-index: 1000;
   position: fixed;
-  left: $left-sidebar-width;
-  margin-left: -$left-sidebar-width;
   overflow-y: auto;
-  background: $left-sidebar-color;
   @include easeIn;
 }
 
+/* Size your Side bars - Settings changed in variables.scss */
+#leftSidebar {
+  left: $left-sidebar-width;
+  margin-left: -$left-sidebar-width;
+  background: $left-sidebar-color;
+}
+#rightSidebar {
+  right: 0;
+  background: $off-white;
+ }
+
+// Make sure your page content fills the page.
 #page-content {
   width: 100%;
   position: absolute;
@@ -62,54 +68,107 @@
     text-indent: 20px;
     line-height: 2.0rem;
     letter-spacing: .05rem;
-    a {
-      display: block;
-      text-decoration: none;
-      color: $left-sidebar-text-color;
-      &:hover {
-        color: $left-sidebar-hover-text-color;
-        background: $left-sidebar-hover-background;
-      }
-      &:active {
-        background: $left-sidebar-hover-active-background;
-      }
-      &:focus {
-        background: $left-sidebar-hover-focus-background;
-      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: $left-sidebar-text-color;
+        &:hover {
+          color: $left-sidebar-hover-text-color;
+          background: $left-sidebar-hover-background;
+        }
+        &:active {
+          background: $left-sidebar-hover-active-background;
+        }
+        &:focus {
+          background: $left-sidebar-hover-focus-background;
+        }
     }
   }
 }
 
 @media (min-width:768px) {
-  #pageWrapper {
+  // Page Wrappers -------------------------------------------------------------
+  // Add the padding to the page wrapper to add the Right Sidebar
+  #pageWrapper-dsb {
+      padding-right: 0;
+  }
+  // Add the padding to the page wrapper to add the Left Sidebar
+  #pageWrapper, #pageWrapper-dsb {
     padding-left: $left-sidebar-width;
     padding-top: $body-top-push;
   }
-  #pageWrapper.toggled {
+  // Toggle Close on Left Sidebar
+  // (Edit witdh if only you want show part of your sidebar when toggled shut.)
+  #pageWrapper.toggled,#pageWrapper-dsb.toggled {
     padding-left: 0px;
     position:absolute;
-    #sidebar {
+    #leftSidebar {
       width: 0px;
     }
-    #page-content {
-      position: relative;
-      margin-right: 0;
-    }
   }
-  #sidebar {
+  // Sidebar Styles-------------------------------------------------------------
+  #leftSidebar {
     width: $left-sidebar-width;
   }
-  #page-content {
-    position: relative;
+  // Right Sidebar Styling
+  #rightSidebar {
+    width: 0x;
+    li {
+      text-indent: 30px;
+      line-height: 30px;
+      font-size: 1rem;
+        a {
+          padding: 10px;
+          color:$black;
+          display: block;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        a:hover {
+          color: #1d1d1d;
+          background: rgba(197,197,197,0.17);
+        }
+        a:active, a:focus {
+          text-decoration: none;
+          color: #000;
+          background: rgba(197,197,197,0.50);
+        }
+    }
   }
 }
 
+
+
+@media(min-width : 992px) {
+  #pageWrapper-dsb { padding: $body-top-push 0 0 $left-sidebar-width; }
+  #rightSidebar { width:0; }
+}
+@media(min-width : 1200px) {
+	#pageWrapper-dsb { padding: $body-top-push $right-sidebar-width 0 $left-sidebar-width; }
+  #rightSidebar { width:$right-sidebar-width; }
+
+}
+// Extra Lalrge Devices in FUllSCREEN 1080p in most cases.
+@media(min-width : 1500px) {
+  #pageWrapper-dsb { padding: $body-top-push 375px 0 $left-sidebar-width; }
+  #rightSidebar {width: 375px; }
+
+}
+
+
+
 // Hover state for navbar when in the toggled mode while in Fullscreen
 // (only if icons are available)
-#pageWrapper.toggled #sidebar:hover {
+#pageWrapper.toggled #leftSidebar:hover {
     position: fixed;
     width: 280px;
 }
+
+
+
+
+
+
 
 // Font Awesome 5 Resets for icon placement (will be placed in docs scss)
 .sidebarItems {

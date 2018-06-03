@@ -4,19 +4,8 @@
 // Please feel free to delete and create your own.
 // And remeber, the easiest way to edit BonsaiUI is via the variables.scss
 
-/* Navigation Toggle */
-.nav-toggle {
-  position: relative;
-  float: right;
-  z-index: 1000;
-  display: block;
-  top: -10px;
-  padding: 20px;
 
-}
-.nav-toggle a {
-  color: $blue;
-  }
+
 /* Position & Size your Side bars */
 #leftSidebar { left: 0px; width: $left-sidebar-width; height: 100%;  z-index: 1; position: fixed;  overflow-y: hidden; border-right: 1px solid #cecece;  background-color: $left-sidebar-color;  }
 #rightSidebar { right: 0; width: $right-sidebar-width; height: 100%; z-index: 1; position: fixed; overflow-y: hidden;   background-color: $right-sidebar-color;}
@@ -79,21 +68,4 @@
   #pageWrapper.left-toggled #leftSidebar, #pageWrapper.right-toggled #rightSidebar { width: 0; padding: 0; }
   #pageContent { position: relative; padding: 10px 5px 0 5px; }
   #pageWrapper.toggled #pageContent { position: relative; margin-right: 0; }
-}
-
-@media(min-width : 992px) {
-  #pageWrapper { padding: 0 $right-sidebar-width 0 $left-sidebar-width; }
-  #rightSidebar { width:$right-sidebar-width; }
-}
-@media(min-width : 1200px) {
-	#pageWrapper { padding: 0 $right-sidebar-width 0 300px; }
-  #leftSidebar {width: 300px; }
-  .leftbar {width: 300px; }
-
-}
-// Extra Lalrge Devices in FUllSCREEN 1080p in most cases.
-@media(min-width : 1500px) {
-  #pageWrapper { padding: 0 375px 0 300px; }
-  #rightSidebar {width: 375px; }
-  .righttbar {width: 375px; }
 }
