@@ -1,48 +1,79 @@
-<div id="pageWrapper">
+<div id="pageWrapper-dsb">
   <div ng-include="'../../templates/includes/sidebar.html'"></div>
   <aside id="rightSidebar">
     <nav class="sidebar">
       <ul class="rightbar">
-        <li><a href="#">What is Bonsai UI?</a></li>
-        <li><a href="#">What make it unique?</a></li>
-        <li><a href="#">Familiarity</a></li>
-        <li><a href="#">Variable Design System</a></li>
-        <li><a href="#">Requirements</a></li>
-        <li><a href="#">Why Angular?</a></li>
-        <li><a href="#two">Support</a></li>
+        <li><a href="javascript:void(0);" scroll-to="Badge Class">The <code>.badge</code> Class</a></li>
+
+
       </ul>
     </nav>
   </aside>
   <article class="pagecontent">
-    <section class="pageBanner-md">
-      <div class="grid-fw">
+    <div class="grid-fw">
+      <section class="pageBanner-md">
         <div class="row">
           <h1>Badges</h1>
-          <h2>Alerts provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</h2>
+          <h2>Documentation and examples for badges, our small count and labeling component.</h2>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="row" id="Badge Class">
+        <h1>The <code>.badge</code> Class</h1>
+        <p>Badges scale to match the size of the immediate parent element by using relative font sizing and em units. It is designed for use in multiple ways. </p>
+        <div class="code-example-box">
+          <div class="example-panel">
+            <h1>Example heading <span class="badge">New</span></h1>
+            <h2>Example heading <span class="badge-secondary">New</span></h2>
+            <h3>Example heading <span class="badge-warning">New</span></h3>
+            <h4>Example heading <span class="badge-danger">New</span></h4>
+            <h5>Example heading <span class="badge-info">New</span></h5>
+            <h6>Example heading <span class="badge-success">New</span></h6>
+          </div>
+          <div hljs>
+            <h1>Example heading <span class="badge">New</span></h1>
+            <h2>Example heading <span class="badge-primary">New</span></h2>
+            <h3>Example heading <span class="badge-primary">New</span></h3>
+            <h4>Example heading <span class="badge-primary">New</span></h4>
+            <h5>Example heading <span class="badge-primary">New</span></h5>
+            <h6>Example heading <span class="badge-primary">New</span></h6>
+          </div>
+        </div>
+      </section>
+      <section class="row" id="Button Badges Class">
+        <p>Badges can be used as part of links or buttons to provide a counter.</p>
+        <div class="code-example-box">
+          <div class="example-panel">
+            <button type="button" class="btn-primary">
+              Notifications <span class="badge-danger">4</span>
+            </button>
+          </div>
+          <div hljs>
+            <button type="button" class="btn-primary">
+              Notifications <span class="badge-danger">4</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+
+
+
+
+
     <div class="grid-fw">
       <section class="row">
         <h1>Examples.</h1>
         <p>Alerts are available for any length of text, as well as an optional dismiss button.</p>
       </section>
       <section class="row">
-        <h1>Example heading <span class="badge">New</span></h1>
-        <h2>Example heading <span class="badge-primary">New</span></h2>
-        <h3>Example heading <span class="badge-primary">New</span></h3>
-        <h4>Example heading <span class="badge-primary">New</span></h4>
-        <h5>Example heading <span class="badge-primary">New</span></h5>
-        <h6>Example heading <span class="badge-primary">New</span></h6>
         <hr />
         <button type="button" class="btn btn-solid">
           Notifications <span class="badge-light">4</span>
         </button>
         <hr />
-        <button type="button" class="btn-solid">
-          Profile <span class="badge-light">9</span>
-          <span class="sr-only">unread messages</span>
-        </button>
+
         <hr />
         <span class="badge-primary">Primary</span>
         <span class="badge-secondary">Secondary</span>
