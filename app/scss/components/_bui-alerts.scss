@@ -4,52 +4,97 @@
   width: 100%;
   border-radius: 4px;
   border: 1px solid $semiTrans;
-}
-.alert-primary {
-  color: #005ea5;
-  background-color: #cce5ff;
-  border-color: $semiTrans;
-}
-.alert-secondary {
-  color: #464a4e;
-  background-color: #e7e8ea;
-  border-color: $semiTrans;
-  //border-color: #dddfe2;
-}
-.alert-success {
-  color: #155724;
-  background-color: #d4edda;
-  border-color: $semiTrans;
-}
-.alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: $semiTrans;
-}
-.alert-warning {
-  color: #856404;
-  background-color: #fff3cd;
-  border-color: $semiTrans;
-}
-.alert-info {
-  color: #0c5460;
-  background-color: #d1ecf1;
-  border-color: $semiTrans;
-}
-.alert-light {
-  color: #818182;
-  background-color: #fefefe;
-  border-color: $semiTrans;
-}
-.alert-dark {
-  color: #1b1e21;
-  background-color: #d6d8d9;
-  border-color: $semiTrans;
-}
-.alert-clear {
-  color: #000;
-  background-color: transparent;
-  border:0 ;
+  &[class*='-primary'],&[class*='-secondary'],&[class*='-success'],
+  &[class*='-danger'],&[class*='-warning'],&[class*='-info'],&[class*='-dark']
+  {
+    color:$white;
+    a {
+      font-weight: 700;
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &[class*='-outlined'] {
+    background-color: $transparent;
+    border: 1px solid grey;
+    &:hover{
+     color:$white;
+     border-color: $semiTrans;
+    }
+    &[class*='-primary'] {
+      color:$primary;
+      border-color:$primary;
+      a {
+        color:$primary;
+        &:hover {
+        color:$primary-shade;
+        }
+      }
+    }
+    &[class*='-secondary'] {
+      color:$secondary;
+      border-color:$secondary;
+      a {
+        color:$secondary;
+        &:hover {
+        color:$secondary-shade;
+        }
+      }
+    }
+    &[class*='-success'] {
+      color:$success;
+      border-color:$success;
+      a {
+        color:$success;
+        &:hover {
+        color:$success-shade;
+        }
+      }
+    }
+    &[class*='-danger'] {
+      color:$danger;
+      border-color:$danger;
+      a {
+        color:$danger;
+        &:hover {
+        color:$danger-shade;
+        }
+      }
+    }
+    &[class*='-warning'] {
+      color:$warning;
+      border-color:$warning;
+      a {
+        color:$warning;
+        &:hover {
+        color:$warning-shade;
+        }
+      }
+    }
+    &[class*='-info'] {
+      color:$info;
+      border-color:$info;
+      a {
+        color:$info;
+        &:hover {
+        color:$info-shade;
+        }
+      }
+    }
+    &[class*='-dark'] {
+      color:$dark;
+      border-color:$dark;
+      a {
+        color:$dark;
+        &:hover {
+        color:$dark-shade;
+        }
+      }
+    }
+
+  }
 }
 .alert .close {
     position: absolute;

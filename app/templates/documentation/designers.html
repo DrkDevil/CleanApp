@@ -1,4 +1,4 @@
-<div id="pageWrapper">
+<div id="pageWrapper-dsb">
   <div ng-include="'../../templates/includes/sidebar.html'"></div>
   <aside id="rightSidebar">
     <nav class="sidebar">
@@ -23,10 +23,63 @@
       </div>
     </section>
     <div class="grid-fw">
-      <section id="how" class="row">
-        <h1>Examples.</h1>
-        <p>Alerts are available for any length of text, as well as an optional dismiss button.</p>
+      <section id="altColors" class="row">
+        <h1>Alternative Colors &amp; Links</h1>
+        <p>
+          Unlike other frameworks BonsaiUI tries to limit the use of multiple classes in your HTML to style components.
+        </p><br />
+        <p>For example... Common frameworks use <code>.alert</code> to create the base alert, and the add <code>.alert-yourcolor</code> to style the alert.
+           This seems a bit counter intuitive as it can bloat and crowd your code the larger your application gets over time.
+           To solve the problem of using too many classes in your HTML to style one component BonsaiUI utilizes CSS Attributes heavily.</br>
+        </p><br />
+        <p>
+          In BonsaiUI the <code>.alert</code> is the base class that creates your default unstyled alert.
+          To add a color class simply add <code>-primary</code>, <code>-info</code>, or another color class listed in
+          the <a href="javascrip:void(0)">variables styleguide</a> directly to the <code>.alert</code> class.<br />
+          This will result in one class that looks like this <code>.alert-primary</code>
+        </p><br />
+
+        <P> You can also create your own color styles easily in the alerts.scss.</p><br />
+        <p>
+          The disadvantage to this method is that it limits what names you can create for your own styles.
+          For instance you would not be able to create a class call alertbox, because the BonsaiUI scss has declared that anyclass that starts with <code>.alert</code> will create the default alert box.
+        </p>
+        <div class="col-6lg">
+          <h2>Examples.</h2>
+          <p>
+            Link &amp; colors are automatically determined by the alert style type. primary, warning, info, success etc...
+          </p>
+          <div class="alert-primary" > This is a primary alert with <a href="#">an example link</a>.</div>
+          <div class="alert-secondary" > This is a secondary alert with <a href="#">an example link</a>.</div>
+          <div class="alert-success" > This is a success alert with <a href="#">an example link</a>.</div>
+          <div class="alert-danger" > This is a danger alert with <a href="#">an example link</a>.</div>
+          <div class="alert-warning" > This is a warning alert with <a href="#">an example link</a>.</div>
+          <div class="alert-info" > This is a info alert with <a href="#">an example link</a>.</div>
+          <div class="alert-light" > This is a light alert with <a href="#">an example link</a>.</div>
+          <div class="alert-dark" > This is a dark alert with <a href="#">an example link</a>.</div>
+        </div>
+        <div class="col-6lg">
+          <h2>Code Sample.</h2>
+          <p>
+            We have simplified things with our css to give you multiple class colors for your alerts and thier styles using one class as shown in the example.
+            <br />
+          </p>
+          <h3>CSS / SCSS Variables</h3>
+          <div hljs>
+          </div>
+          <h3>HTML</h3>
+          <div hljs>
+            <div class="alert-primary" >
+              This is a primary alert with <a href="#">an example link</a>.
+            </div>
+            <div class="alert-secondary" >
+              This is a secondary alert with <a href="#">an example link</a>.
+            </div>
+          </div>
+        </div>
       </section>
+
+
     </div>
   </article>
 </div>
