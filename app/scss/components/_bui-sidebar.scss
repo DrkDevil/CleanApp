@@ -1,180 +1,116 @@
-
-
-/* Position & Size your Side bars */
-#pageWrapper, #pageWrapper-dsb { padding-left: 0; padding-top: $body-top-push-mobile; @include easeIn; }
-
-// Leftbar Toggle
-#pageWrapper.toggled, #pageWrapper-dsb.toggled {
-  // Switch padding to $left-sidebar-width for a push menu on mobile
+/* Mobile Default page wrappers padding are zero to start them closed. */
+#pageWrapper {
+  padding-top: $body-top-push-mobile;
   padding-left: 0;
-  #leftSidebar { width: $left-sidebar-width; }
-  #page-content { position: absolute;  margin-right: -$left-sidebar-width; }
+  padding-right: 0;
+  @include easeIn
+  /* 768px or Higher Display Sidebars. */
+  @include mq('tablet') {
+    padding-top: $body-top-push;
+    padding-left: $left-sidebar-width;
+    padding-right: $right-sidebar-width;
+    @include easeIn
+  }
 }
-
-/* Left & Right Sidebar Base Styles */
-#rightSidebar,#leftSidebar {
-  width: 0;
+/* Make all sidebars fill the height of the screen,not wrap text, and scroll */
+#leftSidebar, #rightSidebar {
   height: 100%;
   z-index: 1000;
   position: fixed;
+  white-space: nowrap;
   overflow-y: auto;
-  @include easeIn;
+  @include easeIn
 }
-
-/* Size your Side bars - Settings changed in variables.scss */
+/* Leftbar Closed style */
 #leftSidebar {
+  width: 0px;
   left: $left-sidebar-width;
   margin-left: -$left-sidebar-width;
-  background: $left-sidebar-color;
+  background-color: $left-sidebar-background-color;
+  a {
+    color: $left-sidebar-text-color;
+  }
+  /* Leftbar open style */
+  @include mq('tablet') {
+    width: $left-sidebar-width;
+  }
 }
+/* Rightbar Closed style */
 #rightSidebar {
-  right: 0;
-  background: $off-white;
- }
-
-// Make sure your page content fills the page.
-#page-content {
-  width: 100%;
-  position: absolute;
-}
-
-.leftSidebar {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: $left-sidebar-width;
-  padding-top: $left-sidebar-padding-top;
-  border-right: $left-sidebar-border-size;
-  border-style: $left-sidebar-border-style;
-  border-color: $left-sidebar-border-color;
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  width: 0;
+  right: $right-sidebar-width;
+  margin-right: -$right-sidebar-width;
+  background-color: $right-sidebar-background-color;
+  a {
+    color: $right-sidebar-text-color;
+  }
+  /* Rightbar open style */
+  @include mq('tablet') {
+    width: $right-sidebar-width;
   }
 }
-.nav-items {
-  padding-bottom: $left-sidebar-nav-items-spacing;
-}
-.navHeader {
-  color: $left-sidebar-navHeader-color;
-  font-size: $left-sidebar-navHeader-font-size;
-  font-weight: $left-sidebar-navHeader-font-weight;
-  text-transform: uppercase;
-}
-.sidebarItems {
-  li {
-    font-size: $left-sidebar-fntsize;
-    text-indent: 20px;
-    line-height: 2.0rem;
-    letter-spacing: .05rem;
-      a {
-        display: block;
-        text-decoration: none;
-        color: $left-sidebar-text-color;
-        &:hover {
-          color: $left-sidebar-hover-text-color;
-          background: $left-sidebar-hover-background;
-        }
-        &:active {
-          background: $left-sidebar-hover-active-background;
-        }
-        &:focus {
-          background: $left-sidebar-hover-focus-background;
-        }
-    }
-  }
-}
-
-@media (min-width:768px) {
-  // Page Wrappers -------------------------------------------------------------
-  // Add the padding to the page wrapper to add the Right Sidebar
-  #pageWrapper-dsb {
-      padding-right: 0;
-  }
-  // Add the padding to the page wrapper to add the Left Sidebar
-  #pageWrapper, #pageWrapper-dsb {
-    padding-left: $left-sidebar-width;
-    padding-top: $body-top-push;
-  }
-  // Toggle Close on Left Sidebar
-  // (Edit witdh if only you want show part of your sidebar when toggled shut.)
-  #pageWrapper.toggled,#pageWrapper-dsb.toggled {
-    padding-left: 0px;
-    position:absolute;
-    #leftSidebar {
-      width: 0px;
-    }
-  }
-  // Sidebar Styles-------------------------------------------------------------
+/* Leftbar Open Toggled */
+#pageWrapper.toggled {
+  padding-left: 0;
   #leftSidebar {
     width: $left-sidebar-width;
   }
-  // Right Sidebar Styling
+}
+/* Rightbar Open Toggled */
+#pageWrapper.r-toggled {
+  padding-right: 0;
   #rightSidebar {
-    width: 0x;
-    li {
-      text-indent: 30px;
-      line-height: 30px;
-      font-size: 1rem;
-        a {
-          padding: 10px;
-          color:$black;
-          display: block;
-          text-decoration: none;
-          cursor: pointer;
-        }
-        a:hover {
-          color: #1d1d1d;
-          background: rgba(197,197,197,0.17);
-        }
-        a:active, a:focus {
-          text-decoration: none;
-          color: #000;
-          background: rgba(197,197,197,0.50);
-        }
+    width: $right-sidebar-width;
+  }
+}
+// Media Query : Above
+@media (min-width:768px) {
+  /* Leftbar Closed Toggle */
+  #pageWrapper.toggled {
+    padding-left: 0;
+    #leftSidebar {
+      width: 0;
+    }
+  }
+  /* Rightbar Closed Toggle */
+  #pageWrapper.r-toggled {
+    padding-right: 0;
+    #rightSidebar {
+      width: 0;
     }
   }
 }
-
-
-
-@media(min-width : 992px) {
-  #pageWrapper-dsb { padding: $body-top-push 0 0 $left-sidebar-width; }
-  #rightSidebar { width:0; }
+// Common link Styling for that can be used for both sidebars.
+.nav-group {
+  padding-bottom: $sidebar-nav-items-spacing;
 }
-@media(min-width : 1200px) {
-	#pageWrapper-dsb { padding: $body-top-push $right-sidebar-width 0 $left-sidebar-width; }
-  #rightSidebar { width:$right-sidebar-width; }
-
+/* Bold Headers for Grouped Navigation  Items */
+.navHeader {
+  color: $sidebar-navHeader-color;
+  font-size: $sidebar-navHeader-font-size;
+  font-weight: $sidebar-navHeader-font-weight;
+  text-transform: uppercase;
 }
-// Extra Lalrge Devices in FUllSCREEN 1080p in most cases.
-@media(min-width : 1500px) {
-  #pageWrapper-dsb { padding: $body-top-push 375px 0 $left-sidebar-width; }
-  #rightSidebar {width: 375px; }
-
-}
-
-
-
-// Hover state for navbar when in the toggled mode while in Fullscreen
-// (only if icons are available)
-#pageWrapper.toggled #leftSidebar:hover {
-    position: fixed;
-    width: 280px;
-}
-
-
-
-
-
-
-
-// Font Awesome 5 Resets for icon placement (will be placed in docs scss)
+/* Default Hover States for sidebars */
 .sidebarItems {
-  .fa-fw {
-    width: 47px;
-    margin-left: -23px;
-    margin-right: 10px;
+  li {
+    font-size: $sidebar-fntsize;
+    text-indent: 20px;
+    line-height: 2.0rem;
+    letter-spacing: .05rem;
+    a {
+      display: block;
+      text-decoration: none;
+      &:hover {
+        color: $left-sidebar-hover-text-color;
+        background: $left-sidebar-hover-background;
+      }
+      &:active {
+       background: $left-sidebar-hover-active-background;
+      }
+      &:focus {
+        background: $left-sidebar-hover-focus-background;
+      }
+    }
   }
 }

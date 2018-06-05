@@ -848,81 +848,107 @@ code {
     color: #D3D3D3;
     font-weight: 500; }
 
-/* Position & Size your Side bars */
-#pageWrapper, #pageWrapper-dsb {
+/* Mobile Default page wrappers padding are zero to start them closed. */
+#pageWrapper {
+  padding-top: 115px;
   padding-left: 0;
-  padding-top: 113px;
+  padding-right: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  /* 768px or Higher Display Sidebars. */ }
+  @media only screen and (min-width: 768px) {
+    #pageWrapper {
+      padding-top: 66px;
+      padding-left: 280px;
+      padding-right: 250px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; } }
 
-#pageWrapper.toggled, #pageWrapper-dsb.toggled {
-  padding-left: 0; }
-  #pageWrapper.toggled #leftSidebar, #pageWrapper-dsb.toggled #leftSidebar {
-    width: 280px; }
-  #pageWrapper.toggled #page-content, #pageWrapper-dsb.toggled #page-content {
-    position: absolute;
-    margin-right: -280px; }
-
-/* Left & Right Sidebar Base Styles */
-#rightSidebar, #leftSidebar {
-  width: 0;
+/* Make all sidebars fill the height of the screen,not wrap text, and scroll */
+#leftSidebar, #rightSidebar {
   height: 100%;
   z-index: 1000;
   position: fixed;
+  white-space: nowrap;
   overflow-y: auto;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-/* Size your Side bars - Settings changed in variables.scss */
+/* Leftbar Closed style */
 #leftSidebar {
+  width: 0px;
   left: 280px;
   margin-left: -280px;
-  background: #282a36; }
+  background-color: #282a36;
+  /* Leftbar open style */ }
+  #leftSidebar a {
+    color: #ffffff; }
+  @media only screen and (min-width: 768px) {
+    #leftSidebar {
+      width: 280px; } }
 
+/* Rightbar Closed style */
 #rightSidebar {
-  right: 0;
-  background: #f8f9fa; }
+  width: 0;
+  right: 250px;
+  margin-right: -250px;
+  background-color: #f8f9fa;
+  /* Rightbar open style */ }
+  #rightSidebar a {
+    color: #282a36; }
+  @media only screen and (min-width: 768px) {
+    #rightSidebar {
+      width: 250px; } }
 
-#page-content {
-  width: 100%;
-  position: absolute; }
+/* Leftbar Open Toggled */
+#pageWrapper.toggled {
+  padding-left: 0; }
+  #pageWrapper.toggled #leftSidebar {
+    width: 280px; }
 
-.leftSidebar {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 280px;
-  padding-top: 10px;
-  border-right: 1px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0); }
-  .leftSidebar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
+/* Rightbar Open Toggled */
+#pageWrapper.r-toggled {
+  padding-right: 0; }
+  #pageWrapper.r-toggled #rightSidebar {
+    width: 250px; }
 
-.nav-items {
+@media (min-width: 768px) {
+  /* Leftbar Closed Toggle */
+  #pageWrapper.toggled {
+    padding-left: 0; }
+    #pageWrapper.toggled #leftSidebar {
+      width: 0; }
+  /* Rightbar Closed Toggle */
+  #pageWrapper.r-toggled {
+    padding-right: 0; }
+    #pageWrapper.r-toggled #rightSidebar {
+      width: 0; } }
+
+.nav-group {
   padding-bottom: 15px; }
 
+/* Bold Headers for Grouped Navigation  Items */
 .navHeader {
   color: #f8f9fa;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase; }
 
+/* Default Hover States for sidebars */
 .sidebarItems li {
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-indent: 20px;
   line-height: 2.0rem;
   letter-spacing: .05rem; }
   .sidebarItems li a {
     display: block;
-    text-decoration: none;
-    color: #ffffff; }
+    text-decoration: none; }
     .sidebarItems li a:hover {
       color: #ffffff;
       background: rgba(12, 12, 12, 0.25); }
@@ -930,66 +956,6 @@ code {
       background: #142029; }
     .sidebarItems li a:focus {
       background: rgba(12, 12, 12, 0.25); }
-
-@media (min-width: 768px) {
-  #pageWrapper-dsb {
-    padding-right: 0; }
-  #pageWrapper, #pageWrapper-dsb {
-    padding-left: 280px;
-    padding-top: 66px; }
-  #pageWrapper.toggled, #pageWrapper-dsb.toggled {
-    padding-left: 0px;
-    position: absolute; }
-    #pageWrapper.toggled #leftSidebar, #pageWrapper-dsb.toggled #leftSidebar {
-      width: 0px; }
-  #leftSidebar {
-    width: 280px; }
-  #rightSidebar {
-    width: 0x; }
-    #rightSidebar li {
-      text-indent: 30px;
-      line-height: 30px;
-      font-size: 1rem; }
-      #rightSidebar li a {
-        padding: 10px;
-        color: #000000;
-        display: block;
-        text-decoration: none;
-        cursor: pointer; }
-      #rightSidebar li a:hover {
-        color: #1d1d1d;
-        background: rgba(197, 197, 197, 0.17); }
-      #rightSidebar li a:active, #rightSidebar li a:focus {
-        text-decoration: none;
-        color: #000;
-        background: rgba(197, 197, 197, 0.5); } }
-
-@media (min-width: 992px) {
-  #pageWrapper-dsb {
-    padding: 66px 0 0 280px; }
-  #rightSidebar {
-    width: 0; } }
-
-@media (min-width: 1200px) {
-  #pageWrapper-dsb {
-    padding: 66px 250px 0 280px; }
-  #rightSidebar {
-    width: 250px; } }
-
-@media (min-width: 1500px) {
-  #pageWrapper-dsb {
-    padding: 66px 375px 0 280px; }
-  #rightSidebar {
-    width: 375px; } }
-
-#pageWrapper.toggled #leftSidebar:hover {
-  position: fixed;
-  width: 280px; }
-
-.sidebarItems .fa-fw {
-  width: 47px;
-  margin-left: -23px;
-  margin-right: 10px; }
 
 footer {
   padding: 10px;

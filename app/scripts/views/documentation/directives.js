@@ -13,7 +13,19 @@ angular.module('docs.directives', [])
     }
   };
 })
-
+.directive('rightbarToggle', function() {
+  return {
+    link: function(scope, element, attrs) {
+      element.parent().bind('click', function() {
+        var lftPgWrpr = angular.element( document.querySelector('#pageWrapper'));
+        var lftPgWrprDsb = angular.element( document.querySelector('#pageWrapper-dsb'));
+        lftPgWrpr.toggleClass('r-toggled');
+        lftPgWrprDsb.toggleClass('r-toggled');
+        console.log('clicked');
+      });
+    }
+  };
+})
 .directive('scrollTo', function ($location, $anchorScroll) {
   return function(scope, element, attrs) {
     element.bind('click', function(event) {

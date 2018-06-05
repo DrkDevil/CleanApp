@@ -146,7 +146,7 @@ $body-line-height: 1;
 
 // -- Navbar body top push to place the content below the navbar.
 $body-top-push:66px;
-$body-top-push-mobile:113px;
+$body-top-push-mobile:115px;
 
 // ----- #Main Navbar ----------------------------------------------------------
 // The Main Syles for BonsaiUI Navbar
@@ -183,10 +183,8 @@ $navbar-brand-line-height: 1.125rem;
 // -----------------------------------------------------------------------------
 
 // -- Left Sidebar Base
-$left-sidebar-padding-top: 10px;
 $left-sidebar-width: 280px;
-$left-sidebar-fntsize: 0.875rem;
-$left-sidebar-color: #282a36;
+$left-sidebar-background-color: #282a36;
 $left-sidebar-text-color: $white;
 
 // -- Left Sidebar Border Style
@@ -194,23 +192,31 @@ $left-sidebar-border-color: $transparent;
 $left-sidebar-border-style: solid;
 $left-sidebar-border-size: 1px;
 
-// -- Left Sidebar navHeader
-$left-sidebar-navHeader-color: $off-white;
-$left-sidebar-navHeader-font-size: 1.0rem;
-$left-sidebar-navHeader-font-weight: 700;
-$left-sidebar-nav-items-spacing: 15px;
-
 // -- Left Sidebar Link Hover States
 $left-sidebar-hover-text-color: $white;
 $left-sidebar-hover-background: $semiTrans;
 $left-sidebar-hover-active-background: #142029;
 $left-sidebar-hover-focus-background: $semiTrans;
 
+
+// -- Sidebar navHeader
+$sidebar-navHeader-color: $off-white;
+$sidebar-navHeader-font-size: 1.0rem;
+$sidebar-navHeader-font-weight: 700;
+$sidebar-nav-items-spacing: 15px;
+
+
 // -- Right Sidebar Base
 $right-sidebar-width: 250px;
+$right-sidebar-text-color: $grey-blue;
+$right-sidebar-background-color: $off-white;
+
 // -- Right Sidebar Border Style
 // -- Right Sidebar navHeader
 // -- Right Sidebar Link Hover States
+
+$sidebar-fntsize: 1rem;
+
 
 // ----- #Buttons -------------------------------------------------------------
 // Default styling of solid and outlined buttons
