@@ -4,5 +4,6 @@ angular.module('BonsaiApp',[
   'BonsaiApp.docs',
   'BonsaiApp.factory',
   'hljs',
+  'duScroll',
   'templates'
 ]);

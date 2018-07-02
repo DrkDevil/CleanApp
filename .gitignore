@@ -3,6 +3,3 @@ app/components
 build
 .tmp
 *.log
-
-app/scripts/bonsai/dropDowns - Copy\.js
-
