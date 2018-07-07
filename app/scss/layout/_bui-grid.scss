@@ -17,6 +17,7 @@
 
 /* Row Clearfix */
 .row {
+  margin:0 ($neg-gutters / 2);
   &:after {
     content: " ";
     visibility: hidden;
@@ -33,20 +34,21 @@
   display: block;
   margin-bottom: $colSpacing;
   width: 100%;
-  padding-right: $gutters;
+  padding-right: ($gutters / 2);
+  padding-left:  ($gutters / 2);
   min-height: 1px;
 }
 
 /* Floats last ".col-" to the right */
-[class*='col-']:last-of-type {
-  padding-right: 0;
-}
+// [class*='col-']:last-of-type {
+//   padding-right: 0;
+// }
 /* Removes floats on mobile phones */
-@media (max-width: 419px) {
-  [class*='col-'] {
-    padding-right: 0;
-  }
-}
+// @media (max-width: 419px) {
+//   [class*='col-'] {
+//     padding-right: 0;
+//   }
+// }
 
 @each $mqSlug, $size in $breakpoints {
   @media (min-width: #{$size}) {

@@ -210,12 +210,14 @@ code {
   margin: 0 auto; }
 
 /* Row Clearfix */
-.row:after {
-  content: " ";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both; }
+.row {
+  margin: 0 -7.5px; }
+  .row:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
 
 /* Column attribute selector */
 [class*='col-'] {
@@ -224,18 +226,12 @@ code {
   display: block;
   margin-bottom: 5px;
   width: 100%;
-  padding-right: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
   min-height: 1px; }
 
 /* Floats last ".col-" to the right */
-[class*='col-']:last-of-type {
-  padding-right: 0; }
-
 /* Removes floats on mobile phones */
-@media (max-width: 419px) {
-  [class*='col-'] {
-    padding-right: 0; } }
-
 @media (min-width: 576px) {
   .grid {
     width: -webkit-calc( 576px - 60px);
