@@ -8,10 +8,10 @@
     margin: 0 0 -2px 0;
   }
 }
-.card-title {
+[class*='card-title'] {
   padding: 20px;
-  border-bottom: 1px solid $light-grey;
- }
+  border-bottom: 1px solid #ddd;
+}
 .card-body {
   padding: 20px;
 }
