@@ -1,4 +1,3 @@
-[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=DrkDevil&repoName=CleanApp&branch=master&pipelineName=CleanApp&accountName=DarkDevil&type=cf-1)]( https://g.codefresh.io/repositories/DrkDevil/CleanApp/builds?filter=trigger:build;branch:master;service:58dada2ef0e1720100fac584~CleanApp)
 [![Code Climate](https://codeclimate.com/github/DrkDevil/CleanApp/badges/gpa.svg)](https://codeclimate.com/github/DrkDevil/CleanApp)
 [![Issue Count](https://codeclimate.com/github/DrkDevil/CleanApp/badges/issue_count.svg)](https://codeclimate.com/github/DrkDevil/CleanApp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -28,7 +27,7 @@ After you have downloaded, or cloned the BonsaiApp repo you will need to gather 
 The first step is to navigate to your newly downloaded repo in terminal, and run the command.
 
 ```
-$ npm install 
+$ npm install
 ```
 This will grab all the nesecary node moduals needed to run your project.
 
