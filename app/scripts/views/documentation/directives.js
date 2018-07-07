@@ -13,7 +13,6 @@ angular.module('docs.directives', [])
       }
     };
   })
-
   .directive('rightbarToggle', function() {
     return {
       link: function(scope, element, attrs) {

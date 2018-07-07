@@ -7,10 +7,6 @@ angular.module('BonsaiApp.docs', ['ngRoute', 'docs.controllers', 'docs.directive
       }
     });
   }])
-
-
-
-
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/alerts', {

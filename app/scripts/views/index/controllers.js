@@ -3,11 +3,7 @@ angular.module('index.controllers', [])
   function($scope, $location) {
     $scope.$on('$locationChangeStart', function(scope) {
       $scope.pathUrl = $location.path();($scope.pathUrl);
-    })
-
+    });
     $('html').removeClass().addClass('main');
-
   }
-
-
 ]);
