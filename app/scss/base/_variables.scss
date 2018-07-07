@@ -46,6 +46,9 @@
 	*     --  Outlined Buttons
 	*         --  Outlined Button Hover States
 	*
+	*    #Badges                                                  (Badge Styling)
+	*     --  Badge Base
+	*
 */
 // -----------------------------------------------------------------------------
 
@@ -243,10 +246,6 @@ $button-outline-color-hover: #271010;
 $button-color:#271010;
 $button-color-hover:#142029;
 
-
-
-
-
 // -- Outlined Button Hovers
 $btn-outlined-color-hover:#fff;
 $btn-outlined-border-hover: 1px solid #142029;
@@ -260,3 +259,27 @@ $btn-solid-background: #142029;
 $btn-solid-color-hover:#cecece;
 $btn-solid-border-hover: 1px solid #4a0909;
 $btn-solid-background-hover: #a33636;
+
+// ----- #Badges ---------------------------------------------------------------
+// Default styling of badges
+// -----------------------------------------------------------------------------
+// -- Badge Base Styling
+$badge-pading: .4rem;
+$badge-line-height: 1.0;
+$badge-border-radius: .25rem;
+$badge-font-color: $white;
+
+// -- Pill Badge Styling
+$pill-badge-radius
+
+// ----- #Breadcrumb ---------------------------------------------------------------
+// Default styling of breadcrumbs
+// -----------------------------------------------------------------------------
+$breadcrumb-padding: 0.75rem 1rem;
+$breadcrumb-margin-bottom: 1rem;
+$breadcrumb-background-color: $light-grey;
+$breadcrumb-text-color: $grey;
+$breadcrumb-border-radius: 0.25rem;
+$breadcrumb-active-page: $red;
+$breadcrumb-divider: "/";
+$breadcrumb-divider-padding-right: .5rem;

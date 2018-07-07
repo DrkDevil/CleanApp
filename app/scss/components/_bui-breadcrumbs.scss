@@ -3,11 +3,12 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	padding: 0.75rem 1rem;
-	margin-bottom: 1rem;
 	list-style: none;
-	background-color: $light-grey;
-	border-radius: 0.25rem;
+	background-color: $breadcrumb-background-color;
+	color: $breadcrumb-text-color;
+	padding: $breadcrumb-padding;
+	margin-bottom: $breadcrumb-margin-bottom;
+	border-radius: $breadcrumb-border-radius;
 }
 .breadcrumb li {
     padding-left: 0.5rem;
@@ -20,10 +21,9 @@
 }
 .breadcrumb li::before {
     display: inline-block;
-    padding-right: 0.5rem;
-    color: $grey;
-    content: "/";
+    padding-right: $breadcrumb-divider-padding-right;
+    content: $breadcrumb-divider;
 }
 .breadcrumb li.active {
-	color: $red;
+	color: $breadcrumb-active-page;
 }

@@ -1,10 +1,11 @@
-<div id="pageWrapper">
+<div id="pageWrapper-dsb">
   <div ng-include="'../../templates/includes/sidebar.html'"></div>
   <aside id="rightSidebar">
     <nav class="sidebarItems">
       <ul class="nav-group">
-        <li><a href="javascriopt:vod(0);">The <code>.badge</code> class.</a></li>
-        <li><a href="javascriopt:vod(0);">Examples</a></li>
+        <li><a href="#Badge Class" du-smooth-scroll du-scrollspy>The <code>.badge</code> class.</a></li>
+        <li><a href="#Button Badges Class" du-smooth-scroll du-scrollspy>Button Badges</a></li>
+        <li><a href="#Examples" du-smooth-scroll du-scrollspy>Examples</a></li>
       </ul>
     </nav>
   </aside>
@@ -53,28 +54,29 @@
           </div>
         </div>
       </section>
-
     </div>
     <div class="grid-fw">
-      <section class="row">
+      <section class="row" id="Examples">
         <h1>Examples.</h1>
         <p>Alerts are available for any length of text, as well as an optional dismiss button.</p>
       </section>
       <section class="row">
         <hr />
-        <button type="button" class="btn btn-solid">
-            Notifications <span class="badge-light">4</span>
-          </button>
+        <button type="button" class="btn btn-primary">
+            Notifications <span class="badge-success">4</span>
+        </button>
+        <button type="button" class="btn btn-primary">
+            Notifications <span class="pill-badge-warning">4</span>
+        </button>
         <hr />
-        <hr />
-        <span class="badge-primary">Primary</span>
-        <span class="badge-secondary">Secondary</span>
-        <span class="badge-success">Success</span>
-        <span class="badge-danger">Danger</span>
-        <span class="badge-warning">Warning</span>
-        <span class="badge-info">Info</span>
-        <span class="badge-light">Light</span>
-        <span class="badge-dark">Dark</span>
+        <span class="badge-primary">primary</span>
+        <span class="badge-secondary">secondary</span>
+        <span class="badge-success">success</span>
+        <span class="badge-danger">danger</span>
+        <span class="badge-warning">warning</span>
+        <span class="badge-info">info</span>
+        <span class="badge-light">light</span>
+        <span class="badge-dark">dark</span>
         <hr />
         <span class="pill-badge-primary">Primary</span>
         <span class="pill-badge-secondary">Secondary</span>
