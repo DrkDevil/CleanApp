@@ -264,13 +264,13 @@ $btn-solid-background-hover: #a33636;
 // Default styling of badges
 // -----------------------------------------------------------------------------
 // -- Badge Base Styling
-$badge-padding: .5em;
+$badge-padding: .3em .5em;
 $badge-line-height: 1.0;
 $badge-border-radius: .25rem;
 $badge-font-color: $white;
 
 // -- Pill Badge Styling
-$pill-badge-radius: 5rem;
+$pill-badge-radius: 1.0rem;
 $pill-badge-padding: .4em .8em;
 
 // ----- #Breadcrumb -----------------------------------------------------------

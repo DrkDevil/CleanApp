@@ -532,9 +532,10 @@ code {
   color: inherit; }
 
 [class*='badge'] {
-  padding: 0.5em;
+  padding: 0.3em 0.5em;
   line-height: 1;
   border-radius: 0.25rem;
+  background-color: #D3D3D3;
   color: #ffffff;
   display: inline-block;
   text-align: center;
@@ -542,7 +543,7 @@ code {
   vertical-align: baseline; }
 
 [class*='pill-badge'] {
-  border-radius: 5rem;
+  border-radius: 1rem;
   padding: 0.4em 0.8em; }
 
 [class*='badge-light'] {
