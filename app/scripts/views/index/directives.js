@@ -1,5 +1,4 @@
 angular.module('index.directives', [])
-.directive('index', function() {
-  return function(scope, element, attrs) {
-  };
-});
+  .directive('index', function() {
+    return function(scope, element, attrs) {};
+  });
