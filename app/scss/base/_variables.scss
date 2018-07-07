@@ -52,7 +52,6 @@
 */
 // -----------------------------------------------------------------------------
 
-
 // ----- #Grid System Variables ------------------------------------------------
 // These are the base variables to control the grid system.
 // -----------------------------------------------------------------------------
@@ -222,7 +221,7 @@ $right-sidebar-background-color: $off-white;
 $sidebar-fntsize: 1rem;
 $sidebar-icon-width: 47px;
 
-// ----- #Buttons -------------------------------------------------------------
+// ----- #Buttons --------------------------------------------------------------
 // Default styling of solid and outlined buttons
 // -----------------------------------------------------------------------------
 
@@ -264,15 +263,16 @@ $btn-solid-background-hover: #a33636;
 // Default styling of badges
 // -----------------------------------------------------------------------------
 // -- Badge Base Styling
-$badge-pading: .4rem;
+$badge-padding: .5em;
 $badge-line-height: 1.0;
 $badge-border-radius: .25rem;
 $badge-font-color: $white;
 
 // -- Pill Badge Styling
-$pill-badge-radius
+$pill-badge-radius: 5rem;
+$pill-badge-padding: .4em .8em;
 
-// ----- #Breadcrumb ---------------------------------------------------------------
+// ----- #Breadcrumb -----------------------------------------------------------
 // Default styling of breadcrumbs
 // -----------------------------------------------------------------------------
 $breadcrumb-padding: 0.75rem 1rem;
@@ -283,3 +283,7 @@ $breadcrumb-border-radius: 0.25rem;
 $breadcrumb-active-page: $red;
 $breadcrumb-divider: "/";
 $breadcrumb-divider-padding-right: .5rem;
+
+// ----- #Cards -----------------------------------------------------------
+// Default styling of Cards
+// -----------------------------------------------------------------------------

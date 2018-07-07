@@ -1,23 +1,53 @@
-<div id="pageWrapper">
+<div id="pageWrapper-dsb">
   <div ng-include="'../../templates/includes/sidebar.html'"></div>
-    <aside id="rightSidebar">
-      <nav class="sidebarItems">
-        <ul class="nav-group">
-          <li><a href="javascriopt:vod(0);">Left Sidebar</a></li>
-          <li><a href="javascriopt:vod(0);">Right Sidebar</a></li>
-          <li><a href="javascriopt:vod(0);">Dual Sidebars</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <article class="page-content">
-      <section class="pageBanner-md">
-        <div class="grid-fw">
-          <div class="row">
-            <h1>Cards</h1>
+  <aside id="rightSidebar">
+    <nav class="sidebarItems">
+      <ul class="nav-group">
+        <li><a href="javascriopt:vod(0);">Left Sidebar</a></li>
+        <li><a href="javascriopt:vod(0);">Right Sidebar</a></li>
+        <li><a href="javascriopt:vod(0);">Dual Sidebars</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="page-content">
+    <section class="pageBanner-md">
+      <div class="grid-fw">
+        <div class="row">
+          <h1>Cards</h1>
+          <h2>Cards provide a flexible, and extensible content container with multiple variants and options.</h2>
+        </div>
+      </div>
+    </section>
+    <div class="grid-fw">
+      <div class="row">
+        <div class="col-4xs">
+          <div class="card">
+            <img class="responsive-img" src="http://via.placeholder.com/350x150">
+            <div class="card-title"> Title Header</div>
+            <div class="card-body">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into electronic typesetting.
+            </div>
           </div>
         </div>
-      </section>
-      <div class="grid-fw">
+        <div class="col-4xs">
+          <div class="card">
+            <div class="card-title"> Title Header</div>
+            <div class="card-body">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into electronic typesetting.
+            </div>
+            <img class="responsive-img" src="http://via.placeholder.com/350x150">
+          </div>
+        </div>
+        <div class="col-4xs">
+          <div class="card">
+            <div class="card-body">
+              Empty Card
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
-  </div>
+    </div>
+  </article>
+</div>
