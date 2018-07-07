@@ -3,7 +3,7 @@
 /* Mobile Default page wrappers padding are zero to start them closed. */
 #pageWrapper {
   padding-top: $body-top-push-mobile;
-  padding-left: $sidebar-icon-width;
+  padding-left: 0;
   padding-right: 0;
   @include easeIn;
   /* 768px or Higher Display Sidebars. */
@@ -17,9 +17,12 @@
     }
   }
 }
+#rightSidebar  ul {
+ width: $right-sidebar-width;
+}
 /* Leftbar Open Toggled */
 #pageWrapper.toggled {
-  padding-left: $sidebar-icon-width;
+  padding-left: 0;
   #leftSidebar {
     width: $left-sidebar-width;
   }
@@ -35,9 +38,9 @@
 @media (min-width:768px) {
   /* Leftbar Closed Toggle */
   #pageWrapper.toggled {
-    padding-left: $sidebar-icon-width;
+    padding-left: 0;
     #leftSidebar {
-      width: $sidebar-icon-width;
+      width: 0;
     }
   }
   /* Rightbar Closed Toggle */
@@ -93,9 +96,6 @@
     }
   }
 }
-.page-content {
-    padding:0;
-}
 // --- Sidebar Styles ---------------------------------------------------------
 /* Make all sidebars fill the height of the screen,not wrap text, and scroll */
 #leftSidebar, #rightSidebar {
@@ -108,7 +108,7 @@
 /* Leftbar Closed style */
 #leftSidebar {
   white-space: nowrap;
-  width: $sidebar-icon-width;
+  width: 0;
   left: $left-sidebar-width;
   margin-left: -$left-sidebar-width;
   background-color: $left-sidebar-background-color;

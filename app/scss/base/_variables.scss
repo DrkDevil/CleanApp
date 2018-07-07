@@ -208,6 +208,7 @@ $sidebar-nav-items-spacing: 15px;
 
 // -- Right Sidebar Base
 $right-sidebar-width: 250px;
+$neg-right-sidebar-width: -$right-sidebar-width;
 $right-sidebar-text-color: $grey-blue;
 $right-sidebar-background-color: $off-white;
 
@@ -216,7 +217,7 @@ $right-sidebar-background-color: $off-white;
 // -- Right Sidebar Link Hover States
 
 $sidebar-fntsize: 1rem;
-
+$sidebar-icon-width: 47px;
 
 // ----- #Buttons -------------------------------------------------------------
 // Default styling of solid and outlined buttons
