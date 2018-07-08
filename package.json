@@ -16,7 +16,12 @@
     "gulp-sass": "^4.0.1",
     "gulp-repl": "^2.0.3",
     "readline-ui": "^2.2.3",
+    "ansi-cyan": "^0.1.1",
+    "ansi-yellow": "^0.1.1",
+    "ansi-green": "^0.1.1",
+    "ansi-red": "^0.1.1",
     "ansi-bgcyan": "^0.1.1",
+    "ansi-bgred": "^0.1.1",
     "ansi-bggreen": "^0.1.1"
   },
   "engines": {

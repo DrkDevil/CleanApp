@@ -8,8 +8,13 @@ var eslint            = require('gulp-eslint');
 var templateCache     = require('gulp-angular-templatecache');
 var friendlyFormatter = require('eslint-friendly-formatter');
 var browserSync       = require('browser-sync');
-var bgCyan           = require('ansi-bggreen');
-var bgGreen            = require('ansi-bgcyan');
+var yellowTxt         = require('ansi-yellow');
+var greenTxt          = require('ansi-green');
+var redTxt            = require('ansi-red');
+var cyanTxt            = require('ansi-cyan');
+var bgGreen           = require('ansi-bggreen');
+var bgCyan            = require('ansi-bgcyan');
+var bgRed             = require('ansi-bgred');
 var UI                = require('readline-ui');
 var ui                = new UI();
 // ----- Reload BrowserSync -------------------------------------------------------------------
@@ -22,34 +27,34 @@ gulp.task('BonsaiApp', function (cb) {
 gulp.task('stop', function (cb) {
   if (gulp.repl) {
     gulp.repl.close();
+    console.log(bgRed('BonsaiApp has stopped. You may now press ctrl+c ...'));
   }
   cb();
 });
 
 // ---- CLI UI ------------------------------------------------------------------
+
 var prompt = 'Press Enter to input a command and run a task.';
 var prompt2 = 'Type ? for help.'
 var running = 'Run Command ';
-
-ui.render(bgCyan(prompt));
+console.log(bgCyan(prompt));
 ui.render(bgGreen(prompt2));
+console.log(' ');
 ui.on('keypress', function() {
-  ui.render(bgGreen(ui.rl.line));
+  ui.render(greenTxt(ui.rl.line));
 });
 
 ui.on('line', function(answer) {
-  ui.render(running + bgGreen(answer));
+  ui.render(yellowTxt(running) + greenTxt(answer));
 });
-
-
 gulp.task('?', function() {
-  console.log('****************************');
-  console.log('*       COMMAND LIST       *');
-  console.log('****************************');
-  console.log('*  lint - to run ESlint    *');
-  console.log('*  sass - to run GulpSass  *');
-  console.log('*  reload - to reload app  *');
-  console.log('****************************');
+  console.log(cyanTxt('--------------------------------------'));
+  console.log(yellowTxt('-  Command List:                    -'));
+  console.log(cyanTxt('--------------------------------------'));
+  console.log(yellowTxt('-  Lint: Run ESLint                 -'));
+  console.log(yellowTxt('-  Sass: Run SaSS Compiler          -'));
+  console.log(yellowTxt('-  Stop: End BonsaiApp loop         -'));
+  console.log(cyanTxt('--------------------------------------'));
 });
 
 // ---- JavaScript Linting (ESlint) -----------------------------------------------------------
