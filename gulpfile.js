@@ -8,7 +8,8 @@ var eslint            = require('gulp-eslint');
 var templateCache     = require('gulp-angular-templatecache');
 var friendlyFormatter = require('eslint-friendly-formatter');
 var browserSync       = require('browser-sync');
-var cyan              = require('ansi-bgcyan');
+var bgCyan           = require('ansi-bggreen');
+var bgGreen            = require('ansi-bgcyan');
 var UI                = require('readline-ui');
 var ui                = new UI();
 // ----- Reload BrowserSync -------------------------------------------------------------------
@@ -26,16 +27,20 @@ gulp.task('stop', function (cb) {
 });
 
 // ---- CLI UI ------------------------------------------------------------------
+var prompt = 'Press Enter to input a command and run a task.';
+var prompt2 = 'Type ? for help.'
+var running = 'Run Command ';
 
-// first, we need to render the "question"
-// to display in the terminal
-var prompt = 'Type a command to run a task. Type ? for help.';
-ui.render(cyan(prompt));
+ui.render(bgCyan(prompt));
+ui.render(bgGreen(prompt2));
 ui.on('keypress', function() {
-  ui.render(ui.rl.line);
+  ui.render(bgGreen(ui.rl.line));
 });
 
-ui.on('line', function(answer) { });
+ui.on('line', function(answer) {
+  ui.render(running + bgGreen(answer));
+});
+
 
 gulp.task('?', function() {
   console.log('****************************');

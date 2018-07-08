@@ -16,7 +16,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-repl": "^2.0.3",
     "readline-ui": "^2.2.3",
-    "ansi-bgcyan": "^0.1.1"
+    "ansi-bgcyan": "^0.1.1",
+    "ansi-bggreen": "^0.1.1"
   },
   "engines": {
     "node": ">=0.10.0"
