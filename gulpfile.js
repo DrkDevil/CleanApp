@@ -33,10 +33,11 @@ gulp.task('stop', function (cb) {
 });
 
 // ---- CLI UI ------------------------------------------------------------------
-
+var Welcome = 'Welcome to BonsaiApp: Develop with peace of mind.';
 var prompt = 'Press Enter to input a command and run a task.';
 var prompt2 = 'Type ? for help.'
 var running = 'Run Command ';
+console.log(yellowTxt(Welcome));
 console.log(bgCyan(prompt));
 ui.render(bgGreen(prompt2));
 console.log(' ');
