@@ -1,0 +1,29 @@
+.breadcrumb {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style: none;
+	background-color: $breadcrumb-background-color;
+	color: $breadcrumb-text-color;
+	padding: $breadcrumb-padding;
+	margin-bottom: $breadcrumb-margin-bottom;
+	border-radius: $breadcrumb-border-radius;
+}
+.breadcrumb li {
+    padding-left: 0.5rem;
+}
+.breadcrumb li:first-of-type {
+    padding-left: 0;
+}
+.breadcrumb li:first-child:before {
+    content: "";
+}
+.breadcrumb li::before {
+    display: inline-block;
+    padding-right: $breadcrumb-divider-padding-right;
+    content: $breadcrumb-divider;
+}
+.breadcrumb li.active {
+	color: $breadcrumb-active-page;
+}

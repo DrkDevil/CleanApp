@@ -1,33 +1,290 @@
-// ----- Base Variables -----------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------  BonsaiUI - Variables: Table of Contents  -----------------
+// -----------------------------------------------------------------------------
+// --  Easily navigate to a location by searching for its section, or title.  --
+// -----------------------------------------------------------------------------
+//     Search for a Main Section by looking up the #Section Name
+//     Search for a SubSection by looking up the -- Sub Section Name
+//     Remember to include the  (#) and (--) in your searches for accuracy.
+// -----------------------------------------------------------------------------
+/*
+  *    #Grid System Variables:       (Base variables to control the grid system)
+	*     -- Base Settings
+	*     -- Mixin Breakpoints
+	*			   -- Grid Specific
+	*        -- Custom Breakpoints
+	*
+	*    #Typography & Color Scheme Variables:  (Font & Color Scheme declarations)
+	*     -- Fonts
+	*     -- Context Colors
+	*     -- HTML Color Pallete Resets
+	*     -- Custom Grey Scale
+	*
+  *    #Body Variables                                (Basic Common Body Styles)
+	*     -- Base body
+	*     -- Navbar body top push
+	*
+	*    #Main Navbar                             (Syles for BonsaiUI Main Navbar)
+	*     -- Navbar Base Styles
+	*     -- Navbar Links and Hover States
+	*     -- Navbar Brand
+	*
+	*    #Sidebars                      (Styles for left, right, or dual sidebars)
+	*     -- Left Sidebar Base
+	*     -- Left Sidebar Border Style
+	*     -- Left Sidebar navHeader
+  *     -- Left Sidebar Link Hover States
+	*     -- Right Sidebar Base
+	*     -- Right Sidebar Border Style
+	*     -- Right Sidebar navHeader
+  *     -- Right Sidebar Link Hover States
+	*
+	*    #Buttons                                               (<button> Styling)
+	*     --  Button Base
+	*     --  Solid Buttons
+	*         --  Solid Button Hover States
+	*     --  Outlined Buttons
+	*         --  Outlined Button Hover States
+	*
+	*    #Badges                                                  (Badge Styling)
+	*     --  Badge Base
+	*
+*/
+// -----------------------------------------------------------------------------
 
-// Fonts
-$primary-font: 'Open Sans', sans-serif;
-$secondary-font: 'Roboto', sans-serif;
-
-// ----- Component Variables ------------------------------------------
-
-// Navbar
-$navbar-color: #2c2c2c;
-$navbar-height: 20px;
-$navbar-link-spacing: 8px;
-$navbar-text-color: #fff;
-$navbar-text-hover-color: #bbb;
-// ----- Helper Variables ---------------------------------------------
-
-// ----- Layout Variables ---------------------------------------------
-
-// Grid System  
-$gutters: 50px;
+// ----- #Grid System Variables ------------------------------------------------
+// These are the base variables to control the grid system.
+// -----------------------------------------------------------------------------
+$gutters: 15px;
+$neg-gutters: -$gutters;
 $gridPadding: 15px;
 $colSpacing: 5px;
-$gridsize: 12;
-$breakpoints: ("xs": 420px, "sm": 768px, "md": 992px, "lg": 1200px);
+$gridsize: 12; // Grid Sizes must be divisible by two.
+$breakpoints: ("xs": 576px, "sm": 768px, "md": 992px, "lg": 1200px);
 
-// The Variable below are used for demo purposes and should be 
-// replaced with your own. They are left in here for you to see
-// the structure of the scss.
+// To edit Media queries for easier use in your scss use the Mixins Variables
+// ----- Mixin Breakpoints -----------------------------------------------------
+$mixinBreakpoints: (
+	// -- Grid Specific
+	"xs": 576px,
+	"sm": 768px,
+	"md": 992px,
+	"lg": 1200px,
+	// -- Custom Breakpoints
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      560px,
+  "tablet-small": 640px,
+  "tablet":       768px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "desktop-wide": 1440px
+);
 
-// ----- Page Variables -----------------------------------------------
+// ----- #Typography Variables -------------------------------------------------
+// Font & Color Scheme declarations
+// -----------------------------------------------------------------------------
 
-// ----- Theme Variables ----------------------------------------------
+// -- Fonts
+$primary-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$secondary-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
+// -- Context Colors
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// -- Shade Colors
+//  These are a slightly darker version of your Context colors
+//  They are primarily used as hover state colors of buttons, and border colors
+
+$primary-shade: #0760bf;
+$secondary-shade: #575e65;
+$success-shade: #23943d;
+$info-shade: #0e8496;
+$warning-shade: #e6ae06;
+$danger-shade: #bd2b3a;
+$light-shade: #dfe3e7;
+$dark-shade: #282a36;
+
+// -- HTML Color Pallete Resets
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #8d1422;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$transparent: rgba(255, 255, 255, 0);
+
+
+// -- Custom Grey Scale
+$semiTrans:  (rgba(12, 12, 12, 0.25));
+$white: #ffffff;
+$off-white: #f8f9fa;
+$white-smoke: #F5F5F5;
+$light-grey: #D3D3D3;
+$silver:#C0C0C0;
+$X11grey: #BEBEBE;
+$grey: #808080;
+$mid-grey: #6c757d;
+$dark-grey: #343a40;
+$grey-blue: #282a36;
+$black: #000000;
+
+// ----- #Body Variables -------------------------------------------------
+// Basic Common Body Styles
+// -----------------------------------------------------------------------------
+// -- Base body
+$body-color: $off-white;
+$body-line-height: 1;
+
+// -- Navbar body top push to place the content below the navbar.
+$body-top-push:66px;
+$body-top-push-mobile:115px;
+
+// ----- #Main Navbar ----------------------------------------------------------
+// The Main Syles for BonsaiUI Navbar
+// -----------------------------------------------------------------------------
+
+// -- Navbar Base Styles
+$navbar-zindex:9000;
+$navbar-padding: 0 .75rem;
+$navbar-font-size-sm: 0.75rem;
+$navbar-font-size-md: 0.8rem;
+$navbar-letter-spacing: .05rem;
+$navbar-line-height: 1.875rem;
+$navbar-text-color: $white;
+$navbar-background-color: #142029;
+
+// -- Navbar Links and Hover States
+$navbar-links-padding: .5rem .35rem;
+$navbar-links-padding-mq: 1.1rem .35rem;
+$navbar-active-text-color: $light-grey;
+$navbar-hover-text-color: $light-grey;
+$navbar-hover-background: $white;
+$navbar-hover-active-background: $white;
+$navbar-hover-focus-background: $white;
+
+// -- Navbar Brand
+$navbar-brand-padding: 30px 0 18px 0;
+$navbar-brand-padding-mq-tablet: 22px 18px 0 8px;
+$navbar-brand-font-size:1.3rem;
+$navbar-brand-line-height: 1.125rem;
+
+
+// ----- #Sidebars -------------------------------------------------------------
+// Styles for left, right, or dual sidebars
+// -----------------------------------------------------------------------------
+
+// -- Left Sidebar Base
+$left-sidebar-width: 280px;
+$left-sidebar-background-color: #282a36;
+$left-sidebar-text-color: $white;
+
+// -- Left Sidebar Border Style
+$left-sidebar-border-color: $transparent;
+$left-sidebar-border-style: solid;
+$left-sidebar-border-size: 1px;
+
+// -- Left Sidebar Link Hover States
+$left-sidebar-hover-text-color: $white;
+$left-sidebar-hover-background: $semiTrans;
+$left-sidebar-hover-active-background: #142029;
+$left-sidebar-hover-focus-background: $semiTrans;
+
+
+// -- Sidebar navHeader
+$sidebar-navHeader-color: $off-white;
+$sidebar-navHeader-font-size: 1.0rem;
+$sidebar-navHeader-font-weight: 700;
+$sidebar-nav-items-spacing: 15px;
+
+
+// -- Right Sidebar Base
+$right-sidebar-width: 250px;
+$neg-right-sidebar-width: -$right-sidebar-width;
+$right-sidebar-text-color: $grey-blue;
+$right-sidebar-background-color: $off-white;
+
+// -- Right Sidebar Border Style
+// -- Right Sidebar navHeader
+// -- Right Sidebar Link Hover States
+
+$sidebar-fntsize: 1rem;
+$sidebar-icon-width: 47px;
+
+// ----- #Buttons --------------------------------------------------------------
+// Default styling of solid and outlined buttons
+// -----------------------------------------------------------------------------
+
+// -- Buttons
+$btn-font-size: 1.0rem;
+$btn-font-family: $secondary-font;
+$btn-padding: 0.5rem 1rem;
+$btn-border:1px solid $transparent;
+$btn-border-radius: 3px;
+$btn-default-backgroud: $light-grey;
+
+// -- Outlined Buttons
+$btn-outlined-border:1px solid $red;
+$btn-outlined-background: $transparent;
+$button-outline-text-color: #000;
+$button-outline-text-color-hover: #fff;
+$button-outline-color: #848483;
+$button-outline-color-hover: #271010;
+
+// -- Solid Buttons
+$button-color:#271010;
+$button-color-hover:#142029;
+
+// -- Outlined Button Hovers
+$btn-outlined-color-hover:#fff;
+$btn-outlined-border-hover: 1px solid #142029;
+$btn-outlined-background-hover: #a33636;
+
+// -- Solid Buttons
+$btn-solid-border: 1px solid #142029;
+$btn-solid-background: #142029;
+
+// -- Solid Button Hovers
+$btn-solid-color-hover:#cecece;
+$btn-solid-border-hover: 1px solid #4a0909;
+$btn-solid-background-hover: #a33636;
+
+// ----- #Badges ---------------------------------------------------------------
+// Default styling of badges
+// -----------------------------------------------------------------------------
+// -- Badge Base Styling
+$badge-padding: .3em .5em;
+$badge-line-height: 1.0;
+$badge-border-radius: .25rem;
+$badge-font-color: $white;
+
+// -- Pill Badge Styling
+$pill-badge-radius: 1.0rem;
+$pill-badge-padding: .3em .8em;
+
+// ----- #Breadcrumb -----------------------------------------------------------
+// Default styling of breadcrumbs
+// -----------------------------------------------------------------------------
+$breadcrumb-padding: 0.75rem 1rem;
+$breadcrumb-margin-bottom: 1rem;
+$breadcrumb-background-color: $light-grey;
+$breadcrumb-text-color: $grey;
+$breadcrumb-border-radius: 0.25rem;
+$breadcrumb-active-page: $red;
+$breadcrumb-divider: "/";
+$breadcrumb-divider-padding-right: .5rem;
+
+// ----- #Cards -----------------------------------------------------------
+// Default styling of Cards
+// -----------------------------------------------------------------------------

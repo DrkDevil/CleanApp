@@ -1,6 +1,8 @@
 // AngularJS main app inialization
 angular.module('BonsaiApp',[
   'BonsaiApp.index',
-  'BonsaiApp.newView',
+  'BonsaiApp.docs',
+  'hljs',
+  'duScroll',
   'templates'
 ]);

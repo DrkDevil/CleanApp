@@ -1,12 +1,20 @@
-//Demo styles -- Please Replace when creating your own app.
-html { height: 100%; font-family: $primary-font; overflow-x: hidden; }
-body { background: url('../../img/backgrounds/swirl_pattern.jpg') repeat; }
-footer { padding: 10px; background-color: #2B2B2B; color: #bbb; width: 100%; font-family: $secondary-font; font-size:0.8rem; }
-footer a { color: #a33636; text-decoration: none; }
-footer a:hover { color: #e2e2e2; }
-p { margin-bottom: 15px;}
+// Styles for UI Demos
+.alrt [class*='alert'] {
+  margin: 10px 0;
+}
+// Grid Reset for BonsaiUI Documentation
+.grid, .grid-fw {
+    padding: 0 30px;
+    margin: 0 auto;
+}
+// pageBanner Reset for BonsaiUI Documentation
+[class*='pageBanner-']{
+	width: 100%;
+	background-color: $transparent;
+	border: 0 ;
+}
 
-//These Demo Styles Make the Grid Visible.
-.gridDemo [class*='col-'] { padding-right: 5px !important; }
-.gridDemo [class*='col-'] > p { background-color: #004d81; padding: 10px; margin-bottom: 0; border-radius: 4px; font-size: 0.8rem; text-align: center; color: #fff; }
+// These Demo Styles Make the Grid Visible.
+.gridDemo [class*='col-'] { padding-right: 0px !important; padding-left: 5px !important; }
+.gridDemo [class*='col-'] > p { background-color: $grey; padding: 10px; margin-bottom: 0; border-radius: 4px; font-size: 0.8rem; text-align: center; color: #fff; }
 * { outline: 0; }

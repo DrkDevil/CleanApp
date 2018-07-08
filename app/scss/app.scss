@@ -1,46 +1,54 @@
-/* --- Delete, modify, or use the scss files in the scss folder to create your own to start styling you own app. --- */ 
-
+// -----------------------------------------------------------------------------
+//   BonsaiUI -- ScSS Imports File
+// -----------------------------------------------------------------------------
 /*
-  * BonsaiApp - Clean: CSS
   * Version: 0.0.1
   * Author: Brian Orr @digitalreligion
   * Author URL: http://www.digitalreligion.net/
   * Github: https://github.com/DrkDevil
 */
-
-/*  Allow angular.js to be loaded in body, hiding cloaked elements until templates compile. */
-[ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
+// -----------------------------------------------------------------------------
 
 @charset "utf-8";
 
-// App Base ------------------- -------------------------------------
-@import 'base/variables';        // Application Configuration 
-@import 'base/global';           // Global Reset Styles
-@import 'base/typography';       // Typography Settings. 
+//  Allow angular.js to be loaded in body,
+//  hiding cloaked elements until templates compile.
+[ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
 
+// App Base ------------------- ------------------------------------------------
+@import 'base/variables';        //  Application Configuration
+@import 'base/global';           //  Global Reset Styles
+@import 'base/typography';       //  Typography Settings.
 
-// Helpers -------------------- -------------------------------------
-@import 'helpers/functions';     // SCSS Functions
-@import 'helpers/mixins';        // SCSS Mixins
-@import 'helpers/helpers';       // CSS Helpers
+// Helpers -------------------- ------------------------------------------------
+@import 'helpers/functions';    //  SCSS Functions
+@import 'helpers/mixins';       //  SCSS Mixins
+@import 'helpers/helpers';      //  CSS Helpers
 
-// Layout --------------------- -------------------------------------
-@import 'layout/bui-grid';       // CSS Grid System
+// Layout --------------------- ------------------------------------------------
+@import 'layout/bui-grid';      //  CSS Grid System
 
-// Components ----------------- -------------------------------------
-@import 'components/bui-navs';   // Navigation Types - in Dev
+// Components ----------------- ------------------------------------------------
+@import 'components/bui-alerts';       //  Alerts & Notifications
+@import 'components/bui-badges';       //  Badges
+@import 'components/bui-breadcrumbs';  //  Breadcrumbs
+@import 'components/bui-cards';        //  Cards
+@import 'components/bui-navbar';       //  Navigation - Navbar
+@import 'components/bui-sidebar';      //  Navigation - Dual Sidebars
+//@import 'components/bui-pillbar';    //  Navigation - Pillbars (re-impliment)
+@import 'components/bui-footer';       //  Bonsai Footer
+@import 'components/bui-buttons';      //  Bonsai UI Buttons
+@import 'components/bui-pageBanner';   //  PageBanners
+//@import 'components/bui-effects';    //  Bonsai UI Effects (depreciate)
 
-// Page ----------------------- -------------------------------------
+// Page ----------------------- ------------------------------------------------
 @import 'pages/main';            // Main Page
-@import 'pages/features';        // Features Page
-@import 'pages/philosophy';      // Philosophy Page
-@import 'pages/newView';         // newView Page
+@import 'pages/docs';            // Document Pages
 @import 'pages/soon';            // Coming Soon Page
 
-// Themes --------------------- -------------------------------------
-@import 'themes/demoStyles';     // Visual Styles for the Demo pages.
+// Themes --------------------- ------------------------------------------------
+@import 'base/colors';           //  Background and Foreground Colors
+@import 'themes/demoStyles';    // Visual Styles for the Demo pages.
 
-// Vendor CSS ----------------- -------------------------------------
-@import 'vendor/animate';        // Animate.css
-
-
+// Vendor CSS ----------------- ------------------------------------------------
+@import 'helpers/syntax-highlighting';   //  Syntax Highlighting

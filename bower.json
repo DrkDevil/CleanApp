@@ -1,7 +1,7 @@
 {
   "name": "bonsaiapp",
   "description": "A Zen-like Angular Modular BaseApp with Modern, &amp; Elegant UI for Rapid Application Development.",
-  "authors": [ { "name": "Brian Orr (drkdevil)" } ], 
+  "authors": [ { "name": "Brian Orr (drkdevil)" } ],
   "main": "index.html",
   "license": "MIT",
   "homepage": "http://bonsaiapp.digitalreligion.net",
@@ -13,7 +13,7 @@
   "dependencies": {
     "angular": "~1.4.9",
     "angular-route": "~1.4.9",
-	"gulp": "^3.8.5",
-	"jquery": "^3.1.1"
+	  "gulp": "^3.8.5",
+	  "jquery": "^3.1.1"
   }
 }

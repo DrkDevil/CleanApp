@@ -1,0 +1,199 @@
+// #PageWrapper is for a single leftnavbar with optional right slider hidden off canvas.
+// #PageWrapper-dsb is for dual visible sidebars simultaneously.
+/* Mobile Default page wrappers padding are zero to start them closed. */
+#pageWrapper {
+  padding-top: $body-top-push-mobile;
+  padding-left: 0;
+  padding-right: 0;
+  @include easeIn;
+  /* 768px or Higher Display Sidebars. */
+  @include mq('tablet') {
+    padding-top: $body-top-push;
+    padding-left: $left-sidebar-width;
+    padding-right: 0;
+    @include easeIn;
+    #rightSidebar {
+        width:0;
+    }
+  }
+}
+#rightSidebar  ul {
+ width: $right-sidebar-width;
+}
+/* Leftbar Open Toggled */
+#pageWrapper.toggled {
+  padding-left: 0;
+  #leftSidebar {
+    width: $left-sidebar-width;
+  }
+}
+/* Rightbar Open Toggled */
+#pageWrapper.r-toggled {
+  padding-right: 0;
+  #rightSidebar {
+    width: $right-sidebar-width!important;
+  }
+}
+// Media Query : Above
+@media (min-width:768px) {
+  /* Leftbar Closed Toggle */
+  #pageWrapper.toggled {
+    padding-left: 0;
+    #leftSidebar {
+      width: 0;
+    }
+  }
+  /* Rightbar Closed Toggle */
+  #pageWrapper.r-toggled {
+    padding-right: 0;
+    #rightSidebar {
+      width: 0;
+    }
+  }
+}
+/* Mobile Default page wrappers padding are zero to start them closed. */
+#pageWrapper-dsb {
+  padding-top: $body-top-push-mobile;
+  padding-left: 0;
+  padding-right: 0;
+  @include easeIn
+  /* 768px or Higher Display Sidebars. */
+  @include mq('tablet') {
+    padding-top: $body-top-push;
+    padding-left: $left-sidebar-width;
+    padding-right: $right-sidebar-width;
+    @include easeIn;
+  }
+}
+/* Leftbar Open Toggled */
+#pageWrapper-dsb.toggled {
+  padding-left: 0;
+  #leftSidebar {
+    width: $left-sidebar-width;
+  }
+}
+/* Rightbar Open Toggled */
+#pageWrapper-dsb.r-toggled {
+  padding-right: 0;
+  #rightSidebar {
+    width: $right-sidebar-width;
+  }
+}
+// Media Query : Above
+@media (min-width:768px) {
+  /* Leftbar Closed Toggle */
+  #pageWrapper-dsb.toggled {
+    padding-left: 0;
+    #leftSidebar {
+      width: 0;
+    }
+  }
+  /* Rightbar Closed Toggle */
+  #pageWrapper-dsb.r-toggled {
+    padding-right: 0;
+    #rightSidebar {
+      width: 0;
+    }
+  }
+}
+// --- Sidebar Styles ---------------------------------------------------------
+/* Make all sidebars fill the height of the screen,not wrap text, and scroll */
+#leftSidebar, #rightSidebar {
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    overflow-y: auto;
+    @include easeIn
+}
+/* Leftbar Closed style */
+#leftSidebar {
+  white-space: nowrap;
+  width: 0;
+  left: $left-sidebar-width;
+  margin-left: -$left-sidebar-width;
+  background-color: $left-sidebar-background-color;
+  a {
+    color: $left-sidebar-text-color;
+  }
+  /* Leftbar open style */
+  @include mq('tablet') {
+    width: $left-sidebar-width;
+  }
+}
+
+/* Rightbar Closed style */
+#rightSidebar {
+    width: 0;
+    right: $right-sidebar-width;
+    margin-right: calc(#{$neg-right-sidebar-width} - 17px);
+    background-color: $right-sidebar-background-color;
+    overflow-x: hidden;
+    a {
+        color: $right-sidebar-text-color;
+    }
+    /* Rightbar open style */
+    @include mq('tablet') {
+        width: $right-sidebar-width;
+    }
+}
+
+// Common link Styling for that can be used for both sidebars.
+.nav-group {
+  padding-bottom: $sidebar-nav-items-spacing;
+}
+/* Bold Headers for Grouped Navigation  Items */
+.navHeader {
+  color: $sidebar-navHeader-color;
+  font-size: $sidebar-navHeader-font-size;
+  font-weight: $sidebar-navHeader-font-weight;
+  text-transform: uppercase;
+}
+/* Default Hover States for sidebars */
+.sidebarItems {
+  li {
+    font-size: $sidebar-fntsize;
+    text-indent: 15px;
+    line-height: 2.0rem;
+    letter-spacing: .05rem;
+    a {
+      display: block;
+      text-decoration: none;
+      &:hover {
+        color: $left-sidebar-hover-text-color;
+        background: $left-sidebar-hover-background;
+      }
+      &:active {
+       background: $left-sidebar-hover-active-background;
+      }
+      &:focus {
+        background: $left-sidebar-hover-focus-background;
+      }
+    }
+  }
+}
+// Font Awesome 5 Resets for icon placement
+.sidebarItems {
+  .fa-fw {
+    width:$sidebar-icon-width;
+    margin-left: -23px;
+    margin-right: 10px;
+  }
+}
+#pageWrapper.toggled #leftSidebar:hover, #leftSidebar:hover {
+    position: fixed;
+    width: $left-sidebar-width;
+
+}
+#pageWrapper.toggled #leftSidebar:hover  {
+  .navHeader{
+  color: $white;
+  @include easeIn;
+  }
+}
+
+#pageWrapper.toggled #leftSidebar {
+  .navHeader {
+    color: transparent;
+    @include easeIn;
+  }
+}

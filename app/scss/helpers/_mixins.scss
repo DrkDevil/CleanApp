@@ -1,1 +1,54 @@
 // Add your SCSS Mixins here.
+
+// ----- Media Queries -----------------------------------------------------
+// Note: Usage -- @include mq('tablet-wide') {} -- Breakpoints in Variables
+@mixin mq($width, $type: min) {
+  @if map_has_key($mixinBreakpoints, $width) {
+    $width: map_get($mixinBreakpoints, $width);
+      @if $type == max {
+        $width: $width - 1px;
+      }
+      @media only screen and (#{$type}-width: $width) {
+        @content;
+      }
+  }
+}
+
+// ----- Animation Mixins -----------------------------------------------------
+@mixin easeIn {
+  -webkit-transition: all 0.5s ease; 
+     -moz-transition: all 0.5s ease;
+	   -o-transition: all 0.5s ease;
+	      transition: all 0.5s ease; 
+}
+
+// ----- Hardware Accleration -----------------------------------------------------
+@mixin hardware($backface: true, $perspective: 1000) {
+  @if $backface {
+    backface-visibility: hidden;
+  }
+  perspective: $perspective;
+}
+
+// ----- Trunication -----------------------------------------------------
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// ----- Pseudo Elements Basic 3 -----------------------------------------------------
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// ----- Full Page Background Cover -----------------------------------------------------
+@mixin cover {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}

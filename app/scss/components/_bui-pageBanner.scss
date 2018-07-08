@@ -1,0 +1,53 @@
+// ------ NOTE!!! ------
+// These Page Banners from BonsaiUI are still in development,
+// and this is just the bare minium used for the demonstration of BonsaiApp.
+// Please feel free to delete and create your own.
+// And remeber, the easiest way to edit BonsaiUI is via the variables.scss
+
+[class*='pageBanner-']{
+	width: 100%;
+	background-color: $light-grey;
+	border-bottom: 1px solid #cecece;
+  h1 {
+	  font-family: $primary-font ;
+	  font-size: 3.5rem;
+    font-weight: 600;
+	  color: #142029;
+ }
+ h2 {
+ 	font-family: $secondary-font ;
+	font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.0rem;
+ }
+}
+.pageBanner-sm { padding: 20px 0; }
+.pageBanner-md { padding: 40px 0; }
+.pageBanner-lg { padding: 60px 0; }
+
+// Animated Banner Background
+
+.animatedBanner {
+background: linear-gradient(40deg, #1b3261, #233441 );
+background-size: 400% 400%;
+
+-webkit-animation: animatedBanner 3s ease infinite;
+-moz-animation: animatedBanner 3s ease infinite;
+animation: animatedBanner 3s ease infinite;
+
+@-webkit-keyframes animatedBanner {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-moz-keyframes animatedBanner {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@keyframes animatedBanner {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+}

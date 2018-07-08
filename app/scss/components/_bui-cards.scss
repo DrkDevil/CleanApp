@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  img {
+    margin: 0 0 -2px 0;
+  }
+}
+[class*='card-title'] {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.card-body {
+  padding: 20px;
+}

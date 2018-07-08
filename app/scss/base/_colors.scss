@@ -1,0 +1,50 @@
+// Classes to change an elements background colors
+// Background Colors
+[class*='-primary'] { background-color:  $primary; }
+[class*='-secondary'] { background-color:  $secondary; }
+[class*='-success'] { background-color:  $success; }
+[class*='-danger'] { background-color:  $danger; }
+[class*='-warning'] { background-color:  $warning; }
+[class*='-info'] { background-color:  $info; }
+[class*='-light'] { background-color:  $light; }
+[class*='-dark'] { background-color:  $dark; }
+
+// Background Colors
+[class*='-blue'] { background-color:  $blue; }
+[class*='-indigo'] { background-color:  $indigo; }
+[class*='-purple'] { background-color:  $purple; }
+[class*='-pink'] { background-color:  $pink; }
+[class*='-red'] { background-color:  $red; }
+[class*='-orange'] { background-color:  $orange; }
+[class*='-yellow'] { background-color:  $yellow; }
+[class*='-green'] { background-color:  $green; }
+[class*='-teal'] { background-color:  $teal; }
+[class*='-cyan'] { background-color:  $cyan; }
+[class*='-white'] { background-color:  $white; }
+[class*='-grey'] { background-color:  $grey; }
+[class*='-dark-grey'] { background-color:  $dark-grey; }
+
+// Classes to change an elements color
+.primary { color:  $primary; }
+.secondary { color:  $secondary; }
+.success { color:  $success; }
+.danger { color:  $danger; }
+.warning { color:  $warning; }
+.info { color:  $info; }
+.light { color:  $light; }
+.dark { color:  $dark; }
+
+// Alternative Colors
+.blue { color:  $blue; }
+.indigo { color:  $indigo; }
+.purple { color:  $purple; }
+.pink { color:  $pink; }
+.red { color:  $red; }
+.orange { color:  $orange; }
+.yellow { color:  $yellow; }
+.green { color:  $green; }
+.teal { color:  $teal; }
+.cyan { color:  $cyan; }
+.white { color:  $white; }
+.grey { color:  $grey; }
+.dark-grey { color:  $dark-grey; }

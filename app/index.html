@@ -1,48 +1,60 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js" ng-app="BonsaiApp">
 <head>
-  <base href="/">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A Zen-like Angular Modular BaseApp with Modern, and Elegant UI for Rapid Application Development.">
-  <link rel="author" href="humans.txt" /> 
-  <link rel="stylesheet" href="css/app.css" /> 
+<base href="/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A Zen-like Angular Modular BaseApp with Modern, and Elegant UI for Rapid Application Development.">
+<link rel="author" href="humans.txt" />
+<link rel="stylesheet" href="css/app.css" />
+  <!-- Vendor CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
+<div ng-app="app">
 <body>
-  <nav class="navbar fixed-top">
-   <header><a href="/">BonsaiApp</a></header>
-    <ul>
-      <li><a href="/newView">Blank Page</a></li> 
-      <li><a href="/soon">Philosophy</a></li>
-      <li><a href="/soon">Features</a></li>
-      <li><a href="/soon">Documentation</a></li>  
-    </ul>
-  </nav>  
-  <main ng-cloak>
-    <!-- AngularJS Routing -->
-    <div ng-view=""></div>
-    <!-- End Routing -->
-  </main>
-  <!-- Jquery Library files -->
-  <script src="components/jquery/dist/jquery.min.js"></script>
-  <!-- AngularJS Library files --> 
-  <script src="components/angular/angular.min.js"></script> 
-  <script src="components/angular-route/angular-route.min.js"></script> 
-  <!-- Project files --> 
-  <script defer src="scripts/templates.js"></script> 
-  <script defer src="scripts/app.js"></script> 
-  <!-- Index --> 
-  <script defer src="scripts/index/index.js"></script> 
-  <script defer src="scripts/index/controllers.js"></script> 
-  <script defer src="scripts/index/directives.js"></script> 
-  <!-- New View --> 
-  <script defer src="scripts/newView/index.js"></script> 
-  <script defer src="scripts/newView/controllers.js"></script> 
-  <script defer src="scripts/newView/directives.js"></script> 
-  <footer class="fixed-bottom">
-    <div class="flt-left">Copyright, MIT License</div> 
-    <div class="flt-right">Created by: <a href="http://www.digitalreligion.net">Digital Religion</a></div> 
-  </footer>
+<header class="navbar fixed-top" role="navigation">
+  <div class="brand">
+    <a href="/">BonsaiApp</a>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/docs">Documentation</a></li>
+    <li><a href="/newView">Starter Pages</a></li>
+  </ul>
+  <ul class="flt-right">
+    <!-- This li is using an effect class located in the scss components folder -->
+    <li><a leftbar-toggle href="javascript:void(0);"><i class="fa fa-bars"></i></a></li>
+    <li><a rightbar-toggle href="javascript:void(0);"><i class="fa fa-bars"></i></a></li>
+  </ul>
+</header>
+<main ng-cloak>
+  <!-- AngularJS Routing -->
+  <div ng-view=""></div>
+  <!-- End Routing -->
+</main>
+<!-- Jquery Library files -->
+<script src="components/jquery/dist/jquery.min.js"></script>
+<!-- AngularJS Library files -->
+<script src="components/angular/angular.min.js"></script>
+<script src="components/angular-route/angular-route.min.js"></script>
+<!-- Required Project files -->
+<script defer src="scripts/templates.js"></script>
+<script defer src="scripts/app.js"></script>
+<!-- Index -->
+<script defer src="scripts/views/index/index.js"></script>
+<script defer src="scripts/views/index/controllers.js"></script>
+<script defer src="scripts/views/index/directives.js"></script>
+<!-- Documentation -->
+<script defer src="scripts/views/documentation/index.js"></script>
+<script defer src="scripts/views/documentation/controllers.js"></script>
+<script defer src="scripts/views/documentation/directives.js"></script>
+<!-- Modules -->
+<script src="scripts/vendor/codehighlighting.js"></script>
+<script src="scripts/vendor/angular-scroll.min.js"></script>
+<!-- Highlight.js (used for displaying code in pre tags) -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://pc035860.github.io/angular-highlightjs/angular-highlightjs.min.js"></script>
 </body>
+</div>
 </html>

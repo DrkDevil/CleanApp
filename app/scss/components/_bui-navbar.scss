@@ -1,0 +1,61 @@
+// ----- BonsaiUI Navbar -----------------------------------------------
+//   Ver. 1.2
+// ----------------------------------------------------------------------
+
+// Main Navbar
+.navbar {
+  width: 100%;
+  text-align: center;
+  z-index: $navbar-zindex;
+  padding: $navbar-padding ;
+  background-color: $navbar-background-color;
+  letter-spacing: $navbar-letter-spacing;
+  .brand {
+    padding: $navbar-brand-padding;
+	  a {
+	    text-align: center;
+	    font-size: $navbar-brand-font-size;
+	    line-height: $navbar-brand-line-height;
+	  }
+	  @include mq('tablet') {
+	    float: left;
+	    display: inline-block;
+	    padding: $navbar-brand-padding-mq-tablet ;
+	  }
+  }
+  ul {
+    display: inline-block;
+	  @include mq('tablet') {
+	    display: inline-block; float: left;
+	  }
+  }
+  li {
+    padding: $navbar-links-padding;
+    line-height: $navbar-line-height;
+    float: left;
+    @include mq('tablet') {
+	    padding: $navbar-links-padding-mq;
+	  }
+  }
+  a {
+    color: $navbar-text-color;
+	  text-decoration: none;
+	  font-size: $navbar-font-size-sm;
+	  &:hover {
+      text-decoration: none;
+		  color:$navbar-hover-text-color;
+	  }
+	  @include mq('tablet') {
+	    font-size:$navbar-font-size-sm;
+    }
+	  @include mq('md') {
+	    font-size: $navbar-font-size-md;
+	  }
+  }
+  .active {
+    a {
+      color:$navbar-hover-text-color;
+      font-weight: 500;
+    }
+  }
+}

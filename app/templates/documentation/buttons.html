@@ -1,0 +1,155 @@
+<div id="pageWrapper-dsb">
+  <div ng-include="'../../templates/includes/sidebar.html'"></div>
+  <aside id="rightSidebar">
+    <nav class="sidebarItems">
+      <ul class="nav-group">
+        <li><a href="#Button Class" du-smooth-scroll du-scrollspy>The <code>.btn</code> Class</a></li>
+        <li><a href="#Outlined Buttons" du-smooth-scroll du-scrollspy>Outlined Buttons</a></li>
+        <li><a href="#Button Sizes" du-smooth-scroll du-scrollspy>Button Sizes</a></li>
+        <li><a href="#Block Level Buttons" du-smooth-scroll du-scrollspy>Block Level Buttons</a></li>
+        <li><a href="#Grouped Buttons" du-smooth-scroll du-scrollspy>Grouped Buttons</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="page-content" >
+    <section class="pageBanner-md">
+      <div class="grid-fw">
+        <div class="row">
+          <h1>Buttons</h1>
+          <h2>The <code>&lt;button&gt;</code> tag defines a clickable button. Inside a <code>&lt;button&gt;</code> element you can put content, like text or images. Styling a <code>&lt;button&gt;</code> element is as easy as adding the <code>.btn</code> class. Further customization can be added to style your butons as decibed in the documentation below. </h2>
+        </div>
+      </div>
+    </section>
+    <div class="grid-fw">
+      <section class="row" id="Button Class">
+        <h1>The <code>.btn</code> Class</h1>
+        <p>The <code>.btn</code> class is the base class that creates your default unstyled buttons. It is designed for use on <code>&lt;button&gt;</code> elements. However, you can also use it on other elements such as <code>&lt;div&gt;</code> or <code>&lt;a&gt;</code>.</p>
+        <p>To add a color class simply add <code>-primary</code>, <code>-info</code>, or another color class listed in the <a href="JavaScript:void(0);">variables styleguide</a> directly to the <code>.btn</code> class.
+          This will result in one class that looks like this .btn-primary</P>
+        <div class="code-example-box">
+          <div class="example-panel">
+            <button type="button" class="btn">Default</button>
+            <button type="button" class="btn-primary">Primary</button>
+            <button type="button" class="btn-secondary">Secondary</button>
+            <button type="button" class="btn-success">Success</button>
+            <button type="button" class="btn-danger">Danger</button>
+            <button type="button" class="btn-warning">Warning</button>
+            <button type="button" class="btn-info">Info</button>
+            <button type="button" class="btn-dark">Dark</button>
+            <button type="button" class="btn-light">Light</button>
+          </div>
+          <div hljs>
+            // Default Solid Buttons Examples
+            <button type="button" class="btn">Default</button>
+            <button type="button" class="btn-primary">Primary</button>
+            <button type="button" class="btn-secondary">Secondary</button>
+            <button type="button" class="btn-success">Success</button>
+            <button type="button" class="btn-danger">Danger</button>
+            <button type="button" class="btn-warning">Warning</button>
+            <button type="button" class="btn-info">Info</button>
+            <button type="button" class="btn-dark">Dark</button>
+            <button type="button" class="btn-light">Light</button>
+          </div>
+        </div>
+      </section>
+      <h1 id="Outlined Buttons">Outlined Buttons</h1>
+      <p>An alternative to the default solid buttons you can allso attach the class <code>-outlined</code> to the <code>.btn</code> to give them a transparent look and feel.</p>
+      <section class="row">
+        <div class="code-example-box">
+          <div class="example-panel">
+            <button type="button" class="btn-outlined">Default</button>
+            <button type="button" class="btn-outlined-primary">Primary</button>
+            <button type="button" class="btn-outlined-secondary">Secondary</button>
+            <button type="button" class="btn-outlined-success">Success</button>
+            <button type="button" class="btn-outlined-danger">Danger</button>
+            <button type="button" class="btn-outlined-warning">Warning</button>
+            <button type="button" class="btn-outlined-info">Info</button>
+            <button type="button" class="btn-outlined-dark">Dark</button>
+          </div>
+          <div hljs>
+            // Outlined Buttons Examples
+            <button type="button" class="btn-outlined">Default</button>
+            <button type="button" class="btn-outlined-primary">Primary</button>
+            <button type="button" class="btn-outlined-secondary">Secondary</button>
+            <button type="button" class="btn-outlined-success">Success</button>
+            <button type="button" class="btn-outlined-danger">Danger</button>
+            <button type="button" class="btn-outlined-warning">Warning</button>
+            <button type="button" class="btn-outlined-info">Info</button>
+            <button type="button" class="btn-outlined-dark">Dark</button>
+          </div>
+      </section>
+      <h1 id="Button Sizes">Button Sizes</h1>
+      <p>Need a quick change in size for your buttons. Just add one of the button sizing classes. <code>-small</code>, or <code>-large</code> to the end of your buttons class. The medium sized button is the default size.</p>
+      <section class="row">
+        <div class="code-example-box">
+          <div class="example-panel">
+            <button type="button" class="btn-small">Default Small</button>
+            <button type="button" class="btn-primary-small">Solid Small</button>
+            <button type="button" class="btn-outlined-info-small">Outlined Small</button>
+          </div>
+          <div hljs>
+            // Small Button Examples
+            <button type="button" class="btn-small">Default Small</button>
+            <button type="button" class="btn-primary-small">Solid Small</button>
+            <button type="button" class="btn-outlined-info-small">Outlined Small</button>
+          </div>
+        </div>
+        <div class="code-example-box">
+          <div class="example-panel">
+            <button type="button" class="btn-large">Default Large</button>
+            <button type="button" class="btn-primary-large">Solid Large</button>
+            <button type="button" class="btn-outlined-info-large">Outlined Large</button>
+          </div>
+          <div hljs>
+            // Large Button Examples
+            <button type="button" class="btn-large">Default Large</button>
+            <button type="button" class="btn-primary-large">Solid Large</button>
+            <button type="button" class="btn-outlined-info-large">Outlined Large</button>
+          </div>
+        </div>
+        <h1 id="Block Level Buttons">Block Level Buttons</h1>
+        <p>Create block level buttons that span the full width of a parent by adding <code>-block</code> to the end of your button class.</p>
+        <div class="code-example-box">
+          <div class="example-panel">
+            <p>
+              <button type="button" class="btn-primary-block">Primary Block</button>
+              <button type="button" class="btn-outlined-info-block">Outlined Block</button>
+            </P>
+            <hr>
+            <p>
+              <button type="button" class="btn-primary-small-block">Small Primary Block</button>
+              <button type="button" class="btn-outlined-info-large-block">Large Oulined Block</button>
+            </P>
+          </div>
+          <div hljs>
+            // Block Level Button Examples
+            <button type="button" class="btn-primary-block">Primary Block</button>
+            <button type="button" class="btn-outlined-info-block">Outlined Block</button>
+
+            // Block Level Sized Examples
+            <button type="button" class="btn-primary-small-block">Small Primary Block</button>
+            <button type="button" class="btn-outlined-info-large-block">Large Oulined Block</button>
+          </div>
+        </div>
+        <h1 id="Grouped Buttons">Grouped Buttons</h1>
+        <p>Buttons can easily be grouped together by wrapping your buttons in a <code>div</code> tag and attaching the class <code>.grouped-buttons</code> as shown in the examples below.</p>
+        <div class="code-example-box">
+          <div class="example-panel">
+              <div class="grouped-buttons">
+                <button type="button" class="btn-primary">Left</button>
+                <button type="button" class="btn-primary">Middle</button>
+                <button type="button" class="btn-primary">Right</button>
+              </div>
+          </div>
+          <div hljs>
+            // Grouped Buttons Examples
+            <div class="grouped-buttons">
+              <button type="button" class="btn-primary">Left</button>
+              <button type="button" class="btn-primary">Middle</button>
+              <button type="button" class="btn-primary">Right</button>
+            </div>
+          </div>
+        </div>
+      </section>
+  </article>
+  </div>
