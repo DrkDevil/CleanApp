@@ -25,7 +25,7 @@ angular.module('docs.directives', [])
         });
       }
     };
-  });
+  })
   // Accordions Directive
  .directive('accordion', function () {
    return {
@@ -63,4 +63,4 @@ angular.module('docs.directives', [])
        });
      }
    };
- })
+ });
