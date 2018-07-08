@@ -132,6 +132,132 @@ code {
   color: #e83e8c;
   word-break: break-word; }
 
+[class*='-primary'] {
+  background-color: #007bff; }
+
+[class*='-secondary'] {
+  background-color: #6c757d; }
+
+[class*='-success'] {
+  background-color: #28a745; }
+
+[class*='-danger'] {
+  background-color: #dc3545; }
+
+[class*='-warning'] {
+  background-color: #ffc107; }
+
+[class*='-info'] {
+  background-color: #17a2b8; }
+
+[class*='-light'] {
+  background-color: #f8f9fa; }
+
+[class*='-dark'] {
+  background-color: #343a40; }
+
+[class*='-blue'] {
+  background-color: #007bff; }
+
+[class*='-indigo'] {
+  background-color: #6610f2; }
+
+[class*='-purple'] {
+  background-color: #6f42c1; }
+
+[class*='-pink'] {
+  background-color: #e83e8c; }
+
+[class*='-red'] {
+  background-color: #8d1422; }
+
+[class*='-orange'] {
+  background-color: #fd7e14; }
+
+[class*='-yellow'] {
+  background-color: #ffc107; }
+
+[class*='-green'] {
+  background-color: #28a745; }
+
+[class*='-teal'] {
+  background-color: #20c997; }
+
+[class*='-cyan'] {
+  background-color: #17a2b8; }
+
+[class*='-white'] {
+  background-color: #ffffff; }
+
+[class*='-grey'] {
+  background-color: #808080; }
+
+[class*='-dark-grey'] {
+  background-color: #343a40; }
+
+.primary {
+  color: #007bff; }
+
+.secondary {
+  color: #6c757d; }
+
+.success {
+  color: #28a745; }
+
+.danger {
+  color: #dc3545; }
+
+.warning {
+  color: #ffc107; }
+
+.info {
+  color: #17a2b8; }
+
+.light {
+  color: #f8f9fa; }
+
+.dark {
+  color: #343a40; }
+
+.blue {
+  color: #007bff; }
+
+.indigo {
+  color: #6610f2; }
+
+.purple {
+  color: #6f42c1; }
+
+.pink {
+  color: #e83e8c; }
+
+.red {
+  color: #8d1422; }
+
+.orange {
+  color: #fd7e14; }
+
+.yellow {
+  color: #ffc107; }
+
+.green {
+  color: #28a745; }
+
+.teal {
+  color: #20c997; }
+
+.cyan {
+  color: #17a2b8; }
+
+.white {
+  color: #ffffff; }
+
+.grey {
+  color: #808080; }
+
+.dark-grey {
+  color: #343a40; }
+
 .center-content {
   text-align: center; }
 
@@ -1099,132 +1225,6 @@ footer a:hover {
 .soon body {
   padding-top: 0; }
 
-[class*='-primary'] {
-  background-color: #007bff; }
-
-[class*='-secondary'] {
-  background-color: #6c757d; }
-
-[class*='-success'] {
-  background-color: #28a745; }
-
-[class*='-danger'] {
-  background-color: #dc3545; }
-
-[class*='-warning'] {
-  background-color: #ffc107; }
-
-[class*='-info'] {
-  background-color: #17a2b8; }
-
-[class*='-light'] {
-  background-color: #f8f9fa; }
-
-[class*='-dark'] {
-  background-color: #343a40; }
-
-[class*='-blue'] {
-  background-color: #007bff; }
-
-[class*='-indigo'] {
-  background-color: #6610f2; }
-
-[class*='-purple'] {
-  background-color: #6f42c1; }
-
-[class*='-pink'] {
-  background-color: #e83e8c; }
-
-[class*='-red'] {
-  background-color: #8d1422; }
-
-[class*='-orange'] {
-  background-color: #fd7e14; }
-
-[class*='-yellow'] {
-  background-color: #ffc107; }
-
-[class*='-green'] {
-  background-color: #28a745; }
-
-[class*='-teal'] {
-  background-color: #20c997; }
-
-[class*='-cyan'] {
-  background-color: #17a2b8; }
-
-[class*='-white'] {
-  background-color: #ffffff; }
-
-[class*='-grey'] {
-  background-color: #808080; }
-
-[class*='-dark-grey'] {
-  background-color: #343a40; }
-
-.primary {
-  color: #007bff; }
-
-.secondary {
-  color: #6c757d; }
-
-.success {
-  color: #28a745; }
-
-.danger {
-  color: #dc3545; }
-
-.warning {
-  color: #ffc107; }
-
-.info {
-  color: #17a2b8; }
-
-.light {
-  color: #f8f9fa; }
-
-.dark {
-  color: #343a40; }
-
-.blue {
-  color: #007bff; }
-
-.indigo {
-  color: #6610f2; }
-
-.purple {
-  color: #6f42c1; }
-
-.pink {
-  color: #e83e8c; }
-
-.red {
-  color: #8d1422; }
-
-.orange {
-  color: #fd7e14; }
-
-.yellow {
-  color: #ffc107; }
-
-.green {
-  color: #28a745; }
-
-.teal {
-  color: #20c997; }
-
-.cyan {
-  color: #17a2b8; }
-
-.white {
-  color: #ffffff; }
-
-.grey {
-  color: #808080; }
-
-.dark-grey {
-  color: #343a40; }
-
 .alrt [class*='alert'] {
   margin: 10px 0; }
 
@@ -1238,7 +1238,8 @@ footer a:hover {
   border: 0; }
 
 .gridDemo [class*='col-'] {
-  padding-right: 5px !important; }
+  padding-right: 0px !important;
+  padding-left: 5px !important; }
 
 .gridDemo [class*='col-'] > p {
   background-color: #808080;
