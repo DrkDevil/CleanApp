@@ -8,23 +8,49 @@ var eslint            = require('gulp-eslint');
 var templateCache     = require('gulp-angular-templatecache');
 var friendlyFormatter = require('eslint-friendly-formatter');
 var browserSync       = require('browser-sync');
+var cyan              = require('ansi-bgcyan');
+var UI                = require('readline-ui');
+var ui                = new UI();
 // ----- Reload BrowserSync -------------------------------------------------------------------
 var reload = browserSync.reload;
+
 // ---- Simple repl for gulp ------------------------------------------------------------------
 gulp.task('BonsaiApp', function (cb) {
   gulp.repl = repl.start(gulp);
 });
-
 gulp.task('stop', function (cb) {
   if (gulp.repl) {
     gulp.repl.close();
   }
   cb();
 });
+
+// ---- CLI UI ------------------------------------------------------------------
+
+// first, we need to render the "question"
+// to display in the terminal
+var prompt = 'Type a command to run a task. Type ? for help.';
+ui.render(cyan(prompt));
+ui.on('keypress', function() {
+  ui.render(ui.rl.line);
+});
+
+ui.on('line', function(answer) { });
+
+gulp.task('?', function() {
+  console.log('****************************');
+  console.log('*       COMMAND LIST       *');
+  console.log('****************************');
+  console.log('*  lint - to run ESlint    *');
+  console.log('*  sass - to run GulpSass  *');
+  console.log('*  reload - to reload app  *');
+  console.log('****************************');
+});
+
 // ---- JavaScript Linting (ESlint) -----------------------------------------------------------
 gulp.task('lint', function() {
   return gulp.src(['app/scripts/**/*.js',          // Location of js files you want to lint.
-				   '!app/scripts/templates.js'])   // Use !foldername/filename to ignore files.
+				           '!app/scripts/templates.js'])   // Use !foldername/filename to ignore files.
     .pipe(eslint('.eslintrc.json'))                // Your eslint pipe (config file)
     .pipe(eslint.format(friendlyFormatter));       // A better way to dispay errors.
 });
@@ -47,10 +73,12 @@ gulp.task('view', [], function() {
     logPrefix: 'BonsaiApp',   // Name you want displayed in your console log's prefix.
     server: ['./app']         // The folder the application is running from.
     // https: true;
-	// Run as an https by uncommenting 'https: true'
-	// Note: this uses an unsigned certificate which on first access
+	  // Run as an https by uncommenting 'https: true'
+    //
+   	// Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
-  });
+    //
+  })
   // -- Watch these files, and folders.
   // -- If there are any changes to saved files reload browser.
   gulp.watch('app/index.html').on('change', reload);
@@ -62,7 +90,6 @@ gulp.task('view', [], function() {
   gulp.watch('app/styles/**/*.css').on('change', reload);
 });
 // ---- Gulp Quick Commands -------------------------------------------------------------------
-// gulp.task('prod', ['lint', 'build', 'view']);
-// gulp prod *Build not Available ATM
+// gulp.task('prod', ['lint', 'build', 'view']);   // gulp prod *Build not Available ATM
 gulp.task('dev', ['lint', 'view']);                // gulp dev
 gulp.task('default', ['BonsaiApp', 'dev']);        // gulp default
