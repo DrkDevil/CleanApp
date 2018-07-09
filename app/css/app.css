@@ -760,6 +760,11 @@ code {
   @media only screen and (min-width: 768px) {
     #leftSidebar {
       width: 280px; } }
+  #leftSidebar .nav-group-extended {
+    margin-bottom: 66px; }
+    @media only screen and (min-width: 560px) {
+      #leftSidebar .nav-group-extended {
+        margin-bottom: 115px; } }
 
 /* Rightbar Closed style */
 #rightSidebar {

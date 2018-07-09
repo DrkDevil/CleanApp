@@ -94,6 +94,7 @@ gulp.task('view', [], function() {
   gulp.watch('app/index.html').on('change', reload);
   gulp.watch('app/templates/**/*.html', ['templates', reload]);
   gulp.watch('app/scss/**/*.scss', ['sass', reload]);
+  gulp.watch('app/scss/**/*.scss').on('change', reload);
   gulp.watch('app/scripts/**/*.js').on('change', reload);
   gulp.watch('app/styles/**/*.css').on('change', reload);
 });

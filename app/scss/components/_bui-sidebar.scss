@@ -119,6 +119,10 @@
   @include mq('tablet') {
     width: $left-sidebar-width;
   }
+  .nav-group-extended {
+    margin-bottom: $body-top-push;
+    @include mq('phablet') {margin-bottom: $body-top-push-mobile;}
+  }
 }
 
 /* Rightbar Closed style */
