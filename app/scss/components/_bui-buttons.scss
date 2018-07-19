@@ -57,6 +57,9 @@
   &[class*='-dark']:hover {
     background-color: $dark-shade;
   }
+  &[class*='-light']:hover {
+    background-color:  $light-shade;
+  }
   &[class*='-outlined'] {
     background-color: $transparent;
     border: 1px solid grey;
@@ -119,6 +122,14 @@
       &:hover {
       color:$white;
       background-color: $dark;
+      }
+    }
+    &[class*='-light'] {
+      color:$X11grey;
+      border-color:$light-shade;
+      &:hover {
+      color:$white;
+      background-color: $X11grey;
       }
     }
   }

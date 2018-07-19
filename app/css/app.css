@@ -895,6 +895,8 @@ footer a:hover {
     background-color: #bd2b3a; }
   [class*='btn'][class*='-dark']:hover {
     background-color: #282a36; }
+  [class*='btn'][class*='-light']:hover {
+    background-color: #dfe3e7; }
   [class*='btn'][class*='-outlined'] {
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid grey; }
@@ -944,6 +946,12 @@ footer a:hover {
       [class*='btn'][class*='-outlined'][class*='-dark']:hover {
         color: #ffffff;
         background-color: #343a40; }
+    [class*='btn'][class*='-outlined'][class*='-light'] {
+      color: #BEBEBE;
+      border-color: #dfe3e7; }
+      [class*='btn'][class*='-outlined'][class*='-light']:hover {
+        color: #ffffff;
+        background-color: #BEBEBE; }
 
 .grouped-buttons {
   position: relative;
