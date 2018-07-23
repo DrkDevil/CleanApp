@@ -51,8 +51,7 @@ angular.module('docs.directives', [])
             icon.removeClass('fa-chevron-circle-up');
             icon.addClass('fa-chevron-circle-down');
             console.log(ah);
-          }
-          else {
+          } else {
             panel.css('display', 'block');
             panel.addClass('open');
             button.addClass('open');
@@ -60,6 +59,25 @@ angular.module('docs.directives', [])
             icon.removeClass('fa-chevron-circle-down');
             icon.addClass('fa-chevron-circle-up');
           }
+        });
+      }
+    };
+  })
+
+  // Collapse
+  .directive('collapse', function() {
+    return {
+      link: function(scope, element, attrs) {
+        element.bind('click', function() {
+          var clps = document.getElementsByClassName('clps-toggle');
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+          console.log('Clps clicked');
+          console.log(content);
         });
       }
     };

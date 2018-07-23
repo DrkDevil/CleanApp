@@ -595,6 +595,13 @@ code {
 .card-body {
   padding: 20px; }
 
+.clps-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1; }
+
 .navbar {
   width: 100%;
   text-align: center;
