@@ -1,7 +1,14 @@
-.clps-content {
-  padding: 0 18px;
-  max-height: 0;
+.clpsContent {
+  
+  display: none;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.clpsContent.open {
+  padding: 20px;
+display: block;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
   background-color: #f1f1f1;
 }

@@ -1,47 +1,40 @@
 <div id="pageWrapper-dsb">
   <div ng-include="'../../templates/includes/sidebar.html'"></div>
-    <aside id="rightSidebar">
-      <nav class="sidebarItems">
-        <ul class="nav-group">
-          <li><a href="#class" du-smooth-scroll du-scrollspy>How it works</a></li>
-          <li><a href="#example" du-smooth-scroll du-scrollspy>Example</a></li>
-          <li><a href="#multi" du-smooth-scroll du-scrollspy>Multiple targets</a></li>
-          <li><a href="#accordion" du-smooth-scroll du-scrollspy>Accordion example</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <article class="page-content">
-      <section class="pageBanner-md">
-        <div class="grid-fw">
-          <div class="row">
-            <h1>Collapse</h1>
-            <h2>Use the BonsaiUI Collapse when you want to hide and show large amount of content.</h2>
-          </div>
-        </div>
-      </section>
+  <aside id="rightSidebar">
+    <nav class="sidebarItems">
+      <ul class="nav-group">
+        <li><a href="#class" du-smooth-scroll du-scrollspy>How it works</a></li>
+        <li><a href="#example" du-smooth-scroll du-scrollspy>Example</a></li>
+        <li><a href="#multi" du-smooth-scroll du-scrollspy>Multiple targets</a></li>
+        <li><a href="#accordion" du-smooth-scroll du-scrollspy>Accordion example</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="page-content">
+    <section class="pageBanner-md">
       <div class="grid-fw">
         <div class="row">
-          <div class="col-12xs">
-            <section id="class">
-              <h1>The <code>.collapse</code> Class</h1>
-              <p>The <code>.collapse</code></p>
-              <div class="code-example-box">
-                <div class="example-panel">
-                  <button class="clps-toggle btn-info" collapse>Toggle Collapse</button>
-                  <div class="clps-content">
-                    Collapse Content
-                  </div>
-                </div>
-                <div hljs>
-                  <button class="clps-toggle btn-info" collapse>Toggle Collapse</button>
-                  <div class="clps-content">
-                    Collapse Content
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
+          <h1>Collapse</h1>
+          <h2>Use the BonsaiUI Collapse when you want to hide and show large amount of content.</h2>
         </div>
       </div>
-    </article>
-  </div>
+    </section>
+    <div class="grid-fw">
+      <div class="row">
+        <div class="col-12xs">
+          <section id="class">
+            <button collapse clps-target="link-clps" class="btn-info">Button</button>
+            <a collapse clps-target="#example-collapse-1" class="btn-info">Href Button </a>
+            <a collapse clps-target="#example-collapse-2" class="btn-info">Href Button </a>
+            <div class="clpsContent link-clps" id="example-collapse-1">
+              Collapse Content
+            </div>
+            <div class="clpsContent link-clps" id="example-collapse-2">
+              Collapse Content
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

@@ -69,15 +69,21 @@ angular.module('docs.directives', [])
     return {
       link: function(scope, element, attrs) {
         element.bind('click', function() {
-          var clps = document.getElementsByClassName('clps-toggle');
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
+          var clpsTarget = this.getAttribute('clps-target');
+          var id = (clpsTarget);
+          var content =  angular.element(document.querySelector(id));
+          var link = 'link-clps';
+          var myEl = angular.element( document.getElementsByClassName('link-clps' ) );
+          if ((id == link)) {
+            myEl.toggleClass('open');
           }
-          console.log('Clps clicked');
-          console.log(content);
+          else if (id === clpsTarget)  {
+            content.toggleClass('open');
+          }
+          else {
+            //Do Nothing
+          }
+          console.log(link);
         });
       }
     };
