@@ -73,8 +73,8 @@ angular.module('docs.directives', [])
           var id = (clpsTarget);
           var content =  angular.element(document.querySelector(id));
           var link = 'link-clps';
-          var myEl = angular.element( document.getElementsByClassName('link-clps' ) );
-          if ((id == link)) {
+          var myEl = angular.element( document.getElementsByClassName('link-clps'));
+          if ((id === link)) {
             myEl.toggleClass('open');
           }
           else if (id === clpsTarget)  {
