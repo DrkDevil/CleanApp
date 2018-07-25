@@ -597,16 +597,25 @@ code {
 
 .clpsContent {
   display: none;
+  max-height: 1;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: height 0.3s ease-out;
   background-color: #f1f1f1; }
 
 .clpsContent.open {
   padding: 20px;
   display: block;
+  height: auto;
   overflow: hidden;
-  transition: all 0.2s ease-in;
+  transition: height 0.3s ease-out;
   background-color: #f1f1f1; }
+
+.accordion {
+  display: inline-block;
+  width: 100%; }
+  .accordion button {
+    width: 100%;
+    border-radius: 0; }
 
 .navbar {
   width: 100%;

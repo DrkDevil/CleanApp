@@ -80,9 +80,11 @@ angular.module('docs.directives', [])
           // Set Conditions
           if (targetValue === clpsTarget) {
             contentID.toggleClass('open');
+            contentClass.toggleClass('open');
           } else {
             //Do Nothing
           }
+          console.log();
         });
       }
     };
