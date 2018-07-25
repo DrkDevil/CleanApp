@@ -69,21 +69,20 @@ angular.module('docs.directives', [])
     return {
       link: function(scope, element, attrs) {
         element.bind('click', function() {
+          // Get target name from HTML Attribute
           var clpsTarget = this.getAttribute('clps-target');
-          var id = (clpsTarget);
-          var content =  angular.element(document.querySelector(id));
-          var link = 'link-clps';
-          var myEl = angular.element( document.getElementsByClassName('link-clps'));
-          if ((id === link)) {
-            myEl.toggleClass('open');
-          }
-          else if (id === clpsTarget)  {
-            content.toggleClass('open');
-          }
-          else {
+          // Set as Target Value
+          var targetValue = (clpsTarget);
+          // Get element by ID that equals targets the name
+          var contentID = angular.element(document.querySelector(targetValue));
+          // Get element by ID that equals targets the name
+          var contentClass = angular.element(document.getElementsByClassName(targetValue));
+          // Set Conditions
+          if (targetValue === clpsTarget) {
+            contentID.toggleClass('open');
+          } else {
             //Do Nothing
           }
-          console.log(link);
         });
       }
     };

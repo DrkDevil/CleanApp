@@ -23,19 +23,68 @@
       <section id="class">
         <div class="row">
           <div class="col-12xs">
-            <button collapse clps-target="link-clps" class="btn-primary">Collapse Both</button>
+            <button collapse clps-target="#simple-collapse" class="btn-info">Simple Collapse</button>
+          </div>
+          <div class="col-6xs">
+            <div class="clpsContent" id="simple-collapse">
+              Simple Collapse Content
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="class">
+        <div class="row">
+          <div class="col-12xs">
+            <button collapse clps-target="clps-group-1" class="btn-primary">Grouped Toggle One</button>
             <button collapse clps-target="#example-collapse-1" class="btn-info">Collapse One </button>
             <button collapse clps-target="#example-collapse-2" class="btn-info">Collapse Two </button>
           </div>
-          <div class="col-6xs">
-            <div class="clpsContent link-clps" id="example-collapse-1">
-              Collapse Content 1
+          <div class="col-3xs">
+            <div class="clpsContent clps-group-1" id="example-collapse-1">
+              Collapse One is also grouped with the content of collapse 2 by class.
             </div>
           </div>
-          <div class="col-6xs">
-            <div class="clpsContent link-clps" id="example-collapse-2">
-              Collapse Content 2
+          <div class="col-3xs">
+            <div class="clpsContent clps-group-1" id="example-collapse-2">
+              Collapse Two is also grouped with the content of collapse 1 by class.
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12xs">
+            <button collapse clps-target="clps-group-2" class="btn-primary">Grouped Toggle Two</button>
+            <button collapse clps-target="#example-collapse-3" class="btn-info">Collapse Three </button>
+            <button collapse clps-target="#example-collapse-4" class="btn-info">Collapse Four </button>
+          </div>
+          <div class="col-3xs">
+            <div class="clpsContent clps-group-2" id="example-collapse-3">
+              Collapse Three is also grouped with the content of collapse 4 by class.
+            </div>
+          </div>
+          <div class="col-3xs">
+            <div class="clpsContent clps-group-2" id="example-collapse-4">
+              Collapse Four is also grouped with the content of collapse 3 by class.
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section id="class">
+        <div class="row">
+          <div class="col-12xs">
+            <button collapse clps-target="#open-collapse" class="btn-info">Toggle Open Collapse</button>
+          </div>
+          <div class="col-6xs">
+            <div class="clpsContent open" id="open-collapse">
+              Already Open Collapsable Content
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="class">
+        <div class="row">
+          <div class="col-12xs">
+            <button collapse clps-target="open" class="btn-danger">Close All Open Collapses</button>
           </div>
         </div>
       </section>
