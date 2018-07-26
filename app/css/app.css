@@ -617,6 +617,11 @@ code {
     width: 100%;
     border-radius: 0; }
 
+.uni-close {
+  display: block;
+  float: right;
+  cursor: pointer; }
+
 .navbar {
   width: 100%;
   text-align: center;

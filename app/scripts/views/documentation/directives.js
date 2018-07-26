@@ -77,14 +77,28 @@ angular.module('docs.directives', [])
           var contentID = angular.element(document.querySelector(targetValue));
           // Get element by ID that equals targets the name
           var contentClass = angular.element(document.getElementsByClassName(targetValue));
-          // Set Conditions
+
           if (targetValue === clpsTarget) {
             contentID.toggleClass('open');
             contentClass.toggleClass('open');
           } else {
             //Do Nothing
           }
-          console.log();
+          console.log(ccbody);
+
+        });
+      }
+    };
+  })
+  // Universal Close Directive
+  .directive('close', function() {
+    return {
+      link: function(scope, element, attrs) {
+        element.bind('click', function() {
+          for (i = 0; i < element.length; i++) {
+            console.log(element);
+            element.parent().fadeOut();
+          }
         });
       }
     };
