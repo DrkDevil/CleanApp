@@ -902,7 +902,7 @@ a {
 
 /* Mobile Default page wrappers padding are zero to start them closed. */
 #pageWrapper {
-  padding-top: 115px;
+  padding-top: 125px;
   padding-left: 0;
   padding-right: 0;
   -webkit-transition: all 0.5s ease;
@@ -951,7 +951,7 @@ a {
 
 /* Mobile Default page wrappers padding are zero to start them closed. */
 #pageWrapper-dsb {
-  padding-top: 115px;
+  padding-top: 125px;
   padding-left: 0;
   padding-right: 0;
   -webkit-transition: all 0.5s ease;
@@ -1021,7 +1021,7 @@ a {
     margin-bottom: 66px; }
     @media only screen and (min-width: 560px) {
       #leftSidebar .nav-group-extended {
-        margin-bottom: 115px; } }
+        margin-bottom: 125px; } }
 
 /* Rightbar Closed style */
 #rightSidebar {
@@ -1036,7 +1036,7 @@ a {
     #rightSidebar .sidebarItems li a:hover {
       background-color: transparent;
       color: #007bff; }
-    #rightSidebar .sidebarItems li a:focusS {
+    #rightSidebar .sidebarItems li a:focus {
       background-color: transparent;
       color: #007bff; }
   @media only screen and (min-width: 768px) {
@@ -1361,8 +1361,7 @@ footer a:hover {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   padding: 1.5rem;
-  margin-right: 0;
-  margin-left: 0; }
+  margin: 0; }
 
 .code-example-box .hljs {
   margin: -10px 0 10px 0;
