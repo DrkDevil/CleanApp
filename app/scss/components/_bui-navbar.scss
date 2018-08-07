@@ -25,11 +25,13 @@
   }
   ul {
     display: inline-block;
+    margin-bottom: 0;
 	  @include mq('tablet') {
 	    display: inline-block; float: left;
 	  }
   }
   li {
+    margin-bottom: 0;
     padding: $navbar-links-padding;
     line-height: $navbar-line-height;
     float: left;

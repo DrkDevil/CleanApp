@@ -11,14 +11,13 @@
 
 /* Grid Container */
 .grid, .grid-fw {
-  width: 100%;
-  margin: 0 auto;
   padding:  0 $gridPadding;
+  margin: 0 auto;
 }
 
 /* Row Clearfix */
 .row {
-  margin:0 0 0 ($neg-gutters / 2);
+  margin:0 ($neg-gutters / 2);
   &:after {
     content: " ";
     visibility: hidden;

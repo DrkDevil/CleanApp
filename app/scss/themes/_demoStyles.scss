@@ -2,19 +2,12 @@
 .alrt [class*='alert'] {
   margin: 10px 0;
 }
-// Grid Reset for BonsaiUI Documentation
-.grid, .grid-fw {
-    padding: 0 30px;
-    margin: 0 auto;
-}
-// pageBanner Reset for BonsaiUI Documentation
-[class*='pageBanner-']{
-	width: 100%;
-	background-color: $transparent;
-	border: 0 ;
-}
 
 // These Demo Styles Make the Grid Visible.
 .gridDemo [class*='col-'] { padding-right: 0px !important; padding-left: 5px !important; }
-.gridDemo [class*='col-'] > p { background-color: $grey; padding: 10px; margin-bottom: 0; border-radius: 4px; font-size: 0.8rem; text-align: center; color: #fff; }
-* { outline: 0; }
+.gridDemo [class*='col-'] > p { background-color: #bebebe; padding: 10px; margin-bottom: 0; border-radius: 4px; font-size: 0.8rem; text-align: center; color: #6c757d; }
+
+code {
+  font-size: 95%;
+  color: #e83e8c;
+  word-break: break-word; }

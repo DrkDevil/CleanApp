@@ -31,7 +31,7 @@
 #pageWrapper.r-toggled {
   padding-right: 0;
   #rightSidebar {
-    width: $right-sidebar-width!important;
+    width: $right-sidebar-width;
   }
 }
 // Media Query : Above
@@ -129,15 +129,28 @@
 #rightSidebar {
     width: 0;
     right: $right-sidebar-width;
-    margin-right: calc(#{$neg-right-sidebar-width} - 17px);
+    margin-right: $neg-right-sidebar-width;
     background-color: $right-sidebar-background-color;
     overflow-x: hidden;
-    a {
-        color: $right-sidebar-text-color;
+    .sidebarItems li a {
+      color: $right-sidebar-text-color;
+      &:hover{
+        background-color: transparent;
+        color: $primary;
+      }
+      &:focusS{
+        background-color: transparent;
+        color: $primary;
+      }
+
     }
     /* Rightbar open style */
     @include mq('tablet') {
         width: $right-sidebar-width;
+    }
+    .active {
+      background-color: transparent;
+      color: $primary;
     }
 }
 

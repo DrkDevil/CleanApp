@@ -1,0 +1,45 @@
+<div id="pageWrapper">
+  <div ng-include="'../../templates/includes/sidebar.html'"></div>
+  <aside id="rightSidebar">
+    <nav class="sidebarItems">
+      <ul class="nav-group">
+        <li><a href="javascriopt:vod(0);">Left Sidebar</a></li>
+        <li><a href="javascriopt:vod(0);">Right Sidebar</a></li>
+        <li><a href="javascriopt:vod(0);">Dual Sidebars</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="page-content">
+    <div class="pageBanner-md">
+      <div class="grid-fw">
+        <div class="row">
+          <div class="col-12xs">
+            <h1>Getting Started</h1>
+            <h2>Downloadins &amp; Setting up BonsaiApp.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="intro" class="grid-fw">
+      <div class="row">
+        <div class="col-12xs">
+          <h2>How to download</h2>
+          <p>BonsaiApp is a Zen-like Angular Modular BaseApp with a Modern, & Elegant UI built with HTML 5, & SCSS for Rapid Application Development. BonsaiApp utilizes BonsaiUI Grid System, Angular Routing, and a highly organizied folder sturcture. All
+            the things you need to quickly get started builing your Angular application.</p>
+          <h2>Apart from the rest.</h2>
+          <p>Framesworks have been a part of developers, and designers arsenal of tools for a while now, and it's no surprise that they are used by millions of developers around the world to get help with jump starting their app. But there seems to be a
+            consitant fundemntal flaw with todays Modern Frameworks. Massive Bloat! This is increased further after people start writting code ontop of these frameworks while creating thier apps, and websites.</p>
+          <h2>Solving css class bloat!</h2>
+          <p>To solve this issue we use what we call a <a href="/variables">variable design system.</a> Unlike other frameworks BonsaiUI tries to limit the use of multiple classes in your HTML to style components and utilizes CSS Attributes heavily.</p>
+          <p>For example... Common frameworks use <code>.alert</code> to create the base alert, and the add <code>.alert-yourcolor</code> to style the alert. This seems a bit counter intuitive as it can bloat and crowd your code the larger your application gets over time. To solve the problem of using too many classes in your HTML to style one component BonsaiUI utilizes CSS Attributes heavily.</p>
+          <p>In BonsaiUI the <code>.alert</code> is the base class that creates your default unstyled alert. To add a color class simply add <code>-primary</code>, <code>-info</code>, or another color class listed in the <a href="javascrip:void(0)">variables styleguide</a> directly to the <code>.alert</code> class. This will result in one class that looks like this <code>.alert-primary</code></p>
+          <p>The disadvantage to this method is that it limits what names you can create for your own styles. For instance you would not be able to create a class call alertbox, because the BonsaiUI scss has declared that anyclass that starts with <code>.alert</code> will create the default alert box.</p>
+          <h2>Why an App and UI?</h2>
+          <p>BonsaiApp &amp; BonsaiUI are two peas in the same pod. They work together to create a cohesive development platform for easy development. We use angular because of its reliability and it has been industy tested time and time again as a reliable platform for front-end development. Creating a seperate UI that works directly with our BaseApp is what helps create a fluid and consitant feel for the entire app.</p>
+          <h2>Can I use a different UI with BonsaiApp?</h2>
+          <p>Technically, Yes. You could easily remove all the scss files for BonsaiUI and include your own or another UI framework if you were so inclined. But the idea behind BonsaiUI is to give you the tools to easily create entire applications stylesheet within a single uniform enviormnet. This gives you more freedom as a designer to style your components exactly how you like. </p>
+        </div>
+      </div>
+    </section>
+  </article>
+</div>

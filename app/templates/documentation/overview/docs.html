@@ -1,0 +1,77 @@
+<div id="pageWrapper-dsb">
+  <div ng-include="'../../templates/includes/sidebar.html'"></div>
+  <aside id="rightSidebar">
+    <nav class="sidebarItems">
+      <ul class="nav-group sidebarItems">
+        <li><a href="#What" du-smooth-scroll du-scrollspy>What is BonsaiApp?</a></li>
+        <li><a href="#Attribute" du-smooth-scroll du-scrollspy>Attribute Class Design</a></li>
+        <li><a href="#Why" du-smooth-scroll du-scrollspy>Why an App &amp; UI</a></li>
+        <li><a href="#Why" du-smooth-scroll du-scrollspy>Is there a solitary BonsaiUI?</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="page-content">
+    <div class="pageBanner-md">
+      <div class="grid-fw">
+        <div class="row">
+          <div class="col-12xs">
+            <h1>Introduction</h1>
+            <h2>Getting to know BonsaiApp &amp; BonsaiUI.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-fw">
+      <div class="row">
+        <div class="col-12xs">
+          <section id="What">
+            <h2>What is BonsaiApp?</h2>
+            <p>BonsaiApp is a Zen-like Angular Modular BaseApp with a Modern, & Elegant UI built with HTML 5, & SCSS for Rapid Application Development. BonsaiApp utilizes BonsaiUI Grid System, Angular Routing, and a highly organizied folder sturcture. All
+              the things you need to quickly get started builing your Angular application.</p>
+          </section>
+          <section id="Apart">
+            <h3>Framework apart from the rest.</h3>
+            <p>Framesworks have been a part of developers, and designers arsenal of tools for a while now, and it's no surprise that they are used by millions of developers around the world to get help with jump starting their app. But there seems to be
+              a consitant fundemntal flaw with todays Modern Frameworks. Massive Bloat! This is increased further after people start writting code ontop of these frameworks while creating thier apps, and websites.</p>
+          </section>
+          <section id="Attribute">
+            <h2>Attribute Class Styling</h2>
+            <h3>Curing <q>style bloat!</q></h3>
+            <h4>First off,what is this <q>style bloat</q> you speak of, and why is it such an issue?</h4>
+            <p>Style bloat is a term BonsaiUI has kind of coined for <q>the over use of classes to style HTML elements within a framework.</q> </p>
+            <h4>For example...</h4>
+            <p>Several modern frameworks use a classes such as <code>.alert</code> to create a basic alert. But if you were to style it a bit further you might have to add another class such as <code>.alert-color</code> to style the alert. After that
+              you may be adding more classes for positioning, or other utility classes that framework may be using. This seems a bit counter intuitive as it can bloat, and crowd your markup the larger your application gets over time.</p>
+            <p>In BonsaiUI the <code>.alert</code> is the base class that creates your default unstyled alert. To add a color class simply add <code>-primary</code>, <code>-info</code>, or another color class listed in the <a href="javascrip:void(0)">variables styleguide</a>
+               directly to the <code>.alert</code> class. This will result in one class that looks like this <code>.alert-primary</code>.</p>
+            <p>You can view the code behind the BonsaiUI Alerts <a href="/alerts">here.</a></p>
+            <p>Unlike other frameworks BonsaiUI tries to limit the use of multiple classes in your HTML. So to solve the problem of "style bloat" in your HTML, BonsaiUI utilizes CSS Attributes heavily. We have also created an easy to use <a href="/variables">variable design system</a>
+               that controls the styles of every element in one highly organizied scss file.</p>
+            <p>
+              <h4>Advantages of Attribute Class Stying </h6>The Advantage to this method is that it allows you to utilize multiple classes as one. Thus limiting the need to clutter up your markup with loads of classes.
+            </p>
+            <p>
+              <h4>The Disadvantages </h6>The disadvantage to this method is that it limits what names you can create for your own styles. For instance you would <strong>not</strong> be able to create a class called <code>.alertbox</code>, because the BonsaiUI has declared with attributes in the scss that any class
+              that starts with <code>.alert</code> will create the default alert box.
+            </p>
+            <p>To view a list of all the classes that BonsaiUI utilizes as attributes <a href="Javascript:void(0);">here</a></p>
+          </section>
+          <section id="why">
+            <h2>Why an App &amp; UI?</h2>
+            <p>BonsaiApp &amp; BonsaiUI are two peas in the same pod. They work together to create a cohesive development platform for easy development. We use angular because of its reliability and it has been industy tested time and time again as a reliable
+              platform for front-end development. Creating a seperate UI that works directly with our BaseApp is what helps create a fluid and consitant feel for the entire app.</p>
+          </section>
+          <section id="otherBase">
+            <h2>The future of BonsaiUI?</h2>
+            <p>We plan on releasing a Vanilla version very soon, and already have an MVC .NET nuget in the works, with future plans for other Application Framesworks as well.</p>
+          </section>
+          <section id="can">
+            <h2>Can I use a different UI with BonsaiApp?</h2>
+            <p>Technically, Yes. You could easily remove all the scss files for BonsaiUI and include your own or another UI framework if you were so inclined. But the idea behind BonsaiUI is to give you the tools to easily create entire applications stylesheet
+              within a single uniform enviormnet. This gives you more freedom as a designer to style your components exactly how you like. And as a developer this give you the ease to create your application without worrying about style and consitency as it will already be implimented.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

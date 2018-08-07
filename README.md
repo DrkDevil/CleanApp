@@ -12,8 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### What is BonsaiApp?
-BonsaiApp is a Zen-like Angular Modular BaseApp with a Modern, & Elegant UI built with HTML 5, & SCSS for Rapid Application Development.
-
+BonsaiApp is a Zen-like Angular Modular BaseApp with a Modern, & Elegant UI built with HTML 5, & SCSS for Ralink pid Application Development.
 
 The Seed Edition is a bare minimum baseApp that utilizes only the BonsaiUI Grid System, Angular Routing, and a highly organized folder structure.
 
