@@ -3,15 +3,15 @@
   <aside id="rightSidebar">
     <nav class="sidebarItems">
       <ul class="nav-group">
-        <li><a href="javascriopt:vod(0);">Left Sidebar</a></li>
-        <li><a href="javascriopt:vod(0);">Right Sidebar</a></li>
-        <li><a href="javascriopt:vod(0);">Dual Sidebars</a></li>
+        <li><a href="javascript:vod(0);">Left Sidebar</a></li>
+        <li><a href="javascript:vod(0);">Right Sidebar</a></li>
+        <li><a href="javascript:vod(0);">Dual Sidebars</a></li>
       </ul>
     </nav>
   </aside>
   <article class="pagecontent">
     <section class="pageBanner-md">
-      <div class="grid-fw">
+      <div class="grid">
         <div class="row">
           <div class="col-12xs">
             <h1>Sass Grid System</h1>
@@ -20,15 +20,26 @@
         </div>
       </div>
     </section>
-    <div class="grid-fw">
-      <section id="how" class="row">
+    <div class="grid">
+      <section id="how" class="theGrid">
+        <div class="col-12xs">
+          <h1>The Grid System.</h1>
+          <p>The Grid System is the brick and mortar of your applications layout. BonsaiUI requires it when using columns to layout your pages.</p>
+          <h2>There are two types of grids you can use.</h2>
+          <p>The <code>.grid</code> class will create you a responsive grid that is set at a fixed-width.
+            This grid will resize itself depending on the breakpoints you set in the <a href="javascript:void(0);">variables.scss</a>
+            The other grid you can use is the  <code>.grid-fw</code> class. This stands for full-width because the grid will always be set at a width of 100%.</a>
+          <p>While containers can be nested, most layouts do not require a nested container.</p>
+        </div>
+      </section>
+      <section id="Examples" class="row">
         <div class="col-12xs">
           <h1>Examples.</h1>
           <p>Alerts are available for any length of text, as well as an optional dismiss button.</p>
         </div>
       </section>
     </div>
-    <div class="grid-fw gridDemo">
+    <div class="grid gridDemo">
       <div class="row">
         <div class="col-1xs">
           <p>col-1</p>

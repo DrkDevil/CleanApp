@@ -1123,6 +1123,7 @@ footer a:hover {
   border-radius: 3px;
   background-color: #D3D3D3;
   color: #343a40;
+  margin-bottom: 0.3125rem;
   padding: 0.5rem 1rem;
   display: inline-block;
   text-align: center;
@@ -1141,6 +1142,7 @@ footer a:hover {
   [class*='btn']:hover {
     border-color: rgba(12, 12, 12, 0.25);
     background: #BEBEBE;
+    text-decoration: none;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -1346,13 +1348,17 @@ footer a:hover {
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 29%, white 62%, white 100%); }
 
 .docs [class*='alert'] {
-  margin: 10px 0; }
+  margin: 0 0 1.0rem 0; }
+
+.docs section {
+  margin-bottom: 1.5rem; }
+
+#shellList {
+  font-weight: 500;
+  text-indent: 15px; }
 
 .code-example-box {
   margin: 20px 0 30px 0; }
-
-.code-example-box [class*='btn'] {
-  margin-bottom: 5px; }
 
 .example-panel {
   padding: 20px;
@@ -1505,9 +1511,6 @@ footer a:hover {
 
 .dark-grey {
   color: #343a40; }
-
-.alrt [class*='alert'] {
-  margin: 10px 0; }
 
 .gridDemo [class*='col-'] {
   padding-right: 0px !important;

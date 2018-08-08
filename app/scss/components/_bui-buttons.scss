@@ -8,6 +8,7 @@
   border-radius: $btn-border-radius;
   background-color: $btn-default-backgroud;
   color:$dark;
+  margin-bottom: 0.3125rem;
   padding: $btn-padding;
   display: inline-block;
   text-align: center;
@@ -29,6 +30,7 @@
   &:hover {
     border-color: $semiTrans;
     background: $X11grey;
+    text-decoration: none;
     @include easeIn;
   }
   &[class*='-primary'],&[class*='-secondary'],&[class*='-success'],
