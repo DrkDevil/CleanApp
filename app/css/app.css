@@ -128,7 +128,8 @@ html {
 hr {
   box-sizing: content-box;
   height: 0;
-  overflow: visible; }
+  overflow: visible;
+  margin: 15px 0; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; }
@@ -947,7 +948,7 @@ a {
   #pageWrapper.r-toggled {
     padding-right: 0; }
     #pageWrapper.r-toggled #rightSidebar {
-      width: 0; } }
+      width: 250px; } }
 
 /* Mobile Default page wrappers padding are zero to start them closed. */
 #pageWrapper-dsb {

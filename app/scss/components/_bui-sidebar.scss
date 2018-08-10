@@ -47,7 +47,7 @@
   #pageWrapper.r-toggled {
     padding-right: 0;
     #rightSidebar {
-      width: 0;
+      width: $right-sidebar-width;
     }
   }
 }
