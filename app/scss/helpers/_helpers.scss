@@ -10,7 +10,6 @@
 .show { visibility: visible !important; }
 .hide { visibility: hidden; }
 
-
 // Hidden Elements
 // Hidden elements work on a max-width and down.
 // This allows for easier control, on when your element will disapear.
@@ -35,8 +34,6 @@
   .hidden-lg { display: none !important; }
 }
 
-
 // Helpful Components Styles
-
-.cell { border: 1px solid #fff; }
+.cell { border: 1px solid #fff; } //Same thing as BS's .well class
 .headline { border-bottom: 1px solid #fff; }

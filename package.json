@@ -8,21 +8,21 @@
   "devDependencies": {
     "angular": "~1.7.2",
     "angular-route": "~1.7.2",
-    "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
-    "gulp-angular-templatecache": "^2.2.1",
-    "eslint-friendly-formatter": "^4.0.1",
-    "gulp-eslint": "^5.0.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-repl": "^2.0.3",
-    "readline-ui": "^2.2.3",
+    "ansi-bgcyan": "^0.1.1",
+    "ansi-bggreen": "^0.1.1",
+    "ansi-bgred": "^0.1.1",
     "ansi-cyan": "^0.1.1",
-    "ansi-yellow": "^0.1.1",
     "ansi-green": "^0.1.1",
     "ansi-red": "^0.1.1",
-    "ansi-bgcyan": "^0.1.1",
-    "ansi-bgred": "^0.1.1",
-    "ansi-bggreen": "^0.1.1"
+    "ansi-yellow": "^0.1.1",
+    "browser-sync": "^2.24.6",
+    "eslint-friendly-formatter": "^4.0.1",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.2.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-repl": "^2.0.3",
+    "gulp-sass": "^4.0.1",
+    "readline-ui": "^2.2.3"
   },
   "engines": {
     "node": ">=0.10.0"
