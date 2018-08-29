@@ -685,6 +685,29 @@ a {
   .offset-12lg {
     margin-left: 100%; } }
 
+/* ----- Flex Grid System (Jacked From CSS-Tricks.com ) Modified By Digital Religion ----- */
+.flex-grid {
+  display: flex; }
+
+.flex-grid .col {
+  flex: 1; }
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-grid-thirds .col {
+  width: 32%; }
+
+@media (max-width: 800px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block; }
+    .flex-grid .col,
+    .flex-grid-thirds .col {
+      width: 100%;
+      margin: 0 0 10px 0; } }
+
 [class*='alert'] {
   padding: 20px;
   width: 100%;
@@ -1450,6 +1473,15 @@ footer a:hover {
 [class*='-dark-grey'] {
   background-color: #343a40; }
 
+[class*='-html'] {
+  background-color: #c24726; }
+
+[class*='-css'] {
+  background-color: #295da8; }
+
+[class*='-js'] {
+  background-color: #d6ba33; }
+
 .primary {
   color: #007bff; }
 
@@ -1513,11 +1545,11 @@ footer a:hover {
 .dark-grey {
   color: #343a40; }
 
-.gridDemo [class*='col-'] {
+.gridDemo [class*='col'] {
   padding-right: 0px !important;
   padding-left: 5px !important; }
 
-.gridDemo [class*='col-'] > p {
+.gridDemo [class*='col'] > p {
   background-color: #bebebe;
   padding: 10px;
   margin-bottom: 0;
@@ -1525,6 +1557,20 @@ footer a:hover {
   font-size: 0.8rem;
   text-align: center;
   color: #6c757d; }
+
+.gridDemo .flex-grid {
+  margin: 0 0 20px 0; }
+
+.gridDemo .col {
+  background: #17a2b8;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; }
+
+[class*='syntax-hdr'] {
+  width: 100%;
+  padding: 10px 20px;
+  color: #ffffff; }
 
 code {
   font-size: 95%;

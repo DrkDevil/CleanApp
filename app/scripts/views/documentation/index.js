@@ -109,13 +109,16 @@ angular.module('BonsaiApp.docs', ['ngRoute', 'docs.controllers', 'docs.directive
         templateUrl: 'documentation/app/sass-grid.html',
         controller: 'docsCtrl'
       })
-
+      .when('/flex-grid', {
+        title: 'BonsaiApp - Flex Grid System',
+        templateUrl: 'documentation/app/flex-grid.html',
+        controller: 'docsCtrl'
+      })
       .when('/started', {
         title: 'BonsaiApp - Gettings Started',
         templateUrl: 'documentation/overview/started.html',
         controller: 'docsCtrl'
       })
-
       .when('/requirements', {
         title: 'BonsaiApp - BonsaiUI',
         templateUrl: 'documentation/overview/requirements.html',

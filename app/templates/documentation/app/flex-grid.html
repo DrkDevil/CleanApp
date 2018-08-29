@@ -1,0 +1,115 @@
+<div id="pageWrapper">
+  <div ng-include="'../../templates/includes/sidebar.html'"></div>
+  <aside id="rightSidebar">
+    <nav class="sidebarItems">
+      <ul class="nav-group">
+        <li><a href="javascript:vod(0);">Left Sidebar</a></li>
+        <li><a href="javascript:vod(0);">Right Sidebar</a></li>
+        <li><a href="javascript:vod(0);">Dual Sidebars</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="pagecontent">
+    <section class="pageBanner-md">
+      <div class="grid-fw">
+        <div class="row">
+          <div class="col-12xs">
+            <h1>Flex Grid System</h1>
+            <h2>This extreamly easy Flex Grid system was totally jacked from CSS-Tricks <a href='https://css-tricks.com/author/chriscoyier/'>Chris Coyier</a>. I would like to thank him here personally as I use it on a regular basis.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="grid-fw">
+      <section id="how" class="theGrid">
+        <div class="row">
+          <div class="col-12xs">
+            <h1>Don’t Overthink It (Flexbox) Grids</h1>
+            <h4><cite>This Article was written by  <a href='https://css-tricks.com/author/chriscoyier/'>Chris Coyier</a> of  <a href='https://css-tricks.com'>CSS-TRICKS.COM</a></cite></h4>
+            <p>Four years ago I posted <a href="https://css-tricks.com/dont-overthink-it-grids/">"Don't Overthink it Grids"</a> and it resonated with quite a few people. Even back then, I thought we might have been at Peak Grid. Someone was promoting a new
+              grid framework practically every week. </p>
+            <p>That article was my way of saying: "<em>Fear not!</em> You can make a grid yourself! You don't need a complicated framework." It might not have been quite as fancy, but that's how I rolled. You float a couple of elements with some percentage
+              widths and call it a day.</p>
+            <p>These days, if you are ready to jump to flexbox for layout, DIY grids are even easier.</p>
+          </div>
+          <div class="col-12xs">
+            <h3>This is how I normally do it:</h3>
+            <div class="code-example-box">
+              <div class="syntax-hdr-html">HTML</div>
+              <div hljs>
+                <div class="flex-grid">
+                  <div class="col"></div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+              </div>
+            </div>
+            <div class="code-example-box">
+              <div class="syntax-hdr-css">CSS</div>
+              <div hljs>
+
+                .flex-grid { display: flex; } .col { flex: 1; }
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12xs">
+            <p>That supports any number of columns and they are automatically equal width and flexible!</p>
+            <p>Wanna have them break into a column for small screens? Easy:</p>
+            <div class="code-example-box">
+              <div class="syntax-hdr-css">CSS</div>
+              <div hljs>
+
+                @media (max-width: 400px) { .flex-grid { display: block; } }
+
+              </div>
+            </div>
+            <p><strong>Lets take a Quick Break from the article to include that you can use BonsaiUI's Media Query Mixin to quicly setup your grids breakpoints.</strong></p>
+            <div class="code-example-box">
+              <div class="syntax-hdr-indigo">SCSS MIXIN <small class="flt-right">(BonsaiUI MQ Mixin using multiple breakpoint.. If so one where inclined)</small></div>
+              <div hljs>
+
+                .flex-grid { @include mq('wide') { display: flex; } @include mq('tablet-wide') { display: block; } }
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12xs">
+            <p>Need gutters? You could add margins to the columns. You could add padding to the columns. I like the idea of using justification to create the columns, like:</p>
+            <div class="code-example-box">
+              <div class="syntax-hdr-html">HTML</div>
+              <div hljs>
+
+                .flex-grid-thirds { display: flex; justify-content: space-between; } .flex-grid-thirds .col { width: 32%; }
+
+              </div>
+            </div>
+            <div class="code-example-box gridDemo">
+              <h1 >Example of Flex Grid</h1>
+              <div class="example-panel">
+                <div class="flex-grid">
+                  <div class="col">This little piggy went to market.</div>
+                  <div class="col">This little piggy stayed home.</div>
+                  <div class="col">This little piggy had roast beef.</div>
+                </div>
+                <div class="flex-grid">
+                  <div class="col">This little piggy went to market.</div>
+                  <div class="col">This little piggy stayed home.</div>
+                  <div class="col">This little piggy had roast beef.</div>
+                  <div class="col">This little piggy had none.</div>
+                  <div class="col">This little piggy went wee wee wee all the way home.</div>
+                </div>
+                <div class="flex-grid-thirds">
+                  <div class="col">This little piggy went to market.</div>
+                  <div class="col">This little piggy stayed home.</div>
+                  <div class="col">This little piggy had roast beef.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</div>

@@ -1,7 +1,23 @@
 
 // These Demo Styles Make the Grid Visible.
-.gridDemo [class*='col-'] { padding-right: 0px !important; padding-left: 5px !important; }
-.gridDemo [class*='col-'] > p { background-color: #bebebe; padding: 10px; margin-bottom: 0; border-radius: 4px; font-size: 0.8rem; text-align: center; color: #6c757d; }
+.gridDemo [class*='col'] { padding-right: 0px !important; padding-left: 5px !important; }
+.gridDemo [class*='col'] > p { background-color: #bebebe; padding: 10px; margin-bottom: 0; border-radius: 4px; font-size: 0.8rem; text-align: center; color: #6c757d; }
+.gridDemo {
+.flex-grid {
+  margin: 0 0 20px 0;
+}
+.col {
+  background: $cyan;
+  padding: 20px;
+  text-align: center;
+  color:$white;
+ }
+}
+[class*='syntax-hdr'] {
+  width: 100%;
+  padding: 10px 20px;
+  color: $white;
+}
 
 code {
   font-size: 95%;

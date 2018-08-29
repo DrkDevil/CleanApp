@@ -1,23 +1,41 @@
 <div id="pageWrapper">
   <div ng-include="'../../templates/includes/sidebar.html'"></div>
-    <aside id="rightSidebar">
-      <nav class="sidebarItems">
-        <ul class="nav-group">
-          <li><a href="javascript:vod(0);">Left Sidebar</a></li>
-          <li><a href="javascript:vod(0);">Right Sidebar</a></li>
-          <li><a href="javascript:vod(0);">Dual Sidebars</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <article class="page-content">
-      <section class="pageBanner-md">
-        <div class="grid-fw">
-          <div class="row">
-            <h1>Forms</h1>
-          </div>
-        </div>
-      </section>
+  <aside id="rightSidebar">
+    <nav class="sidebarItems">
+      <ul class="nav-group">
+        <li><a href="javascript:vod(0);">Left Sidebar</a></li>
+        <li><a href="javascript:vod(0);">Right Sidebar</a></li>
+        <li><a href="javascript:vod(0);">Dual Sidebars</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="page-content">
+    <section class="pageBanner-md">
       <div class="grid-fw">
+        <div class="row">
+          <h1>Forms</h1>
+        </div>
       </div>
-    </article>
-  </div>
+    </section>
+    <div class="grid-fw">
+      <div class="row">
+        <form name="exampleForm">
+          <section>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </section>
+          <section>
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </section>
+          <section>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </section>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </article>
+</div>

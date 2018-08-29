@@ -24,6 +24,11 @@
 [class*='-grey'] { background-color:  $grey; }
 [class*='-dark-grey'] { background-color:  $dark-grey; }
 
+//Branded colors
+[class*='-html'] { background-color: #c24726; }
+[class*='-css'] { background-color: #295da8; }
+[class*='-js'] { background-color: #d6ba33; }
+
 // Classes to change an elements color
 .primary { color:  $primary; }
 .secondary { color:  $secondary; }

@@ -17,10 +17,10 @@ angular.module('docs.directives', [])
     return {
       link: function(scope, element, attrs) {
         element.parent().bind('click', function() {
-          var lftPgWrpr = angular.element(document.querySelector('#pageWrapper'));
-          var lftPgWrprDsb = angular.element(document.querySelector('#pageWrapper-dsb'));
-          lftPgWrpr.toggleClass('r-toggled');
-          lftPgWrprDsb.toggleClass('r-toggled');
+          var rftPgWrpr = angular.element(document.querySelector('#pageWrapper'));
+          var rftPgWrprDsb = angular.element(document.querySelector('#pageWrapper-dsb'));
+          rftPgWrpr.toggleClass('r-toggled');
+          rftPgWrprDsb.toggleClass('r-toggled');
           console.log('clicked');
         });
       }
