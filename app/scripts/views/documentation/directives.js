@@ -51,7 +51,8 @@ angular.module('docs.directives', [])
             icon.removeClass('fa-chevron-circle-up');
             icon.addClass('fa-chevron-circle-down');
             console.log(ah);
-          } else {
+          }
+          else {
             panel.css('display', 'block');
             panel.addClass('open');
             button.addClass('open');
@@ -63,7 +64,6 @@ angular.module('docs.directives', [])
       }
     };
   })
-
   // Collapse
   .directive('collapse', function() {
     return {
@@ -77,15 +77,13 @@ angular.module('docs.directives', [])
           var contentID = angular.element(document.querySelector(targetValue));
           // Get element by ID that equals targets the name
           var contentClass = angular.element(document.getElementsByClassName(targetValue));
-
           if (targetValue === clpsTarget) {
             contentID.toggleClass('open');
             contentClass.toggleClass('open');
-          } else {
+          }
+          else {
             //Do Nothing
           }
-          console.log(ccbody);
-
         });
       }
     };
@@ -95,7 +93,8 @@ angular.module('docs.directives', [])
     return {
       link: function(scope, element, attrs) {
         element.bind('click', function() {
-          for (i = 0; i < element.length; i++) {
+          var i = 0; //we add the variable here to shut up js lint.
+          for ( i; i < element.length; i++) {
             console.log(element);
             element.parent().fadeOut();
           }
