@@ -48,11 +48,15 @@
               <div class="syntax-hdr-css">CSS</div>
               <div hljs>
 
-                .flex-grid { display: flex; } .col { flex: 1; }
+                .flex-grid {
+                   display: flex;
+                  }
+                 .col { flex: 1; }
 
               </div>
             </div>
           </div>
+
           <div class="col-12xs">
             <p>That supports any number of columns and they are automatically equal width and flexible!</p>
             <p>Wanna have them break into a column for small screens? Easy:</p>
@@ -60,7 +64,9 @@
               <div class="syntax-hdr-css">CSS</div>
               <div hljs>
 
-                @media (max-width: 400px) { .flex-grid { display: block; } }
+                @media (max-width: 400px) {
+                   .flex-grid { display: block; }
+                  }
 
               </div>
             </div>
@@ -69,7 +75,13 @@
               <div class="syntax-hdr-indigo">SCSS MIXIN <small class="flt-right">(BonsaiUI MQ Mixin using multiple breakpoint.. If so one where inclined)</small></div>
               <div hljs>
 
-                .flex-grid { @include mq('wide') { display: flex; } @include mq('tablet-wide') { display: block; } }
+                .flex-grid {
+                   @include mq('wide') {
+                      display: flex;
+                   }
+                   @include mq('tablet-wide') {
+                      display: block; }
+                   }
 
               </div>
             </div>
@@ -80,7 +92,13 @@
               <div class="syntax-hdr-html">HTML</div>
               <div hljs>
 
-                .flex-grid-thirds { display: flex; justify-content: space-between; } .flex-grid-thirds .col { width: 32%; }
+                .flex-grid-thirds {
+                    display: flex;
+                    justify-content: space-between;
+                  }
+                .flex-grid-thirds .col {
+                  width: 32%;
+                 }
 
               </div>
             </div>
