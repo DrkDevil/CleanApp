@@ -10,7 +10,6 @@ var friendlyFormatter = require('eslint-friendly-formatter');
 var browserSync = require('browser-sync');
 var yellowTxt = require('ansi-yellow');
 var greenTxt = require('ansi-green');
-var redTxt = require('ansi-red');
 var cyanTxt = require('ansi-cyan');
 var bgGreen = require('ansi-bggreen');
 var bgCyan = require('ansi-bgcyan');
@@ -32,7 +31,7 @@ gulp.task('stop', function(cb) {
 // ---- CLI UI --------------------------------------------------------------------------------
 var Welcome = 'Welcome to BonsaiApp: Develop with peace of mind.';
 var prompt = 'Press Enter to input a command and run a task.';
-var prompt2 = 'Type ? for help.'
+var prompt2 = 'Type ? for help.';
 var running = 'Run Command ';
 console.log(yellowTxt(Welcome));
 console.log(bgCyan(prompt));
@@ -57,8 +56,8 @@ gulp.task('?', function() {
 // ---- JavaScript Linting (ESlint) -----------------------------------------------------------
 gulp.task('lint', function() {
   return gulp.src(['app/scripts/**/*.js',      // Location of js files you want to lint.
-      '!app/scripts/templates.js'              // Use !foldername/filename to ignore files.
-    ])
+    '!app/scripts/templates.js'              // Use !foldername/filename to ignore files.
+  ])
     .pipe(eslint('.eslintrc.json'))            // Your eslint pipe (config file)
     .pipe(eslint.format(friendlyFormatter));   // A better way to dispay errors.
 });
@@ -88,7 +87,7 @@ gulp.task('view', [], function() {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     //
-  })
+  });
   // -- Watch these files, and folders.
   // -- If there are any changes to saved files reload browser.
   gulp.watch('app/index.html').on('change', reload);
