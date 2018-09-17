@@ -919,6 +919,10 @@ li.dropdown {
     display: block;
     text-align: left; }
 
+.navbar .dropdown-content a:hover {
+  background-color: #6610f2;
+  color: #ffffff !important; }
+
 .dropdown-content a:hover {
   background-color: #dfe3e7; }
 

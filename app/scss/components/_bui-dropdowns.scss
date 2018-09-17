@@ -27,6 +27,10 @@ li.dropdown {
     text-align: left;
   }
 }
+.navbar .dropdown-content a:hover {
+  background-color: $indigo;
+  color: $white !important;
+}
 .dropdown-content a:hover {
   background-color: $light-shade;
 }
