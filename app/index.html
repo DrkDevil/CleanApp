@@ -13,21 +13,7 @@
 </head>
 <div ng-app="app">
 <body>
-<header class="navbar fixed-top" role="navigation">
-  <div class="brand">
-    <a href="/">BonsaiApp</a>
-  </div>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/docs">Documentation</a></li>
-    <li><a href="/newView">Starter Pages</a></li>
-  </ul>
-  <ul class="flt-right">
-    <!-- This li is using an effect class located in the scss components folder -->
-    <li><a leftbar-toggle href="javascript:void(0);"><i class="fa fa-bars"></i></a></li>
-    <li><a rightbar-toggle href="javascript:void(0);"><i class="fa fa-bars"></i></a></li>
-  </ul>
-</header>
+<div ng-include="'../../templates/includes/header.html'"></div>
 <main ng-cloak>
   <!-- AngularJS Routing -->
   <div ng-view="" autoscroll="true"></div>

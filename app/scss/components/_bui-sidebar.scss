@@ -1,3 +1,4 @@
+// Note:
 // #PageWrapper is for a single leftnavbar with optional right slider hidden off canvas.
 // #PageWrapper-dsb is for dual visible sidebars simultaneously.
 /* Mobile Default page wrappers padding are zero to start them closed. */
@@ -35,7 +36,7 @@
   }
 }
 // Media Query : Above
-@media (min-width:768px) {
+@include mq('tablet') {
   /* Leftbar Closed Toggle */
   #pageWrapper.toggled {
     padding-left: 0;
@@ -51,6 +52,7 @@
     }
   }
 }
+// Dual Sidebar Styling
 /* Mobile Default page wrappers padding are zero to start them closed. */
 #pageWrapper-dsb {
   padding-top: $body-top-push-mobile;
@@ -80,7 +82,7 @@
   }
 }
 // Media Query : Above
-@media (min-width:768px) {
+@include mq('tablet') {
   /* Leftbar Closed Toggle */
   #pageWrapper-dsb.toggled {
     padding-left: 0;
@@ -121,7 +123,9 @@
   }
   .nav-group-extended {
     margin-bottom: $body-top-push;
-    @include mq('phablet') {margin-bottom: $body-top-push-mobile;}
+    @include mq('phablet') {
+      margin-bottom: $body-top-push-mobile;
+    }
   }
 }
 
@@ -207,7 +211,6 @@
   @include easeIn;
   }
 }
-
 #pageWrapper.toggled #leftSidebar {
   .navHeader {
     color: transparent;
