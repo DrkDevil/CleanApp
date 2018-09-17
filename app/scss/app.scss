@@ -34,14 +34,14 @@
 @import 'components/bui-badges';       //  Badges
 @import 'components/bui-breadcrumbs';  //  Breadcrumbs
 @import 'components/bui-cards';        //  Cards
-@import 'components/bui-collapse';        //  Cards
+@import 'components/bui-collapse';     //  Collapsables
 @import 'components/bui-navbar';       //  Navigation - Navbar
 @import 'components/bui-sidebar';      //  Navigation - Dual Sidebars
 //@import 'components/bui-pillbar';    //  Navigation - Pillbars (re-impliment)
 @import 'components/bui-footer';       //  Bonsai Footer
 @import 'components/bui-buttons';      //  Bonsai UI Buttons
 @import 'components/bui-pageBanner';   //  PageBanners
-//@import 'components/bui-effects';    //  Bonsai UI Effects (depreciate)
+@import 'components/bui-scrollbars';    //  Bonsai UI Effects (depreciate)
 
 // Page ----------------------- ------------------------------------------------
 @import 'pages/main';            // Main Page
@@ -50,7 +50,7 @@
 
 // Themes --------------------- ------------------------------------------------
 @import 'base/colors';           //  Background and Foreground Colors
-@import 'themes/demoStyles';    // Visual Styles for the Demo pages.
+@import 'themes/demoStyles';     // Visual Styles for the Demo pages.
 
 // Vendor CSS ----------------- ------------------------------------------------
 @import 'helpers/syntax-highlighting';   //  Syntax Highlighting

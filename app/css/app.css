@@ -1317,6 +1317,9 @@ footer a:hover {
   100% {
     background-position: 100% 0%; } }
 
+#leftSidebar::-webkit-scrollbar {
+  width: 0px; }
+
 .main body {
   padding-top: 0;
   background: url("../../img/backgrounds/AdobeStock_101916353.jpeg") no-repeat center center fixed;
