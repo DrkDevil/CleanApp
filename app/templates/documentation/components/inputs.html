@@ -1,54 +1,75 @@
 <div id="pageWrapper">
   <div ng-include="'../../templates/includes/sidebar.html'"></div>
-    <aside id="rightSidebar">
-      <nav class="sidebarItems">
-        <ul class="nav-group">
-          <li><a href="javascript:vod(0);">Left Sidebar</a></li>
-          <li><a href="javascript:vod(0);">Right Sidebar</a></li>
-          <li><a href="javascript:vod(0);">Dual Sidebars</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <article class="page-content">
-      <section class="pageBanner-md">
-        <div class="grid-fw">
-          <div class="row">
-            <h1>Inputs</h1>
-          </div>
-        </div>
-      </section>
+  <aside id="rightSidebar">
+    <nav class="sidebarItems">
+      <ul class="nav-group">
+        <li><a href="javascript:vod(0);">Left Sidebar</a></li>
+        <li><a href="javascript:vod(0);">Right Sidebar</a></li>
+        <li><a href="javascript:vod(0);">Dual Sidebars</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <article class="page-content">
+    <section class="pageBanner-md">
       <div class="grid-fw">
         <div class="row">
-          <section>
-            Form Fields
+          <h1>Inputs</h1>
+        </div>
+      </div>
+    </section>
+    <div class="grid-fw">
+      <div class="row">
+        <section>
+          Form Fields
           <input type="text">
-          </section>
-          <section>
-            password field
-            <input type="password">
-          </section>
-          <section>
-            <h2>Form Buttons Type</h2>
-            <p>As usual the text within an HTML button is based on the buttons Value</p>
-            <input type="reset">
-            <input type="submit">
-            <input type="button" value="Button">
-            <p>You can style your HTML buttons using any css button class and attribue</p>
-            <input type="submit" value="btn" class="btn">
-            <input type="submit" value="btn-primary" class="btn-primary">
-            <input type="submit" value="btn-secondary" class="btn-secondary">
-            <input type="submit" value="btn-warning" class="btn-warning">
-            <input type="submit" value="btn-danger" class="btn-danger">
-            <input type="submit" value="btn-info" class="btn-info">
+        </section>
+        <section>
+          password field
+          <input type="password">
+        </section>
+        <section>
+          <h2>Form Buttons Type</h2>
+          <p>As usual the text within an HTML button is based on the buttons Value</p>
+          <input type="reset">
+          <input type="submit">
+          <input type="button" value="Button">
+          <p>You can style your HTML buttons using any css button class and attribue</p>
+          <input type="submit" value="btn" class="btn">
+          <input type="submit" value="btn-primary" class="btn-primary">
+          <input type="submit" value="btn-secondary" class="btn-secondary">
+          <input type="submit" value="btn-warning" class="btn-warning">
+          <input type="submit" value="btn-danger" class="btn-danger">
+          <input type="submit" value="btn-info" class="btn-info">
 
 
 
-          </section>
-          <section>
+        </section>
+        <section>
           <input type="radio">
         </section>
         <section>
-          <input type="checkbox">
+          <div id="checkboxes">
+            <ul>
+              <li><input type="checkbox" class="checkbox_red" />Red</li>
+              <li><input type="checkbox" class="checkbox_pink" />Pink</li>
+              <li><input type="checkbox" class="checkbox_purple" />Purple</li>
+              <li><input type="checkbox" class="checkbox_deep_purple" />Deep-Purple</li>
+              <li><input type="checkbox" class="checkbox_indigo" />Indigo</li>
+              <li><input type="checkbox" class="checkbox_blue" />Blue</li>
+              <li><input type="checkbox" class="checkbox_light_blue" />Light-Blue</li>
+              <li><input type="checkbox" class="checkbox_cyan" />Cyan</li>
+              <li><input type="checkbox" class="checkbox_teal" />Teal</li>
+              <li><input type="checkbox" class="checkbox_green" />Green</li>
+              <li><input type="checkbox" class="checkbox_light_green" />Light-Green</li>
+              <li><input type="checkbox" class="checkbox_lime" />Lime</li>
+              <li><input type="checkbox" class="checkbox_yellow" />Yellow</li>
+              <li><input type="checkbox" class="checkbox_amber" />Amber</li>
+              <li><input type="checkbox" class="checkbox_orange" />Orange</li>
+              <li><input type="checkbox" class="checkbox_deep_orange" />Deep Orange</li>
+              <li>Blue-Grey</li>
+            </ul>
+
+          </div>
         </section>
         <section>
 
@@ -68,11 +89,11 @@
           <input type="time">
           <input type="url">
           <input type="week">
-        <section>
+          <section>
 
 
 
-        </div>
       </div>
-    </article>
-  </div>
+    </div>
+  </article>
+</div>
