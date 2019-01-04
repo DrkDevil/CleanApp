@@ -2,7 +2,7 @@
 [![Issue Count](https://codeclimate.com/github/DrkDevil/CleanApp/badges/issue_count.svg)](https://codeclimate.com/github/DrkDevil/CleanApp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# BonsaiApp - This version of BonsaiApp is no longer supported. A newer Angular Library version is on the way. 
+# This version of BonsaiApp is no longer supported. A newer Angular Library version is on the way. 
 
 # BonsaiApp - Seed Edition (aka: CleanApp)
 ## Develop with ease and peace of mind.
